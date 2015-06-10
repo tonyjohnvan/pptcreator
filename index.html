@@ -40,15 +40,23 @@
         <div id="navbar">
             <ul class="nav navbar-nav">
                 <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">File <span class="caret"></span></a>
+                    <ul class="dropdown-menu navbar-inverse op-nav-drop-down" role="menu">
+                        <li><a onclick="">Save</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Export</li>
+                        <li><a onclick="">as HTML</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Edit <span class="caret"></span></a>
                     <ul class="dropdown-menu navbar-inverse op-nav-drop-down" role="menu">
-                        <li><a onclick="addTextField();">Add Text</a></li>
-                        <li><a onclick="">Ipsum Lorem</a></li>
-                        <li><a onclick="">Ipsum Lorem</a></li>
+                        <li><a onclick="addTextField();">Insert Text Box</a></li>
+                        <li><a onclick="">Delete Selected Text</a></li>
                         <li class="divider"></li>
-                        <li class="dropdown-header">Other Functions</li>
-                        <li><a onclick="">Ipsum Lerom</a></li>
-                        <li><a onclick="">Ipsum Lerom</a></li>
+                        <li class="dropdown-header">Report</li>
+                        <li><a onclick="">New Slide</a></li>
+                        <li><a onclick="">Delete Current Slide</a></li>
                     </ul>
                 </li>
             </ul>
@@ -67,10 +75,54 @@
         </div>
     </div>
 
-
 </div>
 <!-- /.container -->
 
+<div class="floating-panel">
+    <!--<div class="tabPanel"></div>-->
+    <!--<div class="detailPanel"></div>-->
+    <div class="floating-panel-wrap" role="tabpanel">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs tabWrap" role="tablist">
+            <li role="presentation"><a href="#components" aria-controls="components" role="tab" data-toggle="tab">Components</a></li>
+            <li role="presentation" class="active"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab">Properties</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content detailPanel">
+            <div role="tabpanel" class="tab-pane" id="components">components</div>
+            <div role="tabpanel" class="tab-pane active" id="properties">
+                <div class="row">
+                    <div class="col-xs-5 text-right propertyPanelTextDiv">
+                        <div>Top:</div>
+                        <div>Left:</div>
+                        <div>Width:</div>
+                        <div>Height:</div>
+                        <div>zIndex:</div>
+                    </div>
+                    <div class="col-xs-7 propertyPanelTextDiv">
+                        <div class="propertyValue" id="topValue">-</div>
+                        <div class="propertyValue" id="leftValue">-</div>
+                        <div class="propertyValue" id="widthValue">-</div>
+                        <div class="propertyValue" id="heightValue">-</div>
+                        <div class="propertyValue" id="zIndexValue">-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<ul class="custom-right-menu no-select">
+    <li onclick="addTextField(event);" data-action="newElement">Insert Text Box</li>
+    <li class="disabled" id="deleteElement" data-action="deleteElement">Delete Selected Text</li>
+    <li class="divider disabled"></li>
+    <li data-action="newSlide">New Slide</li>
+    <li data-action="deleteSlide">Delete Current Slide</li>
+</ul>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
@@ -79,6 +131,8 @@
 <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
 <script src="plugins/editor/ckeditor.js"></script>
 <script src="assets/js/model/eText.js"></script>
+<script src="assets/js/model/domItems.js"></script>
+<script src="assets/js/controller/functions.js"></script>
 <script src="assets/js/controller/main.js"></script>
 <script src="plugins/jQueryUI/jquery-ui.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

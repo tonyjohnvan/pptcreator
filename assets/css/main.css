@@ -6,6 +6,15 @@ body,html{
     min-height: 900px !important;
 }
 
+.no-select{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .op-nav-container,
 .container{
     width: 1440px !important;
@@ -14,20 +23,22 @@ body,html{
 .op-container{
     margin-top: 50px;
     height: 100%;
+    background: #eee;
 }
 .op-sidebar{
     background: #444;
     height: 100%;
+    width: 200px;
 }
 .op-pptContainer{
-    background: #eee;
     height: 100%;
+    max-width: 1200px;
 }
 .op-slideContainer{
     width: 1024px;
     height: 768px;
     background: #ffffff;
-    margin: 50px auto;
+    margin: 50px 0 0 50px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
 }
 .op-nav-drop-down li a{
@@ -48,6 +59,121 @@ body,html{
     min-height: 50px;
     top: 150px;
     left: 250px;
-    line-height: 0.5;
+    /*line-height: 0.5;*/
     overflow: hidden;
+}
+
+.floating-panel{
+    position: absolute;
+    z-index: 1000;
+    width: 300px;
+    height: 200px;
+    background: #2c2c2c;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: move;
+}
+.tabPanel,
+.floating-panel-wrap{
+    /*position: relative;*/
+    /*top: 1px;*/
+    height: 100%;
+    padding: 3px 1px 1px 1px;
+}
+.detailPanel{
+    background: #545454;
+    height: 84%;
+    border-left: 1px solid #222;
+    border-right: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+.tabWrap a{
+    padding: 5px 10px !important;
+    color: #aaa;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+    border-color: #222 #222 #222;
+    background: #404040;
+}
+.tab-pane{
+    padding: 10px 15px;
+    color: #ffffff;
+    font-weight: 100;
+}
+.nav-tabs {
+    border-bottom: 1px solid #222;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #eee;
+    cursor: default;
+    background-color: #545454;
+    border: 1px solid #222;
+    border-bottom-color: transparent;
+}
+
+.small-text{
+    font-weight: 100;
+}
+
+.propertyPanelTextDiv>div{
+    margin: 8px 0;
+}
+
+.tabWrap li{
+    cursor: pointer;
+}
+
+.custom-right-menu {
+    z-index:1000;
+    position: absolute;
+    background-color:#545454;
+    border: 1px solid #111;
+    padding: 2px;
+
+    display: none;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    color: #333;
+    border-radius: 3px;
+}
+/* Each of the items in the list */
+.custom-right-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+    list-style-type: none;
+    color: #ddd;
+}
+.custom-right-menu li a{
+    color: #ddd;
+}
+.custom-right-menu li:hover {
+    background-color: #2c2c2c;
+    color: #fff;
+}
+.custom-right-menu li.disabled:hover {
+    background-color: #545454;
+    color: #aaa;
+}
+.custom-right-menu li.disabled{
+    /*background-color: #545454;*/
+    cursor: default;
+    color: #aaa;
+}
+.custom-right-menu li a:hover{
+    text-decoration: none;
+}
+.custom-right-menu li.divider{
+    height: 1px;
+    padding: 0;
+    margin: 10px 0;
+    background: #888;
+    text-decoration: none;
+}
+.custom-right-menu li.divider:hover{
+    background: #888;
+    text-decoration: none;
 }
