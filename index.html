@@ -68,7 +68,39 @@
 <div class="op-container">
 
     <div class="col-xs-2 op-sidebar">
-
+        <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="dropdown-toggle btn-black" data-toggle="dropdown" aria-expanded="false">
+                New Slide
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu navbar-inverse op-nav-drop-down themeDropdown" role="menu">
+                <li class="dropdownThemeCard" id="themeCard1"></li>
+                <li class="dropdownThemeCard" id="themeCard2"></li>
+                <li class="dropdownThemeCard" id="themeCard3"></li>
+                <li class="dropdownThemeCard" id="themeCard4"></li>
+                <li class="dropdownThemeCard" id="themeCard5"></li>
+                <li class="dropdownThemeCard" id="themeCard6"></li>
+                <li class="dropdownThemeCard" id="themeCard7"></li>
+                <li class="dropdownThemeCard" id="themeCard8"></li>
+                <li class="dropdownThemeCard" id="themeCard9"></li>
+                <li class="dropdownThemeCard" id="themeCard10"></li>
+                <li class="dropdownThemeCard" id="themeCard11"></li>
+                <li class="dropdownThemeCard" id="themeCard12"></li>
+            </ul>
+            <!--<button type="button" class="btn btn-default">Right</button>-->
+        </div>
+        <div class="slidesThumbnail" id="stn1">
+            <div class="pageNumber">1</div>
+        </div>
+        <div class="slidesThumbnail" id="stn2">
+            <div class="pageNumber">1</div>
+        </div>
+        <div class="slidesThumbnail" id="stn3">
+            <div class="pageNumber">1</div>
+        </div>
+        <div class="slidesThumbnail" id="stn4">
+            <div class="pageNumber">1</div>
+        </div>
     </div>
     <div class="col-xs-10 op-pptContainer">
         <div class="op-slideContainer">
@@ -119,15 +151,20 @@
 <ul class="custom-right-menu no-select">
     <li onclick="addTextField(event);" data-action="newElement">Insert Text Box</li>
     <li class="disabled" id="deleteElement" data-action="deleteElement">Delete Selected Text</li>
-    <li class="divider disabled"></li>
+    <li data-action="divider" class="divider disabled"></li>
     <li data-action="newSlide">New Slide</li>
     <li data-action="deleteSlide">Delete Current Slide</li>
+    <li data-action="divider" class="divider disabled"></li>
+    <li class="disabled" id="moveForward" data-action="moveForward">Move Forward</li>
+    <li class="disabled" id="moveBackWard" data-action="moveBackWard">Move Backward</li>
+    <li class="disabled" id="bringToFront" data-action="bringToFront">Bring to Front</li>
+    <li class="disabled" id="bringToBack" data-action="bringToBack">Bring to Back</li>
 </ul>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="plugins/jQuery1112.js"></script>
 <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
 <script src="plugins/editor/ckeditor.js"></script>
 <script src="assets/js/model/eText.js"></script>

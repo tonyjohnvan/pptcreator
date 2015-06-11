@@ -5,6 +5,8 @@
 var lastId = 0;
 var etArray = [];
 
+var currentItem;
+
 
 $(document).ready(function () {
     "use strict";
@@ -13,15 +15,16 @@ $(document).ready(function () {
     $(".op-slideContainer").delegate('.editText', 'click', function (ev) {
         ev.preventDefault();
         var target = $(ev.target).closest('.editText');
+        settingCurrentItem(target);
         updatePropertyPanel(target.attr('id'));
         //console.log(target);
-        if (!target.hasClass("cke_editable_inline")) {
-            CKEDITOR.disableAutoInline = true;
-            CKEDITOR.inline(target.attr('id'));
-        }
 
         if (target.hasClass("ui-draggable")) {
             $('#' + target.attr('id')).draggable("destroy");
+        }
+        if (!target.hasClass("cke_editable_inline")) {
+            CKEDITOR.disableAutoInline = true;
+            CKEDITOR.inline(target.attr('id'));
         }
         CKEDITOR.instances[target.attr('id')].on('blur', function () {
             //console.log('onblur fired at ' + target.attr('id'));
@@ -36,6 +39,7 @@ $(document).ready(function () {
                     });
             }, 100);
             updatePropertyPanel();
+            settingCurrentItem();
         });
 
     }).delegate('.editText', 'keydown', function (e) {
@@ -47,10 +51,17 @@ $(document).ready(function () {
             });
     }).delegate('.editText', 'drag', function (ev) {
         var target = $(ev.target).closest('.editText');
+        settingCurrentItem(target);
         updatePropertyPanel(target.attr('id'));
     }).delegate('.editText', 'resize', function (ev) {
         var target = $(ev.target).closest('.editText');
+        settingCurrentItem(target);
         updatePropertyPanel(target.attr('id'));
+    }).delegate('.editText', 'blur', function (ev) {
+        setTimeout(function(){
+            settingCurrentItem();
+            updatePropertyPanel();
+        },100);
     });
 
 
@@ -61,6 +72,15 @@ $(document).ready(function () {
     // MAKE THE Customized right click...
     $(document).bind("contextmenu", function (event) {
         event.preventDefault();
+        var target = $(event.target).closest('.editText');
+//        console.log(target);
+        if (target.hasClass("editText")) {
+            settingCurrentItem(target);
+            updatePropertyPanel(target.attr('id'));
+        } else {
+//            settingCurrentItem();
+//            updatePropertyPanel();
+        }
         // Show contextmenu
         $(".custom-right-menu").finish().toggle(100).
             // In the right position (the mouse)
@@ -88,8 +108,9 @@ $(document).ready(function () {
                 break;
             case "deleteElement":
             {
+//                console.log(currentItem.attr('id'));
                 if (!$(this).hasClass('disabled')) {
-                    console.log($(this).attr("data-action"));
+                    $('#'+currentItem.attr('id')).remove();
                     // Hide it AFTER the action was triggered
                     $(".custom-right-menu").hide(100);
                 }
