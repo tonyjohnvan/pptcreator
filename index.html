@@ -32,7 +32,7 @@
 
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse" id="navigationBar">
     <div class="op-nav-container">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">Online PPT Creator</a>
@@ -42,7 +42,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">File <span class="caret"></span></a>
                     <ul class="dropdown-menu navbar-inverse op-nav-drop-down" role="menu">
-                        <li><a onclick="">Save</a></li>
+                        <li><a onclick="saveCurrentSlide()">Save</a></li>
                         <li class="divider"></li>
                         <li class="dropdown-header">Export</li>
                         <li><a onclick="">as HTML</a></li>
@@ -103,7 +103,7 @@
         </div>
     </div>
     <div class="col-xs-10 op-pptContainer">
-        <div class="op-slideContainer">
+        <div class="op-slideContainer" id="slideContent">
         </div>
     </div>
 
@@ -165,6 +165,7 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="plugins/jQuery1112.js"></script>
+<script src="plugins/html2canvas.js"></script>
 <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
 <script src="plugins/editor/ckeditor.js"></script>
 <script src="assets/js/model/eText.js"></script>

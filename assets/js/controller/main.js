@@ -6,7 +6,11 @@ var lastId = 0;
 var etArray = [];
 
 var currentItem;
+var currentSlideNum = 1;
 
+var currentSlideContent="";
+
+var AllSlides = [];
 
 $(document).ready(function () {
     "use strict";
@@ -32,7 +36,7 @@ $(document).ready(function () {
                 $('#' + target.attr('id'))
                     .draggable({
                         containment: "parent"
-                    }).resizable("destroy")
+                    }).resizable("destroy").delay(100)
                     .resizable({
                         handles: "se",
                         containment: "parent"
@@ -44,7 +48,7 @@ $(document).ready(function () {
 
     }).delegate('.editText', 'keydown', function (e) {
         var target = $(e.target);
-        $('#' + target.attr('id')).resizable("destroy")
+        $('#' + target.attr('id')).resizable("destroy").delay(100)
             .resizable({
                 handles: "se",
                 containment: "parent"
@@ -53,6 +57,9 @@ $(document).ready(function () {
         var target = $(ev.target).closest('.editText');
         settingCurrentItem(target);
         updatePropertyPanel(target.attr('id'));
+    }).delegate('.editText', 'dragend', function (ev) {
+//        settingCurrentItem();
+//        updatePropertyPanel();
     }).delegate('.editText', 'resize', function (ev) {
         var target = $(ev.target).closest('.editText');
         settingCurrentItem(target);

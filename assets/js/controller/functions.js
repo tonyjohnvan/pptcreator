@@ -104,3 +104,48 @@ function settingCurrentItem(item) {
         $('#bringToBack').addClass('disabled');
     }
 }
+
+function getScreenshotFor(slideNum) {
+//    slideNum = 1;
+    html2canvas(document.getElementById('slideContent'), {
+        onrendered: function (canvas) {
+            $(canvas).css({
+                'width': $('.slidesThumbnail').width(),
+                'height': $('.slidesThumbnail').height()
+            }).attr('id', 'tbn' + slideNum);
+            if ($('#tbn' + slideNum) != undefined) {
+                $('#tbn' + slideNum).remove();
+            }
+            $('#stn' + slideNum).append(canvas);
+        }
+    });
+}
+
+function saveCurrentSlide() {
+    $('.editText').attr('class','editText');
+    currentSlideContent = $("#slideContent").html();
+    AllSlides[currentSlideNum] = {
+        'domHtml': currentSlideContent,
+        'numOfBoxes': lastId
+    };
+    getScreenshotFor(currentSlideNum);
+    loadSlide(currentSlideNum);
+}
+
+function loadSlide(num) {
+    currentSlideContent = AllSlides[num].domHtml;
+    $('#slideContent').html(currentSlideContent);
+    setTimeout(function () {
+        for (var i = 1; i <= AllSlides[num].numOfBoxes; i++) {
+            $('#et' + i)
+                .draggable({
+                    containment: "parent"
+                })
+                .resizable({
+                    handles: "se",
+                    containment: "parent"
+                });
+        }
+    },1000);
+    lastId = AllSlides[num].numOfBoxes;
+}

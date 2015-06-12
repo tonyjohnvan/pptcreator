@@ -1,9 +1,15 @@
 body,html{
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    /*height: 100%;*/
+    /*overflow: hidden;*/
     min-width: 1440px !important;
     min-height: 900px !important;
+    background: #eee;
+}
+
+.navbar{
+    border-radius: 0;
+    margin-bottom: 0;
 }
 
 .no-select{
@@ -21,19 +27,20 @@ body,html{
 }
 
 .op-container{
-    margin-top: 50px;
-    height: 100%;
+    /*height: 100%;*/
     background: #eee;
 }
 .op-sidebar{
+    position: fixed;
     background: #444;
     height: 100%;
     width: 200px;
     padding: 0 20px;
 }
 .op-pptContainer{
-    height: 100%;
+    /*height: 100%;*/
     max-width: 1200px;
+    left: 200px;
 }
 .op-slideContainer{
     width: 1024px;
@@ -258,3 +265,4 @@ button.btn-black:active{
 .dropdownThemeCard:hover{
     box-shadow: inset 1px 1px 6px  rgba(0,0,0,0.6);
 }
+
