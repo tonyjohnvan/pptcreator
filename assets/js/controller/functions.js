@@ -122,19 +122,21 @@ function getScreenshotFor(slideNum) {
 }
 
 function saveCurrentSlide() {
-    $('.editText').attr('class','editText');
-    currentSlideContent = $("#slideContent").html();
+    $('.editText').attr('class', 'editText');
+//    currentSlideContent = $("#slideContent").html();
     AllSlides[currentSlideNum] = {
-        'domHtml': currentSlideContent,
+        'domHtml': $("#slideContent").html(),
         'numOfBoxes': lastId
     };
     getScreenshotFor(currentSlideNum);
-    loadSlide(currentSlideNum);
+//    loadSlide(currentSlideNum);
 }
 
 function loadSlide(num) {
-    currentSlideContent = AllSlides[num].domHtml;
-    $('#slideContent').html(currentSlideContent);
+    saveCurrentSlide();
+    currentSlideNum = num;
+    clearCurrentSlide();
+    $('#slideContent').html(AllSlides[num].domHtml);
     setTimeout(function () {
         for (var i = 1; i <= AllSlides[num].numOfBoxes; i++) {
             $('#et' + i)
@@ -146,6 +148,23 @@ function loadSlide(num) {
                     containment: "parent"
                 });
         }
-    },1000);
+    }, 1000);
     lastId = AllSlides[num].numOfBoxes;
+}
+
+function newSlide() {
+    saveCurrentSlide();
+//    ++currentSlideNum;
+    $('.slideWrap').append(
+            '<div class="slidesThumbnail" id="stn' + ++totalSlideNum + '">\
+                <div class="pageNumber">' + totalSlideNum + '</div>\
+             </div>'
+    );
+    clearCurrentSlide();
+
+    currentSlideNum = totalSlideNum;
+}
+
+function clearCurrentSlide(){
+    $('.op-slideContainer').html('');
 }

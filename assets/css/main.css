@@ -1,18 +1,18 @@
-body,html{
+body, html {
     width: 100%;
-    /*height: 100%;*/
+    height: 100%;
     /*overflow: hidden;*/
     min-width: 1440px !important;
     min-height: 900px !important;
     background: #eee;
 }
 
-.navbar{
+.navbar {
     border-radius: 0;
     margin-bottom: 0;
 }
 
-.no-select{
+.no-select {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -22,47 +22,54 @@ body,html{
 }
 
 .op-nav-container,
-.container{
+.container {
     width: 1440px !important;
 }
 
-.op-container{
+.op-container {
     /*height: 100%;*/
     background: #eee;
 }
-.op-sidebar{
+
+.op-sidebar {
     position: fixed;
     background: #444;
     height: 100%;
     width: 200px;
     padding: 0 20px;
+    overflow-y: scroll;
 }
-.op-pptContainer{
+
+.op-pptContainer {
     /*height: 100%;*/
     max-width: 1200px;
     left: 200px;
 }
-.op-slideContainer{
+
+.op-slideContainer {
     width: 1024px;
     height: 768px;
     background: #ffffff;
     margin: 50px 0 0 50px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
-.op-nav-drop-down li a{
+
+.op-nav-drop-down li a {
     color: #bbb;
     cursor: pointer;
 }
-.dropdown-menu .divider{
-    background: rgba(255,255,255,0.4);
-}
-.op-nav-drop-down {
-    background: rgba(0,0,0,0.9);
+
+.dropdown-menu .divider {
+    background: rgba(255, 255, 255, 0.4);
 }
 
-.editText{
+.op-nav-drop-down {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.editText {
     position: absolute;
-    border: 1px solid rgba(0,0,0,0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     min-width: 100px;
     min-height: 50px;
     top: 150px;
@@ -71,7 +78,7 @@ body,html{
     overflow: hidden;
 }
 
-.floating-panel{
+.floating-panel {
     position: absolute;
     z-index: 1000;
     width: 300px;
@@ -82,41 +89,47 @@ body,html{
     border-radius: 3px;
     overflow: hidden;
     cursor: move;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 
 }
+
 .tabPanel,
-.floating-panel-wrap{
+.floating-panel-wrap {
     /*position: relative;*/
     /*top: 1px;*/
     height: 100%;
     padding: 3px 1px 1px 1px;
 }
-.detailPanel{
+
+.detailPanel {
     background: #545454;
     height: 84%;
     border-left: 1px solid #222;
     border-right: 1px solid #222;
     border-bottom: 1px solid #222;
 }
-.tabWrap a{
+
+.tabWrap a {
     padding: 5px 10px !important;
     color: #aaa;
 }
-.nav>li>a:focus, .nav>li>a:hover{
+
+.nav > li > a:focus, .nav > li > a:hover {
     border-color: #222 #222 #222;
     background: #404040;
 }
-.tab-pane{
+
+.tab-pane {
     padding: 10px 15px;
     color: #ffffff;
     font-weight: 100;
 }
+
 .nav-tabs {
     border-bottom: 1px solid #222;
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
     color: #eee;
     cursor: default;
     background-color: #545454;
@@ -124,22 +137,22 @@ body,html{
     border-bottom-color: transparent;
 }
 
-.small-text{
+.small-text {
     font-weight: 100;
 }
 
-.propertyPanelTextDiv>div{
+.propertyPanelTextDiv > div {
     margin: 8px 0;
 }
 
-.tabWrap li{
+.tabWrap li {
     cursor: pointer;
 }
 
 .custom-right-menu {
-    z-index:1000;
+    z-index: 1000;
     position: absolute;
-    background-color:#545454;
+    background-color: #545454;
     border: 1px solid #111;
     padding: 2px;
 
@@ -149,8 +162,9 @@ body,html{
     font-family: sans-serif;
     color: #333;
     border-radius: 3px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
+
 /* Each of the items in the list */
 .custom-right-menu li {
     padding: 8px 12px;
@@ -158,44 +172,52 @@ body,html{
     list-style-type: none;
     color: #ddd;
 }
-.custom-right-menu li a{
+
+.custom-right-menu li a {
     color: #ddd;
 }
+
 .custom-right-menu li:hover {
     background-color: #2c2c2c;
     color: #fff;
 }
+
 .custom-right-menu li.disabled:hover {
     background-color: #545454;
     color: #aaa;
 }
-.custom-right-menu li.disabled{
+
+.custom-right-menu li.disabled {
     /*background-color: #545454;*/
     cursor: default;
     color: #aaa;
 }
-.custom-right-menu li a:hover{
+
+.custom-right-menu li a:hover {
     text-decoration: none;
 }
-.custom-right-menu li.divider{
+
+.custom-right-menu li.divider {
     height: 1px;
     padding: 0;
     margin: 10px 0;
     background: #888;
     text-decoration: none;
 }
-.custom-right-menu li.divider:hover{
+
+.custom-right-menu li.divider:hover {
     background: #888;
     text-decoration: none;
 }
 
-.slidesThumbnail{
+.slidesThumbnail {
     width: 150px;
     height: 120px;
     background: #ffffff;
     margin: 40px auto;
 }
-.pageNumber{
+
+.pageNumber {
     display: block;
     position: absolute;
     margin: 130px -10px;
@@ -206,15 +228,17 @@ body,html{
     left: 100px;
 }
 
-.op-sidebar .btn-group{
+.op-sidebar .btn-group {
     position: relative;
     margin: 20px auto 0;
     text-align: center;
 }
-.op-sidebar .btn-group button{
+
+.op-sidebar .btn-group button {
     width: 100px;
 }
-button.btn-black{
+
+button.btn-black {
     color: #ddd;
     line-height: 2;
     background-color: #353535;
@@ -230,18 +254,20 @@ button.btn-black{
     -moz-transition-duration: 0.2s;
     transition-duration: 0.2s;
 
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-button.btn-black:hover{
+
+button.btn-black:hover {
     background: #333;
     border: solid 1px #212121;
     text-decoration: none;
     color: #ddd;
 }
-button.btn-black:active{
+
+button.btn-black:active {
     -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
@@ -250,11 +276,11 @@ button.btn-black:active{
     color: #ddd;
 }
 
-.themeDropdown{
+.themeDropdown {
     width: 500px;
 }
 
-.dropdownThemeCard{
+.dropdownThemeCard {
     display: inline-block;
     width: 100px;
     height: 80px;
@@ -262,7 +288,6 @@ button.btn-black:active{
     background: #ffffff;
 }
 
-.dropdownThemeCard:hover{
-    box-shadow: inset 1px 1px 6px  rgba(0,0,0,0.6);
+.dropdownThemeCard:hover {
+    box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.6);
 }
-

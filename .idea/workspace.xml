@@ -2,253 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d2d8c20-cd88-4cbb-8cc0-fb59f64e8040" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/angel_smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/angel_smile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/angry_smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/angry_smile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/showblocks/images/block_address.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/showblocks/images/block_blockquote.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/showblocks/images/block_div.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/showblocks/images/block_h1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/showblocks/images/block_h2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/showblocks/images/block_h3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/showblocks/images/block_h4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/showblocks/images/block_h5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/showblocks/images/block_h6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/showblocks/images/block_p.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/showblocks/images/block_pre.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/broken_heart.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/broken_heart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/confused_smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/confused_smile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/cry_smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/cry_smile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/devil_smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/devil_smile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/embaressed_smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/embarrassed_smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/embarrassed_smile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/envelope.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/envelope.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/heart.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/heart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/forms/images/hiddenfield.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/magicline/images/icon-rtl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/magicline/images/hidpi/icon-rtl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/magicline/images/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/magicline/images/hidpi/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/kiss.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/kiss.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/lightbulb.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/lightbulb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/assets/inlineall/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/image/images/noimage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/omg_smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/omg_smile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.fla" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/pagebreak/images/pagebreak.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/flash/images/placeholder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/iframe/images/placeholder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/regular_smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/regular_smile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/sad_smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/sad_smile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/assets/sample.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/shades_smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/shades_smile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/teeth_smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/teeth_smile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/templates/templates/images/template1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/templates/templates/images/template2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/templates/templates/images/template3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/thumbs_down.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/thumbs_down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/thumbs_up.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/thumbs_up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/tongue_smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/tongue_smile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/tounge_smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/whatchutalkingabout_smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/whatchutalkingabout_smile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/wink_smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/images/wink_smile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/scayt/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/wsc/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/scayt/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/wsc/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/_translationstatus.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/a11yhelp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/af.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/af.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/ajax.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/api.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/appendto.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/forms/dialogs/button.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/forms/dialogs/checkbox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/wsc/dialogs/ciframe.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/colordialog/dialogs/colordialog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/cy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/cy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/datafiltering.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/pastefromword/filter/default.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/templates/templates/default.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/plugins/dialog/dialog.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/div/dialogs/div.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/divreplace.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/el.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/el.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/en-gb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/en-gb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/plugins/enterkey/enterkey.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/eo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/eo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/fa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/fa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/find/dialogs/find.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/flash/dialogs/flash.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/forms/dialogs/form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/fr-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/fr-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/plugins/wysiwygarea/fullpage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/gl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/gl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/gu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/hi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/forms/dialogs/hiddenfield.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/hr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/hr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/iframe/dialogs/iframe.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/image/dialogs/image.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/inlineall.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/inlinebycode.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/inlinetextarea.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/jquery.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/km.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/km.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/ku.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/ku.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/assets/uilanguages/languages.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/liststyle/dialogs/liststyle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/plugins/magicline/magicline.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/mk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/mn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/plugins/dialog/assets/my_dialog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/nb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/nb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/no.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/no.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/scayt/dialogs/options.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/plugins/htmlwriter/outputforflash.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/plugins/htmlwriter/outputhtml.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/assets/outputxhtml/outputxhtml.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/assets/posteddata.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/preview/preview.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/pt-br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/pt-br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/forms/dialogs/radio.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/readonly.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/replacebyclass.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/replacebycode.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/sample.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/sample.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/sample_posteddata.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/forms/dialogs/select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/si.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/si.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/sl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/sl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/smiley/dialogs/smiley.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/specialchar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/sq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/sq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/sr-latn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/sr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/plugins/htmlwriter/assets/outputforflash/swfobject.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/tabindex.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/table/dialogs/table.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/tabletools/dialogs/tableCell.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/templates/dialogs/templates.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/templates/dialogs/templates.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/forms/dialogs/textarea.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/forms/dialogs/textfield.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/wsc/dialogs/tmpFrameset.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/scayt/dialogs/toolbar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/plugins/toolbar/toolbar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/tt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/tt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/ug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/ug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/uicolor.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/uilanguages.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/vi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/vi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/wsc/dialogs/wsc.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/wsc/dialogs/wsc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/wsc/dialogs/wsc_ie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/samples/xhtmlstyle.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/zh-cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/zh-cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/a11yhelp/dialogs/lang/zh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/plugins/specialchar/dialogs/lang/zh.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/controller/functions.js" afterPath="$PROJECT_DIR$/assets/js/controller/functions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
@@ -275,14 +28,14 @@
     <favorites_list name="pptcreator" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.53633004">
+    <splitter split-orientation="horizontal" split-proportion="0.50615764">
       <split-first>
         <leaf>
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4497768" vertical-offset="707" max-vertical-offset="2820">
-                  <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+                <state vertical-scroll-proportion="0.43080357" vertical-offset="1939" max-vertical-offset="2835">
+                  <caret line="155" column="30" selection-start-line="155" selection-start-column="30" selection-end-line="155" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -295,8 +48,8 @@
           <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/js/controller/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.6153846" vertical-offset="0" max-vertical-offset="2325">
-                  <caret line="8" column="19" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="19" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="1527" max-vertical-offset="2475">
+                  <caret line="133" column="63" selection-start-line="133" selection-start-column="22" selection-end-line="133" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -305,20 +58,21 @@
           <file leaf-file-name="functions.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/js/controller/functions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.58654904" vertical-offset="773" max-vertical-offset="1680">
-                  <caret line="131" column="29" selection-start-line="131" selection-start-column="29" selection-end-line="131" selection-end-column="29" />
+                <state vertical-scroll-proportion="0.35501653" vertical-offset="1043" max-vertical-offset="1980">
+                  <caret line="135" column="23" selection-start-line="135" selection-start-column="23" selection-end-line="135" selection-end-column="23" />
                   <folding>
-                    <marker date="1434146014000" expanded="false" signature="89:1761" placeholder="{...}" />
-                    <marker date="1434146014000" expanded="true" signature="306:1098" placeholder="{...}" />
-                    <marker date="1434146014000" expanded="true" signature="619:1088" placeholder="{...}" />
-                    <marker date="1434146014000" expanded="true" signature="725:1066" placeholder="{...}" />
-                    <marker date="1434146014000" expanded="true" signature="805:878" placeholder="{&quot;containment&quot;: &quot;parent&quot;...}" />
-                    <marker date="1434146014000" expanded="true" signature="934:1048" placeholder="{&quot;handles&quot;: &quot;se&quot;...}" />
-                    <marker date="1434146014000" expanded="true" signature="1104:1757" placeholder="{...}" />
-                    <marker date="1434146014000" expanded="true" signature="1281:1747" placeholder="{...}" />
-                    <marker date="1434146014000" expanded="true" signature="1387:1728" placeholder="{...}" />
-                    <marker date="1434146014000" expanded="true" signature="1467:1540" placeholder="{&quot;containment&quot;: &quot;parent&quot;...}" />
-                    <marker date="1434146014000" expanded="true" signature="1596:1710" placeholder="{&quot;handles&quot;: &quot;se&quot;...}" />
+                    <marker date="1434392056000" expanded="false" signature="89:1761" placeholder="{...}" />
+                    <marker date="1434392056000" expanded="true" signature="306:1098" placeholder="{...}" />
+                    <marker date="1434392056000" expanded="true" signature="619:1088" placeholder="{...}" />
+                    <marker date="1434392056000" expanded="true" signature="725:1066" placeholder="{...}" />
+                    <marker date="1434392056000" expanded="true" signature="805:878" placeholder="{&quot;containment&quot;: &quot;parent&quot;...}" />
+                    <marker date="1434392056000" expanded="true" signature="934:1048" placeholder="{&quot;handles&quot;: &quot;se&quot;...}" />
+                    <marker date="1434392056000" expanded="true" signature="1104:1757" placeholder="{...}" />
+                    <marker date="1434392056000" expanded="true" signature="1281:1747" placeholder="{...}" />
+                    <marker date="1434392056000" expanded="true" signature="1387:1728" placeholder="{...}" />
+                    <marker date="1434392056000" expanded="true" signature="1467:1540" placeholder="{&quot;containment&quot;: &quot;parent&quot;...}" />
+                    <marker date="1434392056000" expanded="true" signature="1596:1710" placeholder="{&quot;handles&quot;: &quot;se&quot;...}" />
+                    <marker date="1434392056000" expanded="true" signature="5058:5148" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -327,8 +81,8 @@
           <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-32.076923" vertical-offset="3186" max-vertical-offset="4110">
-                  <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="3537" max-vertical-offset="4470">
+                  <caret line="290" column="36" selection-start-line="290" selection-start-column="26" selection-end-line="290" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -388,8 +142,8 @@
         <option value="$PROJECT_DIR$/plugins/jQuery1112.js" />
         <option value="$PROJECT_DIR$/plugins/html2canvas.js" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/assets/js/controller/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/js/controller/main.js" />
         <option value="$PROJECT_DIR$/assets/js/controller/functions.js" />
       </list>
     </option>
@@ -570,6 +324,7 @@
     <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
+    <property name="LayoutCode.rearrangeEntriesCSS" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -706,17 +461,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1005">
           <caret line="74" column="28" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
           <folding>
-            <marker date="1434146014000" expanded="false" signature="89:1761" placeholder="{...}" />
-            <marker date="1434146014000" expanded="true" signature="306:1098" placeholder="{...}" />
-            <marker date="1434146014000" expanded="true" signature="619:1088" placeholder="{...}" />
-            <marker date="1434146014000" expanded="true" signature="725:1066" placeholder="{...}" />
-            <marker date="1434146014000" expanded="true" signature="805:878" placeholder="{&quot;containment&quot;: &quot;parent&quot;...}" />
-            <marker date="1434146014000" expanded="true" signature="934:1048" placeholder="{&quot;handles&quot;: &quot;se&quot;...}" />
-            <marker date="1434146014000" expanded="true" signature="1104:1757" placeholder="{...}" />
-            <marker date="1434146014000" expanded="true" signature="1281:1747" placeholder="{...}" />
-            <marker date="1434146014000" expanded="true" signature="1387:1728" placeholder="{...}" />
-            <marker date="1434146014000" expanded="true" signature="1467:1540" placeholder="{&quot;containment&quot;: &quot;parent&quot;...}" />
-            <marker date="1434146014000" expanded="true" signature="1596:1710" placeholder="{&quot;handles&quot;: &quot;se&quot;...}" />
+            <marker date="1434392056000" expanded="false" signature="89:1761" placeholder="{...}" />
+            <marker date="1434392056000" expanded="true" signature="306:1098" placeholder="{...}" />
+            <marker date="1434392056000" expanded="true" signature="619:1088" placeholder="{...}" />
+            <marker date="1434392056000" expanded="true" signature="725:1066" placeholder="{...}" />
+            <marker date="1434392056000" expanded="true" signature="805:878" placeholder="{&quot;containment&quot;: &quot;parent&quot;...}" />
+            <marker date="1434392056000" expanded="true" signature="934:1048" placeholder="{&quot;handles&quot;: &quot;se&quot;...}" />
+            <marker date="1434392056000" expanded="true" signature="1104:1757" placeholder="{...}" />
+            <marker date="1434392056000" expanded="true" signature="1281:1747" placeholder="{...}" />
+            <marker date="1434392056000" expanded="true" signature="1387:1728" placeholder="{...}" />
+            <marker date="1434392056000" expanded="true" signature="1467:1540" placeholder="{&quot;containment&quot;: &quot;parent&quot;...}" />
+            <marker date="1434392056000" expanded="true" signature="1596:1710" placeholder="{&quot;handles&quot;: &quot;se&quot;...}" />
+            <marker date="1434392056000" expanded="true" signature="5058:5148" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -830,46 +586,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-32.076923" vertical-offset="3186" max-vertical-offset="4110">
-          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4497768" vertical-offset="707" max-vertical-offset="2820">
-          <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.43080357" vertical-offset="1939" max-vertical-offset="2835">
+          <caret line="155" column="30" selection-start-line="155" selection-start-column="30" selection-end-line="155" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/controller/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6153846" vertical-offset="0" max-vertical-offset="2325">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1527" max-vertical-offset="2475">
+          <caret line="133" column="63" selection-start-line="133" selection-start-column="22" selection-end-line="133" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3537" max-vertical-offset="4470">
+          <caret line="290" column="36" selection-start-line="290" selection-start-column="26" selection-end-line="290" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/controller/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58654904" vertical-offset="773" max-vertical-offset="1680">
-          <caret line="131" column="29" selection-start-line="131" selection-start-column="29" selection-end-line="131" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.35501653" vertical-offset="1043" max-vertical-offset="1980">
+          <caret line="135" column="23" selection-start-line="135" selection-start-column="23" selection-end-line="135" selection-end-column="23" />
           <folding>
-            <marker date="1434146014000" expanded="false" signature="89:1761" placeholder="{...}" />
-            <marker date="1434146014000" expanded="true" signature="306:1098" placeholder="{...}" />
-            <marker date="1434146014000" expanded="true" signature="619:1088" placeholder="{...}" />
-            <marker date="1434146014000" expanded="true" signature="725:1066" placeholder="{...}" />
-            <marker date="1434146014000" expanded="true" signature="805:878" placeholder="{&quot;containment&quot;: &quot;parent&quot;...}" />
-            <marker date="1434146014000" expanded="true" signature="934:1048" placeholder="{&quot;handles&quot;: &quot;se&quot;...}" />
-            <marker date="1434146014000" expanded="true" signature="1104:1757" placeholder="{...}" />
-            <marker date="1434146014000" expanded="true" signature="1281:1747" placeholder="{...}" />
-            <marker date="1434146014000" expanded="true" signature="1387:1728" placeholder="{...}" />
-            <marker date="1434146014000" expanded="true" signature="1467:1540" placeholder="{&quot;containment&quot;: &quot;parent&quot;...}" />
-            <marker date="1434146014000" expanded="true" signature="1596:1710" placeholder="{&quot;handles&quot;: &quot;se&quot;...}" />
+            <marker date="1434392056000" expanded="false" signature="89:1761" placeholder="{...}" />
+            <marker date="1434392056000" expanded="true" signature="306:1098" placeholder="{...}" />
+            <marker date="1434392056000" expanded="true" signature="619:1088" placeholder="{...}" />
+            <marker date="1434392056000" expanded="true" signature="725:1066" placeholder="{...}" />
+            <marker date="1434392056000" expanded="true" signature="805:878" placeholder="{&quot;containment&quot;: &quot;parent&quot;...}" />
+            <marker date="1434392056000" expanded="true" signature="934:1048" placeholder="{&quot;handles&quot;: &quot;se&quot;...}" />
+            <marker date="1434392056000" expanded="true" signature="1104:1757" placeholder="{...}" />
+            <marker date="1434392056000" expanded="true" signature="1281:1747" placeholder="{...}" />
+            <marker date="1434392056000" expanded="true" signature="1387:1728" placeholder="{...}" />
+            <marker date="1434392056000" expanded="true" signature="1467:1540" placeholder="{&quot;containment&quot;: &quot;parent&quot;...}" />
+            <marker date="1434392056000" expanded="true" signature="1596:1710" placeholder="{&quot;handles&quot;: &quot;se&quot;...}" />
+            <marker date="1434392056000" expanded="true" signature="5058:5148" placeholder="..." />
           </folding>
         </state>
       </provider>

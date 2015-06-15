@@ -55,7 +55,7 @@
                         <li><a onclick="">Delete Selected Text</a></li>
                         <li class="divider"></li>
                         <li class="dropdown-header">Report</li>
-                        <li><a onclick="">New Slide</a></li>
+                        <li><a onclick="newSlide();">New Slide</a></li>
                         <li><a onclick="">Delete Current Slide</a></li>
                     </ul>
                 </li>
@@ -68,38 +68,39 @@
 <div class="op-container">
 
     <div class="col-xs-2 op-sidebar">
-        <div class="btn-group" role="group" aria-label="...">
-            <button type="button" class="dropdown-toggle btn-black" data-toggle="dropdown" aria-expanded="false">
-                New Slide
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu navbar-inverse op-nav-drop-down themeDropdown" role="menu">
-                <li class="dropdownThemeCard" id="themeCard1"></li>
-                <li class="dropdownThemeCard" id="themeCard2"></li>
-                <li class="dropdownThemeCard" id="themeCard3"></li>
-                <li class="dropdownThemeCard" id="themeCard4"></li>
-                <li class="dropdownThemeCard" id="themeCard5"></li>
-                <li class="dropdownThemeCard" id="themeCard6"></li>
-                <li class="dropdownThemeCard" id="themeCard7"></li>
-                <li class="dropdownThemeCard" id="themeCard8"></li>
-                <li class="dropdownThemeCard" id="themeCard9"></li>
-                <li class="dropdownThemeCard" id="themeCard10"></li>
-                <li class="dropdownThemeCard" id="themeCard11"></li>
-                <li class="dropdownThemeCard" id="themeCard12"></li>
-            </ul>
-            <!--<button type="button" class="btn btn-default">Right</button>-->
-        </div>
-        <div class="slidesThumbnail" id="stn1">
-            <div class="pageNumber">1</div>
-        </div>
-        <div class="slidesThumbnail" id="stn2">
-            <div class="pageNumber">1</div>
-        </div>
-        <div class="slidesThumbnail" id="stn3">
-            <div class="pageNumber">1</div>
-        </div>
-        <div class="slidesThumbnail" id="stn4">
-            <div class="pageNumber">1</div>
+        <!--<div class="btn-group" role="group" aria-label="...">-->
+            <!--<button type="button" class="dropdown-toggle btn-black" data-toggle="dropdown" aria-expanded="false">-->
+                <!--New Slide-->
+                <!--<span class="caret"></span>-->
+            <!--</button>-->
+            <!--<ul class="dropdown-menu navbar-inverse op-nav-drop-down themeDropdown" role="menu">-->
+                <!--<li class="dropdownThemeCard" id="themeCard1"></li>-->
+                <!--<li class="dropdownThemeCard" id="themeCard2"></li>-->
+                <!--<li class="dropdownThemeCard" id="themeCard3"></li>-->
+                <!--<li class="dropdownThemeCard" id="themeCard4"></li>-->
+                <!--<li class="dropdownThemeCard" id="themeCard5"></li>-->
+                <!--<li class="dropdownThemeCard" id="themeCard6"></li>-->
+                <!--<li class="dropdownThemeCard" id="themeCard7"></li>-->
+                <!--<li class="dropdownThemeCard" id="themeCard8"></li>-->
+                <!--<li class="dropdownThemeCard" id="themeCard9"></li>-->
+                <!--<li class="dropdownThemeCard" id="themeCard10"></li>-->
+                <!--<li class="dropdownThemeCard" id="themeCard11"></li>-->
+                <!--<li class="dropdownThemeCard" id="themeCard12"></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <div class="slideWrap">
+            <div class="slidesThumbnail" id="stn1">
+                <div class="pageNumber">1</div>
+            </div>
+            <!--<div class="slidesThumbnail" id="stn2">-->
+                <!--<div class="pageNumber">2</div>-->
+            <!--</div>-->
+            <!--<div class="slidesThumbnail" id="stn3">-->
+                <!--<div class="pageNumber">3</div>-->
+            <!--</div>-->
+            <!--<div class="slidesThumbnail" id="stn4">-->
+                <!--<div class="pageNumber">4</div>-->
+            <!--</div>-->
         </div>
     </div>
     <div class="col-xs-10 op-pptContainer">

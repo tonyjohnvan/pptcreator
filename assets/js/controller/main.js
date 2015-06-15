@@ -8,7 +8,9 @@ var etArray = [];
 var currentItem;
 var currentSlideNum = 1;
 
-var currentSlideContent="";
+var currentSlideContent = "";
+
+var totalSlideNum = 1;
 
 var AllSlides = [];
 
@@ -65,10 +67,10 @@ $(document).ready(function () {
         settingCurrentItem(target);
         updatePropertyPanel(target.attr('id'));
     }).delegate('.editText', 'blur', function (ev) {
-        setTimeout(function(){
+        setTimeout(function () {
             settingCurrentItem();
             updatePropertyPanel();
-        },100);
+        }, 100);
     });
 
 
@@ -102,6 +104,13 @@ $(document).ready(function () {
             $(".custom-right-menu").hide(100);
         }
     });
+
+    $('.slideWrap').delegate('.slidesThumbnail', 'click', function(e){
+        //console.log($(e.target).closest('.slidesThumbnail').attr('id').substr(3));
+        var clickedNum = parseInt($(e.target).closest('.slidesThumbnail').attr('id').substr(3));
+        loadSlide(clickedNum);
+    })
+
     // If the menu element is clicked
     $(".custom-right-menu li").click(function (e) {
         // This is the triggered action name
@@ -117,7 +126,7 @@ $(document).ready(function () {
             {
 //                console.log(currentItem.attr('id'));
                 if (!$(this).hasClass('disabled')) {
-                    $('#'+currentItem.attr('id')).remove();
+                    $('#' + currentItem.attr('id')).remove();
                     // Hide it AFTER the action was triggered
                     $(".custom-right-menu").hide(100);
                 }
@@ -125,7 +134,8 @@ $(document).ready(function () {
                 break;
             case "newSlide":
             {
-                console.log($(this).attr("data-action"));
+//                console.log($(this).attr("data-action"));
+                newSlide();
                 // Hide it AFTER the action was triggered
                 $(".custom-right-menu").hide(100);
             }
