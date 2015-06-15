@@ -17,6 +17,7 @@ var AllSlides = [];
 $(document).ready(function () {
     "use strict";
 
+    highlightCurrent();
     // MAKE EVENT on every new text box
     $(".op-slideContainer").delegate('.editText', 'click', function (ev) {
         ev.preventDefault();
@@ -105,7 +106,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.slideWrap').delegate('.slidesThumbnail', 'click', function(e){
+    $('.slideWrap').delegate('.slidesThumbnail', 'click', function (e) {
         //console.log($(e.target).closest('.slidesThumbnail').attr('id').substr(3));
         var clickedNum = parseInt($(e.target).closest('.slidesThumbnail').attr('id').substr(3));
         loadSlide(clickedNum);

@@ -258,6 +258,7 @@ button.btn-black {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    /*width: 50px;*/
 }
 
 button.btn-black:hover {
@@ -289,5 +290,10 @@ button.btn-black:active {
 }
 
 .dropdownThemeCard:hover {
+    cursor: pointer;
     box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.newSlideButton{
+    top:8px;
 }

@@ -110,8 +110,8 @@ function getScreenshotFor(slideNum) {
     html2canvas(document.getElementById('slideContent'), {
         onrendered: function (canvas) {
             $(canvas).css({
-                'width': $('.slidesThumbnail').width(),
-                'height': $('.slidesThumbnail').height()
+                'width': $('.slidesThumbnail').width()-8,
+                'height': $('.slidesThumbnail').height()-8
             }).attr('id', 'tbn' + slideNum);
             if ($('#tbn' + slideNum) != undefined) {
                 $('#tbn' + slideNum).remove();
@@ -137,6 +137,7 @@ function loadSlide(num) {
     currentSlideNum = num;
     clearCurrentSlide();
     $('#slideContent').html(AllSlides[num].domHtml);
+    highlightCurrent();
     setTimeout(function () {
         for (var i = 1; i <= AllSlides[num].numOfBoxes; i++) {
             $('#et' + i)
@@ -161,10 +162,16 @@ function newSlide() {
              </div>'
     );
     clearCurrentSlide();
-
     currentSlideNum = totalSlideNum;
+    highlightCurrent();
 }
 
 function clearCurrentSlide(){
     $('.op-slideContainer').html('');
+}
+
+function highlightCurrent(){
+    $('.slidesThumbnail').css("border",'0px');
+    $('#stn'+currentSlideNum).css('border','4px solid rgba(0, 127, 122, 0.5)');
+//    $($('.slidesThumbnail')[currentSlideNum-1]).css("border",'4px solid rgba(0, 127, 122, 0.5);');
 }
