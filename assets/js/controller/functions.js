@@ -153,7 +153,7 @@ function loadSlide(num) {
     lastId = AllSlides[num].numOfBoxes;
 }
 
-function newSlide() {
+function newSlide(content) {
     saveCurrentSlide();
 //    ++currentSlideNum;
     $('.slideWrap').append(
@@ -163,7 +163,14 @@ function newSlide() {
     );
     clearCurrentSlide();
     currentSlideNum = totalSlideNum;
+    if(content){
+        setContent(content);
+    }
     highlightCurrent();
+}
+
+function setContent(content){
+    $('.op-slideContainer').html(content);
 }
 
 function clearCurrentSlide(){

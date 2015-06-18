@@ -70,8 +70,8 @@ body, html {
 .editText {
     position: absolute;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    min-width: 100px;
-    min-height: 50px;
+    min-width: 200px;
+    min-height: 70px;
     top: 150px;
     left: 250px;
     /*line-height: 0.5;*/
@@ -286,7 +286,27 @@ button.btn-black:active {
     width: 100px;
     height: 80px;
     margin: 10px;
-    background: #ffffff;
+    /*background: #ffffff;*/
+}
+
+#themeCard1{
+    background: #fff url(../images/slideTheme/1.png) center center no-repeat;
+    background-size: 100px auto;
+}
+
+#themeCard2{
+    background: #fff url(../images/slideTheme/2.png) center center no-repeat;
+    background-size: 100px auto;
+}
+
+#themeCard3{
+    background: #fff url(../images/slideTheme/3.png) center center no-repeat;
+    background-size: 100px auto;
+}
+
+#themeCard4{
+    background: #fff url(../images/slideTheme/4.png) center center no-repeat;
+    background-size: 100px auto;
 }
 
 .dropdownThemeCard:hover {
