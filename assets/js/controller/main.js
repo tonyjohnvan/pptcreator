@@ -17,6 +17,7 @@ var AllSlides = [];
 $(document).ready(function () {
     "use strict";
 
+    CKEDITOR.disableAutoInline = true;
     highlightCurrent();
     // MAKE EVENT on every new text box
     $(".op-slideContainer").delegate('.editText', 'click', function (ev) {
@@ -33,7 +34,6 @@ $(document).ready(function () {
             $('#' + target.attr('id')).draggable("destroy");
         }
         if (!target.hasClass("cke_editable_inline")) {
-            CKEDITOR.disableAutoInline = true;
             CKEDITOR.inline(target.attr('id'));
         }
         CKEDITOR.instances[target.attr('id')].on('blur', function () {
@@ -124,7 +124,16 @@ $(document).ready(function () {
         //console.log($(e.target).closest('.slidesThumbnail').attr('id').substr(3));
         var clickedNum = parseInt($(e.target).closest('.slidesThumbnail').attr('id').substr(3));
         loadSlide(clickedNum);
-    })
+    });
+
+    $('.presentationsWrap').delegate('.PresentationItemTitle','keypress', function(event){
+        var key = (event.keyCode ? event.keyCode : event.which);
+        console.log(key);
+        if(key == 13){
+            event.preventDefault();
+            $(this).blur();
+        }
+    });
 
     // If the menu element is clicked
     $(".custom-right-menu li").click(function (e) {
@@ -168,6 +177,11 @@ $(document).ready(function () {
             }
                 break;
         }
+    });
+
+    // create new presentation
+    $('.newPresentation').on('click',function(){
+        $('.newPresentationWindowWrap').show().addClass('animated fadeIn')
     });
 
     $('#themeCard1').on('click',function(){

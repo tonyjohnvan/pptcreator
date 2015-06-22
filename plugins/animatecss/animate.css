@@ -27,13 +27,15 @@ Copyright (c) 2015 Daniel Eden
 .animated.bounceIn,
 .animated.bounceOut {
   -webkit-animation-duration: .75s;
-  animation-duration: .75s;
+  /*animation-duration: .75s;*/
+  animation-duration: .6s;
 }
 
 .animated.flipOutX,
 .animated.flipOutY {
   -webkit-animation-duration: .75s;
-  animation-duration: .75s;
+  /*animation-duration: 75s;*/
+  animation-duration: .6s;
 }
 
 @-webkit-keyframes bounce {

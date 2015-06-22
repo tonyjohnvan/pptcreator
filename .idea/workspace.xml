@@ -2,91 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d2d8c20-cd88-4cbb-8cc0-fb59f64e8040" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/animatecss/animate.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/plugins/icons.png" afterPath="$PROJECT_DIR$/plugins/editor/plugins/icons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/skins/moono/icons.png" afterPath="$PROJECT_DIR$/plugins/editor/skins/moono/icons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/plugins/icons_hidpi.png" afterPath="$PROJECT_DIR$/plugins/editor/plugins/icons_hidpi.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/skins/moono/icons_hidpi.png" afterPath="$PROJECT_DIR$/plugins/editor/skins/moono/icons_hidpi.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/af.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/af.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ar.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/bg.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/bg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/bn.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/bn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/bs.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/bs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/build-config.js" afterPath="$PROJECT_DIR$/plugins/editor/build-config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ca.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/ckeditor.js" afterPath="$PROJECT_DIR$/plugins/editor/ckeditor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/config.js" afterPath="$PROJECT_DIR$/plugins/editor/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/cs.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/cs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/cy.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/cy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/da.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/da.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/de.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/skins/moono/editor.css" afterPath="$PROJECT_DIR$/plugins/editor/skins/moono/editor.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_gecko.css" afterPath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_gecko.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_ie.css" afterPath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_ie.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_ie7.css" afterPath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_ie7.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_ie8.css" afterPath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_ie8.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_iequirks.css" afterPath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_iequirks.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/el.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/el.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/en-au.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/en-au.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/en-ca.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/en-ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/en-gb.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/en-gb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/en.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/eo.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/eo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/es.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/es.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/et.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/et.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/eu.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/eu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/fa.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/fa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/fi.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/fi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/fo.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/fo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/fr-ca.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/fr-ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/fr.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/controller/functions.js" afterPath="$PROJECT_DIR$/assets/js/controller/functions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/gl.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/gl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/gu.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/gu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/he.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/he.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/hi.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/hi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/hr.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/hr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/hu.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/hu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/id.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/animatecss/animate.css" afterPath="$PROJECT_DIR$/plugins/animatecss/animate.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/is.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/is.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/it.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/it.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ja.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ja.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ka.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ka.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/km.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/km.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ko.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ko.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ku.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ku.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/lt.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/lt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/lv.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/lv.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/controller/main.js" afterPath="$PROJECT_DIR$/assets/js/controller/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/mk.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/mk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/mn.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/mn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ms.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/nb.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/nb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/nl.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/nl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/no.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/no.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/pl.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/pl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/pt-br.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/pt-br.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/pt.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/pt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ro.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ru.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/si.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/si.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/sk.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/sk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/sl.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/sl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/sq.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/sq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/sr-latn.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/sr-latn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/sr.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/sr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/sv.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/sv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/th.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/th.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/tr.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/tr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/tt.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/tt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ug.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ug.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/uk.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/uk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/vi.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/vi.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/zh-cn.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/zh-cn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/zh.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/zh.js" />
     </list>
     <ignored path="pptcreator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,14 +31,12 @@
     <splitter split-orientation="horizontal" split-proportion="0.58365506">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.55011135" vertical-offset="286" max-vertical-offset="3540">
-                  <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
-                  <folding>
-                    <marker date="1435004505000" expanded="true" signature="1823:2036" placeholder="..." />
-                  </folding>
+                <state vertical-scroll-proportion="0.40089086" vertical-offset="480" max-vertical-offset="3855">
+                  <caret line="56" column="78" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -126,7 +44,7 @@
           <file leaf-file-name="ie10-viewport-bug-workaround.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/plugins/bootstrap/js/ie10-viewport-bug-workaround.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
                   <caret line="22" column="28" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
                   <folding />
                 </state>
@@ -160,8 +78,8 @@
           <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/js/controller/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1605" max-vertical-offset="3015">
-                  <caret line="64" column="54" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="2303" max-vertical-offset="3225">
+                  <caret line="133" column="27" selection-start-line="133" selection-start-column="27" selection-end-line="133" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
@@ -170,18 +88,28 @@
           <file leaf-file-name="functions.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/js/controller/functions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1973" max-vertical-offset="2895">
+                <state vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="2895">
                   <caret line="186" column="40" selection-start-line="186" selection-start-column="40" selection-end-line="186" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.23535791" vertical-offset="5228" max-vertical-offset="6210">
-                  <caret line="363" column="23" selection-start-line="363" selection-start-column="1" selection-end-line="363" selection-end-column="1" />
+                <state vertical-scroll-proportion="0.47939262" vertical-offset="6308" max-vertical-offset="8340">
+                  <caret line="450" column="23" selection-start-line="450" selection-start-column="23" selection-end-line="450" selection-end-column="23" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="animate.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/plugins/animatecss/animate.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-8.576923" vertical-offset="6317" max-vertical-offset="49200">
+                  <caret line="436" column="28" selection-start-line="436" selection-start-column="28" selection-end-line="436" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -233,6 +161,7 @@
         <option value="$PROJECT_DIR$/assets/js/model/eText.js" />
         <option value="$PROJECT_DIR$/plugins/editor/config.js" />
         <option value="$PROJECT_DIR$/assets/js/controller/functions.js" />
+        <option value="$PROJECT_DIR$/plugins/animatecss/animate.css" />
         <option value="$PROJECT_DIR$/assets/js/controller/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
@@ -465,9 +394,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1519" max-vertical-offset="2925">
           <caret line="143" column="107" selection-start-line="143" selection-start-column="107" selection-end-line="143" selection-end-column="107" />
-          <folding>
-            <marker date="1435004505000" expanded="true" signature="1823:2036" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -539,9 +466,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="811" max-vertical-offset="2895">
           <caret line="70" column="68" selection-start-line="70" selection-start-column="58" selection-end-line="70" selection-end-column="68" />
-          <folding>
-            <marker date="1435004505000" expanded="true" signature="1823:2036" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -589,9 +514,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1909" max-vertical-offset="2805">
           <caret line="146" column="49" selection-start-line="146" selection-start-column="10" selection-end-line="146" selection-end-column="10" />
-          <folding>
-            <marker date="1435004505000" expanded="true" signature="1823:2036" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -670,14 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/bootstrap/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06521739" vertical-offset="0" max-vertical-offset="920">
-          <caret line="4" column="53434" selection-start-line="4" selection-start-column="53434" selection-end-line="4" selection-end-column="53434" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/model/domItems.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
@@ -718,9 +633,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/animatecss/animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.576923" vertical-offset="6317" max-vertical-offset="49200">
+          <caret line="436" column="28" selection-start-line="436" selection-start-column="28" selection-end-line="436" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/bootstrap/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06507592" vertical-offset="0" max-vertical-offset="922">
+          <caret line="4" column="113738" selection-start-line="4" selection-start-column="113738" selection-end-line="4" selection-end-column="113738" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/controller/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1973" max-vertical-offset="2895">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2895">
           <caret line="186" column="40" selection-start-line="186" selection-start-column="40" selection-end-line="186" selection-end-column="40" />
           <folding />
         </state>
@@ -728,26 +659,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/controller/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1605" max-vertical-offset="3015">
-          <caret line="64" column="54" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2303" max-vertical-offset="3225">
+          <caret line="133" column="27" selection-start-line="133" selection-start-column="27" selection-end-line="133" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47939262" vertical-offset="6308" max-vertical-offset="8340">
+          <caret line="450" column="23" selection-start-line="450" selection-start-column="23" selection-end-line="450" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55011135" vertical-offset="286" max-vertical-offset="3540">
-          <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
-          <folding>
-            <marker date="1435004505000" expanded="true" signature="1823:2036" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23535791" vertical-offset="5228" max-vertical-offset="6210">
-          <caret line="363" column="23" selection-start-line="363" selection-start-column="1" selection-end-line="363" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.40089086" vertical-offset="480" max-vertical-offset="3855">
+          <caret line="56" column="78" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding />
         </state>
       </provider>

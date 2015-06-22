@@ -5,6 +5,7 @@ body, html {
     min-width: 1440px !important;
     min-height: 900px !important;
     background: #eee;
+    -webkit-font-smoothing: antialiased;
 }
 
 .navbar {
@@ -345,12 +346,29 @@ button.btn-black:active {
     margin: 5px 20px 0 0;
 }
 
+.ap-view{
+    cursor: default;
+    overflow: hidden;
+    position: absolute;
+    margin: 0px;
+    border: solid 0 transparent;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 .newPresentationWindow{
     position: absolute;
     width: 100%;
     height: 100%;
     background: #57575d;
     z-index: 1001;
+    min-width: 1440px;
+    min-height: 900px;
 }
 
 .presentationsWrap{
@@ -406,4 +424,128 @@ button.btn-black:active {
     color: #57575d;
     font-weight: 100;
     text-align: center;
+}
+
+.newPresentationWindowWrap{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    min-height: 900px;
+    min-width: 1440px;
+    background: rgba(0,0,0,0.3);
+    top: 0;
+    left: 0;
+    z-index: 10002;
+}
+
+.newPresentationPopUpWindow{
+    position: absolute;
+    /*display: none;*/
+    margin-top: -293px;
+    margin-left: -467px;
+    left: 50%;
+    width: 934px;
+    top: 50%;
+    height: 586px;
+    background: #e3e3e3;
+    z-index: 1005;
+
+    border: 0px #444 solid;
+
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.15),0px 0px 1px 1px rgba(0,0,0,0.1);
+}
+
+.newPresentationPopUpWindow.outer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.15),0px 0px 1px 1px rgba(0,0,0,0.1);
+}
+
+.newPresentationPopUpWindow.middle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    background-color: #e4e4e4;
+}
+
+
+.newPresentationPopUpWindow.inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+}
+
+.newPopUpWindowHeaderWrap{
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    height: 53px;
+    left: 0;
+    right: 0;
+    border-radius: 8px;
+}
+.newPopUpWindowHeader{
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 45px;
+    background-color: white;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.3);
+    cursor: default;
+    overflow: hidden;
+    position: absolute;
+    margin: 0px;
+    border: solid 0 transparent;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.newPopUpWindowHeader a{
+    text-decoration: none;
+}
+.newPopUpWindowHeader a:hover{
+    color: #167efb;
+}
+.newPopUpWindowHeader .leftLabel,
+.newPopUpWindowHeader .rightLabel{
+    padding-left: 20px;
+    color: #005cbf;
+    padding-right: 20px;
+    font-size: 17px;
+    line-height: 43px;
+    margin-top: 10px;
+}
+
+.newPopUpWindowHeader .rightLabel{
+    right: 0;
+}
+.newPopUpWindowHeader p{
+    margin: 0;
+    font-size: 20px;
+    line-height: 45px;
+    text-align: center;
+}
+.rightLabelWrap{
+    text-align: right;
+    right: 0px;
+    position: absolute;
+    padding-right: 0;
 }
