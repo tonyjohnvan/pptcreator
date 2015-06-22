@@ -182,3 +182,7 @@ function highlightCurrent(){
     $('#stn'+currentSlideNum).css('border','4px solid rgba(0, 127, 122, 0.5)');
 //    $($('.slidesThumbnail')[currentSlideNum-1]).css("border",'4px solid rgba(0, 127, 122, 0.5);');
 }
+
+function updateEleWidth(){
+    console.log(currentItem.attr('id'));
+}

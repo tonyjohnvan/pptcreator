@@ -317,3 +317,93 @@ button.btn-black:active {
 .newSlideButton{
     top:8px;
 }
+
+.propertyPanelTextDiv a{
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+
+#elementControl input{
+    width: 60px;
+    height: 20px;
+    color: #000000;
+    position: absolute;
+    right: 50px;
+}
+
+.propertyPanelAdjust{
+    /*display: none;*/
+}
+
+#slider1,
+#slider2,
+#slider3{
+    display: inline-block;
+    width: 50%;
+    float: right;
+    margin: 5px 20px 0 0;
+}
+
+.newPresentationWindow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #57575d;
+    z-index: 1001;
+}
+
+.presentationsWrap{
+    margin: 90px auto;
+    width: 990px;
+    top: 92px;
+    bottom: 0px;
+    min-height: 215px;
+    opacity: 1;
+    /*text-align: center;*/
+}
+
+.presentationItem{
+    margin: 20px auto;
+    left: 50%;
+    width: 186px;
+    bottom: 64px;
+    height: 140px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 1px 1px 0px #505050;
+    -moz-box-shadow: 1px 1px 1px 0px #505050;
+    box-shadow: 1px 1px 1px 0px #505050;
+}
+.presentationItem:active{
+    background: #ddd;
+}
+
+.PresentationItemTitle{
+    top: 0px;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    bottom: 33px;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.presentationItemsWarp{
+    display: inline-block;
+    left: 3px;
+    width: 244px;
+    top: 0px;
+    height: 215px;
+}
+
+.newPresentation{
+    font-size: 84px;
+    color: #57575d;
+    font-weight: 100;
+    text-align: center;
+}

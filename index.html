@@ -14,6 +14,7 @@
     <!-- Bootstrap core CSS -->
     <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="plugins/jQueryUI/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="plugins/animatecss/animate.css"/>
 
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
@@ -32,6 +33,27 @@
 
 <body>
 
+
+<div class="newPresentationWindow">
+    <div class="presentationsWrap">
+        <div class="presentationItemsWarp">
+            <div class="presentationItem newPresentation no-select">
+                +
+            </div>
+            <div class="PresentationItemTitle">
+                Create Presentation
+            </div>
+        </div>
+        <div class="presentationItemsWarp" id="presentation1">
+            <div class="presentationItem newPresentation">
+            </div>
+            <div class="PresentationItemTitle" contenteditable="true" >
+                Presentation
+            </div>
+        </div>
+    </div>
+</div>
+
 <nav class="navbar navbar-inverse" id="navigationBar">
     <div class="op-nav-container">
         <div class="navbar-header">
@@ -42,7 +64,8 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">File <span class="caret"></span></a>
                     <ul class="dropdown-menu navbar-inverse op-nav-drop-down" role="menu">
-                        <li><a onclick="saveCurrentSlide()">Save</a></li>
+                        <li><a href="">New Presentation</a></li>
+                        <li><a onclick="saveCurrentSlide()">Save Presentation</a></li>
                         <li class="divider"></li>
                         <li class="dropdown-header">Export</li>
                         <li><a onclick="">as HTML</a></li>
@@ -72,14 +95,20 @@
                         <li class="dropdownThemeCard" id="themeCard2"></li>
                         <li class="dropdownThemeCard" id="themeCard3"></li>
                         <li class="dropdownThemeCard" id="themeCard4"></li>
-                        <!--<li class="dropdownThemeCard" id="themeCard5"></li>-->
-                        <!--<li class="dropdownThemeCard" id="themeCard6"></li>-->
-                        <!--<li class="dropdownThemeCard" id="themeCard7"></li>-->
-                        <!--<li class="dropdownThemeCard" id="themeCard8"></li>-->
-                        <!--<li class="dropdownThemeCard" id="themeCard9"></li>-->
-                        <!--<li class="dropdownThemeCard" id="themeCard10"></li>-->
-                        <!--<li class="dropdownThemeCard" id="themeCard11"></li>-->
-                        <!--<li class="dropdownThemeCard" id="themeCard12"></li>-->
+                    </ul>
+                </div>
+
+                <div class="dropdown pull-left newSlideButton" role="group" aria-label="...">
+                    <button type="button" class="dropdown-toggle btn-black" data-toggle="dropdown"
+                            aria-expanded="false">
+                        New Slide
+                        <!--<span class="caret"></span>-->
+                    </button>
+                    <ul class="dropdown-menu navbar-inverse op-nav-drop-down themeDropdown" role="menu">
+                        <li class="dropdownThemeCard" id="themeStyle1"></li>
+                        <li class="dropdownThemeCard" id="themeStyle2"></li>
+                        <li class="dropdownThemeCard" id="themeStyle3"></li>
+                        <li class="dropdownThemeCard" id="themeStyle4"></li>
                     </ul>
                 </div>
 
@@ -131,19 +160,32 @@
             <div role="tabpanel" class="tab-pane" id="components">components</div>
             <div role="tabpanel" class="tab-pane active" id="properties">
                 <div class="row">
-                    <div class="col-xs-5 text-right propertyPanelTextDiv">
+                    <div class="col-xs-2 text-right propertyPanelTextDiv">
                         <div>Top:</div>
                         <div>Left:</div>
                         <div>Width:</div>
                         <div>Height:</div>
                         <div>zIndex:</div>
                     </div>
-                    <div class="col-xs-7 propertyPanelTextDiv">
-                        <div class="propertyValue" id="topValue">-</div>
+                    <div class="col-xs-3 propertyPanelTextDiv">
+                        <div class="ui-icon-newwinE"></div>
+                        <div class="propertyValue" id="topValue">- </div>
                         <div class="propertyValue" id="leftValue">-</div>
                         <div class="propertyValue" id="widthValue">-</div>
                         <div class="propertyValue" id="heightValue">-</div>
                         <div class="propertyValue" id="zIndexValue">-</div>
+                    </div>
+
+                    <div class="col-xs-7 propertyPanelTextDiv propertyPanelAdjust" id="elementControl">
+                        <div>Align to <a>Top</a> / <a>Bottom</a></div>
+                        <div>Align to <a>Left</a> / <a>Right</a></div>
+                        <!--<div>Width:<input type="text" onchange="updateEleWidth();"/> </div>-->
+                        <!--<div>Height:<input type="text" onchange="updateEleHeight();"/></div>-->
+                        <!--<div>zIndex:<input type="text" onchange="updateEleZIndex()"/></div>-->
+                        <div>Width: <div id="slider1"></div> </div>
+                        <div>Height: <div id="slider2"></div> </div>
+                        <div>zIndex: <div id="slider3"></div> </div>
+
                     </div>
                 </div>
             </div>
@@ -165,6 +207,7 @@
     <li class="disabled" id="bringToFront" data-action="bringToFront">Bring to Front</li>
     <li class="disabled" id="bringToBack" data-action="bringToBack">Bring to Back</li>
 </ul>
+
 
 <!-- Bootstrap core JavaScript
 ================================================== -->

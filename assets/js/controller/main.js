@@ -42,11 +42,14 @@ $(document).ready(function () {
                 $('#' + target.attr('id'))
                     .draggable({
                         containment: "parent"
-                    }).resizable("destroy").delay(100)
-                    .resizable({
-                        handles: "se",
-                        containment: "parent"
-                    });
+                    }).resizable("destroy").delay(100);
+//                setTimeout(function () {
+//                    $('#' + target.attr('id'))
+//                        .resizable({
+//                            handles: "se",
+//                            containment: "parent"
+//                        });
+//                },400);
             }, 200);
             updatePropertyPanel();
             settingCurrentItem();
@@ -54,12 +57,19 @@ $(document).ready(function () {
 
     }).delegate('.editText', 'keydown', function (e) {
         var target = $(e.target);
-        $('#' + target.attr('id'))
-//            .resizable("destroy").delay(100)
-            .resizable({
-                handles: "se",
-                containment: "parent"
-            });
+        $('#' + target.attr('id'));
+//            .resizable("destroy").delay(100);
+//            .resizable({
+//                handles: "se",
+//                containment: "parent"
+//            });
+        setTimeout(function () {
+            $('#' + target.attr('id'))
+                .resizable({
+                    handles: "se",
+                    containment: "parent"
+                });
+        },400);
     }).delegate('.editText', 'drag', function (ev) {
         var target = $(ev.target).closest('.editText');
         settingCurrentItem(target);
@@ -176,6 +186,10 @@ $(document).ready(function () {
         newSlide(themeCard4Content);
         lastId = 3;
     });
+
+    $( "#slider1" ).slider();
+    $( "#slider2" ).slider();
+    $( "#slider3" ).slider();
 });
 
 
