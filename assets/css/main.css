@@ -123,7 +123,7 @@ body, html {
 .tab-pane {
     padding: 10px 15px;
     color: #ffffff;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 .nav-tabs {
@@ -216,6 +216,7 @@ body, html {
     height: 120px;
     background: #ffffff;
     margin: 40px auto;
+    border: 4px solid #464646;
 }
 
 .pageNumber {
@@ -223,7 +224,7 @@ body, html {
     position: absolute;
     margin: 130px -10px;
     color: #ffffff;
-    font-weight: 100;
+    font-weight: 400;
     text-align: center;
     width: 20px;
     left: 100px;
@@ -290,22 +291,22 @@ button.btn-black:active {
     /*background: #ffffff;*/
 }
 
-#themeCard1{
+#themeCard1 {
     background: #fff url(../images/slideTheme/1.png) center center no-repeat;
     background-size: 100px auto;
 }
 
-#themeCard2{
+#themeCard2 {
     background: #fff url(../images/slideTheme/2.png) center center no-repeat;
     background-size: 100px auto;
 }
 
-#themeCard3{
+#themeCard3 {
     background: #fff url(../images/slideTheme/3.png) center center no-repeat;
     background-size: 100px auto;
 }
 
-#themeCard4{
+#themeCard4 {
     background: #fff url(../images/slideTheme/4.png) center center no-repeat;
     background-size: 100px auto;
 }
@@ -315,17 +316,17 @@ button.btn-black:active {
     box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.6);
 }
 
-.newSlideButton{
-    top:8px;
+.newSlideButton {
+    top: 8px;
 }
 
-.propertyPanelTextDiv a{
+.propertyPanelTextDiv a {
     cursor: pointer;
     color: white;
     text-decoration: underline;
 }
 
-#elementControl input{
+#elementControl input {
     width: 60px;
     height: 20px;
     color: #000000;
@@ -333,20 +334,20 @@ button.btn-black:active {
     right: 50px;
 }
 
-.propertyPanelAdjust{
+.propertyPanelAdjust {
     /*display: none;*/
 }
 
 #slider1,
 #slider2,
-#slider3{
+#slider3 {
     display: inline-block;
     width: 50%;
     float: right;
     margin: 5px 20px 0 0;
 }
 
-.ap-view{
+.ap-view {
     cursor: default;
     overflow: hidden;
     position: absolute;
@@ -358,10 +359,10 @@ button.btn-black:active {
     -webkit-user-select: none;
     user-select: none;
     -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.newPresentationWindow{
+.newPresentationWindow {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -371,7 +372,7 @@ button.btn-black:active {
     min-height: 900px;
 }
 
-.presentationsWrap{
+.presentationsWrap {
     margin: 90px auto;
     width: 990px;
     top: 92px;
@@ -381,7 +382,7 @@ button.btn-black:active {
     /*text-align: center;*/
 }
 
-.presentationItem{
+.presentationItem {
     margin: 20px auto;
     left: 50%;
     width: 186px;
@@ -393,11 +394,12 @@ button.btn-black:active {
     -moz-box-shadow: 1px 1px 1px 0px #505050;
     box-shadow: 1px 1px 1px 0px #505050;
 }
-.presentationItem:active{
+
+.presentationItem:active {
     background: #ddd;
 }
 
-.PresentationItemTitle{
+.PresentationItemTitle {
     top: 0px;
     width: 100%;
     left: 0px;
@@ -411,7 +413,7 @@ button.btn-black:active {
     font-family: 'Helvetica Neue', sans-serif;
 }
 
-.presentationItemsWarp{
+.presentationItemsWarp {
     display: inline-block;
     left: 3px;
     width: 244px;
@@ -419,27 +421,27 @@ button.btn-black:active {
     height: 215px;
 }
 
-.newPresentation{
+.newPresentation {
     font-size: 84px;
     color: #57575d;
     font-weight: 100;
     text-align: center;
 }
 
-.newPresentationWindowWrap{
+.newPresentationWindowWrap {
     position: absolute;
     display: none;
     width: 100%;
     height: 100%;
     min-height: 900px;
     min-width: 1440px;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     top: 0;
     left: 0;
     z-index: 10002;
 }
 
-.newPresentationPopUpWindow{
+.newPresentationPopUpWindow {
     position: absolute;
     /*display: none;*/
     margin-top: -293px;
@@ -455,10 +457,10 @@ button.btn-black:active {
 
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.15),0px 0px 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15), 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-.newPresentationPopUpWindow.outer{
+.newPresentationPopUpWindow.outer {
     position: absolute;
     top: 0;
     left: 0;
@@ -466,10 +468,10 @@ button.btn-black:active {
     bottom: 0;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.15),0px 0px 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15), 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-.newPresentationPopUpWindow.middle{
+.newPresentationPopUpWindow.middle {
     position: absolute;
     top: 0;
     left: 0;
@@ -479,8 +481,7 @@ button.btn-black:active {
     background-color: #e4e4e4;
 }
 
-
-.newPresentationPopUpWindow.inner{
+.newPresentationPopUpWindow.inner {
     position: absolute;
     top: 0;
     left: 0;
@@ -489,7 +490,7 @@ button.btn-black:active {
     border-radius: 8px;
 }
 
-.newPopUpWindowHeaderWrap{
+.newPopUpWindowHeaderWrap {
     font-weight: 400;
     position: absolute;
     top: 0;
@@ -498,13 +499,14 @@ button.btn-black:active {
     right: 0;
     border-radius: 8px;
 }
-.newPopUpWindowHeader{
+
+.newPopUpWindowHeader {
     left: 0px;
     right: 0px;
     top: 0px;
     height: 45px;
     background-color: white;
-    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
     cursor: default;
     overflow: hidden;
     position: absolute;
@@ -516,16 +518,19 @@ button.btn-black:active {
     -webkit-user-select: none;
     user-select: none;
     -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.newPopUpWindowHeader a{
+
+.newPopUpWindowHeader a {
     text-decoration: none;
 }
-.newPopUpWindowHeader a:hover{
+
+.newPopUpWindowHeader a:hover {
     color: #167efb;
 }
+
 .newPopUpWindowHeader .leftLabel,
-.newPopUpWindowHeader .rightLabel{
+.newPopUpWindowHeader .rightLabel {
     padding-left: 20px;
     color: #005cbf;
     padding-right: 20px;
@@ -534,18 +539,210 @@ button.btn-black:active {
     margin-top: 10px;
 }
 
-.newPopUpWindowHeader .rightLabel{
+.newPopUpWindowHeader .rightLabel {
     right: 0;
 }
-.newPopUpWindowHeader p{
+
+.newPopUpWindowHeader p {
     margin: 0;
     font-size: 20px;
     line-height: 45px;
     text-align: center;
 }
-.rightLabelWrap{
+
+.rightLabelWrap {
     text-align: right;
-    right: 0px;
+    right: 0;
     position: absolute;
     padding-right: 0;
+}
+
+.newPresentationTabWrap {
+    width: 400px;
+    height: 31px;
+    margin: 60px auto 15px;
+}
+
+.newPresentationTabWrap a {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 0px 10px 0px 10px;
+}
+
+.tabButtonWrap.left {
+    border: 1px solid #3b3b3b;
+    display: inline-block;
+    text-align: center;
+    background: transparent;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 26px !important;
+    overflow: visible;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    left: 0px;
+    width: 120px;
+    top: 0px;
+    bottom: 0px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: 0px !important;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.tabButtonWrap.left.active {
+    background-color: #3b3b3b;
+}
+.tabButtonWrap a{
+    color: #3b3b3b;
+    text-decoration: none;
+}
+.tabButtonWrap.active a{
+    color: #ffffff;
+    text-decoration: none;
+    cursor: inherit;
+}
+.tabButtonWrap.right {
+
+    border: 1px solid #3b3b3b;
+    display: inline-block;
+    text-align: center;
+    background: transparent;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 26px !important;
+    overflow: visible;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    left: 0px;
+    width: 120px;
+    top: 0px;
+    bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    border-color: #3b3b3b;
+    box-shadow: none;
+}
+.tabButtonWrap.right.active {
+    background-color: #3b3b3b;
+}
+
+.tabButtonWrap:active{
+    background: rgba(0,0,0,0.2);
+}
+.newPresentationTabWrap{
+    font-size: 0;
+    text-align: center;
+}
+
+.newPresentationThemeItemWrap,
+.oneRwoWrap{
+    text-align: center;
+}
+
+.newPresentationThemeItemWrap{
+    width: 24%;
+    display: inline-block;
+}
+
+#wideWrap{
+    display: none;
+}
+
+.newPresentationThemeItemThumbnail{
+    width: 190px;
+    height: 144px;
+    background: #000000;
+    margin: 0 auto 10px;
+    border: 2px solid #fff;
+}
+.newPresentationThemeItemThumbnail.wide{
+    width: 190px;
+    height: 109px;
+    background: #000000;
+    margin: 0 auto 10px;
+}
+.newPresentationThemeItemThumbnail:hover{
+    cursor: pointer;
+    border-color: #157efb;
+}
+
+.newPresentationThemeItemDescription{
+    font-size: 13px;
+    color: #606060;
+}
+
+#PT1{
+    background: url("../images/PresentationStyle/PT1.jpg") center center no-repeat;
+    background-size: 190px 144px;
+}
+#PT2{
+    background: url("../images/PresentationStyle/PT2.jpg") center center no-repeat;
+    background-size: 190px 144px;
+}
+#PT3{
+    background: url("../images/PresentationStyle/PT3.jpg") center center no-repeat;
+    background-size: 190px 144px;
+}
+#PT4{
+    background: url("../images/PresentationStyle/PT4.jpg") center center no-repeat;
+    background-size: 190px 144px;
+}
+#PT1w{
+    background: url("../images/PresentationStyle/PT1w.jpg") center center no-repeat;
+    background-size: 190px 119px;
+}
+#PT2w{
+    background: url("../images/PresentationStyle/PT2w.jpg") center center no-repeat;
+    background-size: 190px 119px;
+}
+#PT3w{
+    background: url("../images/PresentationStyle/PT3w.jpg") center center no-repeat;
+    background-size: 190px 119px;
+}
+#PT4w{
+    background: url("../images/PresentationStyle/PT4w.jpg") center center no-repeat;
+    background-size: 190px 119px;
+}
+
+#fileNamePanel{
+    display: none;
+    margin-top: -75px;
+    margin-left: -300px;
+    left: 50%;
+    width: 600px;
+    top: 50%;
+    height: 150px;
+}
+
+#newPresentationNameInput{
+    font-size: 16px;
+    margin: 20px;
+    text-align: center;
+    width: 60%;
+}
+
+.loadingIndicator{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-right: -12px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/ajax-loader-dark.gif")center center no-repeat;
+    background-size: 24px 24px;
 }

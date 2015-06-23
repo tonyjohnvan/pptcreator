@@ -37,7 +37,7 @@
 <div class="newPresentationWindow no-select">
     <div class="presentationsWrap">
         <div class="presentationItemsWarp">
-            <div class="presentationItem newPresentation no-select">
+            <div class="presentationItem newPresentation no-select" onclick="bringUpNewPresentationPanel()">
                 +
             </div>
             <div class="PresentationItemTitle">
@@ -55,8 +55,8 @@
 
 </div>
 
-<div class="newPresentationWindowWrap no-select">
-    <div class="ap-view newPresentationPopUpWindow">
+<div class="newPresentationWindowWrap no-select" >
+    <div class="ap-view newPresentationPopUpWindow" id="selectThemePanel">
         <div class="ap-view newPopUpWindowHeaderWrap">
             <div class="ap-view newPopUpWindowHeader">
                 <div class="row">
@@ -67,13 +67,89 @@
                         <p>Choose a Theme</p>
                     </div>
                     <div class="col-xs-2 rightLabelWrap">
-                        <a href="" class="rightLabel">Choose</a>
+                        <!--<a href="" class="rightLabel">Choose</a>-->
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="newPresentationTabWrap">
+            <div onclick="createThemeStandard();" class="tabButtonWrap left active">
+                <a>Standard</a>
+            </div>
+            <div onclick="createThemeWide();" class="tabButtonWrap right">
+                <a>Wide</a>
+            </div>
+        </div>
+
+        <div class="newPresentationThemesWrap" id="standardWrap">
+            <div class="oneRwoWrap">
+                <div class="newPresentationThemeItemWrap">
+                    <div class="newPresentationThemeItemThumbnail" id="PT1" onclick="createNewPresentation(event);"></div>
+                    <div class="newPresentationThemeItemDescription">Black</div>
+                </div>
+                <div class="newPresentationThemeItemWrap">
+                    <div class="newPresentationThemeItemThumbnail" id="PT2" onclick="createNewPresentation(event);"></div>
+                    <div class="newPresentationThemeItemDescription">White</div>
+                </div>
+                <div class="newPresentationThemeItemWrap">
+                    <div class="newPresentationThemeItemThumbnail" id="PT3" onclick="createNewPresentation(event);"></div>
+                    <div class="newPresentationThemeItemDescription">Iron</div>
+                </div>
+                <div class="newPresentationThemeItemWrap">
+                    <div class="newPresentationThemeItemThumbnail" id="PT4" onclick="createNewPresentation(event);"></div>
+                    <div class="newPresentationThemeItemDescription">Slick</div>
+                </div>
+            </div>
+        </div>
+        <div class="newPresentationThemesWrap" id="wideWrap">
+            <div class="oneRwoWrap">
+                <div class="newPresentationThemeItemWrap">
+                    <div class="newPresentationThemeItemThumbnail wide" id="PT1w" onclick="createNewPresentation(event);"></div>
+                    <div class="newPresentationThemeItemDescription">Black</div>
+                </div>
+                <div class="newPresentationThemeItemWrap">
+                    <div class="newPresentationThemeItemThumbnail wide" id="PT2w" onclick="createNewPresentation(event);"></div>
+                    <div class="newPresentationThemeItemDescription">White</div>
+                </div>
+                <div class="newPresentationThemeItemWrap">
+                    <div class="newPresentationThemeItemThumbnail wide" id="PT3w" onclick="createNewPresentation(event);"></div>
+                    <div class="newPresentationThemeItemDescription">Iron</div>
+                </div>
+                <div class="newPresentationThemeItemWrap">
+                    <div class="newPresentationThemeItemThumbnail wide" id="PT4w" onclick="createNewPresentation(event);"></div>
+                    <div class="newPresentationThemeItemDescription">Slick</div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!--fileName Panel-->
+    <div class="ap-view newPresentationPopUpWindow" id="fileNamePanel">
+        <div class="ap-view newPopUpWindowHeaderWrap">
+            <div class="ap-view newPopUpWindowHeader">
+                <div class="row">
+                    <div class="col-xs-2 labelWrap">
+                        <a class="leftLabel" onclick="NewPresentationNameBack()">Back</a>
+                    </div>
+                    <div class="col-xs-8">
+                        <p>Name Your Presentation</p>
+                    </div>
+                    <div class="col-xs-2 rightLabelWrap">
+                        <a class="rightLabel" onclick="FinishCreatingNewPresentation()">Create</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newPresentationTabWrap">
+            <input type="text" id="newPresentationNameInput" placeholder="Presentation" maxlength="26"/>
+        </div>
+    </div>
+
+    <div class="loadingIndicator"></div>
+
 </div>
+
 
 <nav class="navbar navbar-inverse" id="navigationBar">
     <div class="op-nav-container">
@@ -141,7 +217,7 @@
 
 <div class="op-container">
 
-    <div class="col-xs-2 op-sidebar">
+    <div class="col-xs-2 op-sidebar no-select">
         <div class="slideWrap">
             <div class="slidesThumbnail" id="stn1">
                 <div class="pageNumber">1</div>
@@ -241,6 +317,7 @@
 <script src="assets/js/model/domItems.js"></script>
 <script src="assets/js/controller/functions.js"></script>
 <script src="assets/js/controller/main.js"></script>
+<script src="assets/js/controller/PresentationVC.js"></script>
 <script src="plugins/jQueryUI/jquery-ui.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="plugins/bootstrap/js/ie10-viewport-bug-workaround.js"></script>

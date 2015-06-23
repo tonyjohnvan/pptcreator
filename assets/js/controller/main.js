@@ -38,38 +38,31 @@ $(document).ready(function () {
         }
         CKEDITOR.instances[target.attr('id')].on('blur', function () {
             //console.log('onblur fired at ' + target.attr('id'));
-            setTimeout(function () {
-                $('#' + target.attr('id'))
-                    .draggable({
-                        containment: "parent"
-                    }).resizable("destroy").delay(100);
-//                setTimeout(function () {
-//                    $('#' + target.attr('id'))
-//                        .resizable({
-//                            handles: "se",
-//                            containment: "parent"
-//                        });
-//                },400);
-            }, 200);
+//            setTimeout(function () {
+            $('#' + target.attr('id'))
+                .draggable({
+                    containment: "parent"
+                }).resizable("destroy")
+                .resizable({
+                    handles: "se",
+                    containment: "parent"
+                });
+//            }, 200);
             updatePropertyPanel();
             settingCurrentItem();
         });
 
     }).delegate('.editText', 'keydown', function (e) {
         var target = $(e.target);
-        $('#' + target.attr('id'));
-//            .resizable("destroy").delay(100);
-//            .resizable({
-//                handles: "se",
-//                containment: "parent"
-//            });
+        $('#' + target.attr('id'))
+            .resizable("destroy");
         setTimeout(function () {
             $('#' + target.attr('id'))
                 .resizable({
                     handles: "se",
                     containment: "parent"
                 });
-        },400);
+        }, 1);
     }).delegate('.editText', 'drag', function (ev) {
         var target = $(ev.target).closest('.editText');
         settingCurrentItem(target);
@@ -126,10 +119,10 @@ $(document).ready(function () {
         loadSlide(clickedNum);
     });
 
-    $('.presentationsWrap').delegate('.PresentationItemTitle','keypress', function(event){
+    $('.presentationsWrap').delegate('.PresentationItemTitle', 'keypress', function (event) {
         var key = (event.keyCode ? event.keyCode : event.which);
         console.log(key);
-        if(key == 13){
+        if (key == 13) {
             event.preventDefault();
             $(this).blur();
         }
@@ -179,31 +172,27 @@ $(document).ready(function () {
         }
     });
 
-    // create new presentation
-    $('.newPresentation').on('click',function(){
-        $('.newPresentationWindowWrap').show().addClass('animated fadeIn')
-    });
 
-    $('#themeCard1').on('click',function(){
+    $('#themeCard1').on('click', function () {
         newSlide(themeCard1Content);
         lastId = 3;
     });
-    $('#themeCard2').on('click',function(){
+    $('#themeCard2').on('click', function () {
         newSlide(themeCard2Content);
         lastId = 3;
     });
-    $('#themeCard3').on('click',function(){
+    $('#themeCard3').on('click', function () {
         newSlide(themeCard3Content);
         lastId = 2;
     });
-    $('#themeCard4').on('click',function(){
+    $('#themeCard4').on('click', function () {
         newSlide(themeCard4Content);
         lastId = 3;
     });
 
-    $( "#slider1" ).slider();
-    $( "#slider2" ).slider();
-    $( "#slider3" ).slider();
+    $("#slider1").slider();
+    $("#slider2").slider();
+    $("#slider3").slider();
 });
 
 

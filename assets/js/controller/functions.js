@@ -165,6 +165,9 @@ function newSlide(content) {
     currentSlideNum = totalSlideNum;
     if(content){
         setContent(content);
+        setTimeout(function(){
+            loadSlide(currentSlideNum);
+        },1);
     }
     highlightCurrent();
 }
@@ -178,7 +181,7 @@ function clearCurrentSlide(){
 }
 
 function highlightCurrent(){
-    $('.slidesThumbnail').css("border",'0px');
+    $('.slidesThumbnail').css("border",'4px solid #464646');
     $('#stn'+currentSlideNum).css('border','4px solid rgba(0, 127, 122, 0.5)');
 //    $($('.slidesThumbnail')[currentSlideNum-1]).css("border",'4px solid rgba(0, 127, 122, 0.5);');
 }
