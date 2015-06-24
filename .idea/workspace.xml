@@ -2,14 +2,467 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d2d8c20-cd88-4cbb-8cc0-fb59f64e8040" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/pt1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/pt2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/controller/PresentationVC.js" afterPath="$PROJECT_DIR$/assets/js/controller/PresentationVC.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/model/eText.js" afterPath="$PROJECT_DIR$/assets/js/model/eText.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/controller/functions.js" afterPath="$PROJECT_DIR$/assets/js/controller/functions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/controller/main.js" afterPath="$PROJECT_DIR$/assets/js/controller/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/link/images/anchor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/link/images/hidpi/anchor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/angel_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/angel_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/angry_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/angry_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/images/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/images/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/showblocks/images/block_address.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/showblocks/images/block_blockquote.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/showblocks/images/block_div.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/showblocks/images/block_h1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/showblocks/images/block_h2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/showblocks/images/block_h3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/showblocks/images/block_h4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/showblocks/images/block_h5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/showblocks/images/block_h6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/showblocks/images/block_p.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/showblocks/images/block_pre.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/bold.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/broken_heart.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/broken_heart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/images/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/images/hidpi/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/images/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/images/hidpi/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/confused_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/confused_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/cry_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/cry_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/devil_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/devil_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/embaressed_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/embarrassed_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/embarrassed_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/envelope.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/envelope.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/find-rtl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/heart.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/heart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/forms/images/hiddenfield.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/magicline/images/icon-rtl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/magicline/images/hidpi/icon-rtl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/magicline/images/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/magicline/images/hidpi/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/icons_hidpi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/icons_hidpi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/icons_hidpi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/kiss.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/kiss.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/lightbulb.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/lightbulb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/images/lock-open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/images/hidpi/lock-open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/images/lock-open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/images/hidpi/lock-open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/images/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/images/hidpi/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/images/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/images/hidpi/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/assets/inlineall/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/about/dialogs/logo_ckeditor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/about/dialogs/hidpi/logo_ckeditor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/image/images/noimage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/omg_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/omg_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/pagebreak/images/pagebreak.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/flash/images/placeholder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/iframe/images/placeholder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/images/refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/images/hidpi/refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/images/refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/images/hidpi/refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/regular_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/regular_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/sad_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/sad_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/assets/sample.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/scayt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/shades_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/shades_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/teeth_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/teeth_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/templates/templates/images/template1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/templates/templates/images/template2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/templates/templates/images/template3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/thumbs_down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/thumbs_down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/thumbs_up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/thumbs_up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/tongue_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/tongue_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/tounge_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/whatchutalkingabout_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/whatchutalkingabout_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/wink_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/images/wink_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/CHANGES.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/scayt/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/wsc/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/scayt/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/wsc/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/_translationstatus.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/a11yhelp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/about/dialogs/about.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/ajax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/link/dialogs/anchor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/appendto.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/bn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/bs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/build-config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/forms/dialogs/button.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/forms/dialogs/checkbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/wsc/dialogs/ciframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/ckeditor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/colordialog/dialogs/colordialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/contents.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/datafiltering.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/pastefromword/filter/default.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/templates/templates/default.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/plugins/dialog/dialog.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/dialog/dialogDefinition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/dialog_ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/dialog_ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/dialog_ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/dialog_ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/dialog_ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/dialog_ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/dialog_iequirks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/dialog_iequirks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/dialog_opera.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/div/dialogs/div.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/divreplace.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/editor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/editor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/editor_gecko.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/editor_gecko.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/editor_ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/editor_ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/editor_ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/editor_ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/editor_ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/editor_ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/editor_iequirks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/editor_iequirks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/en-au.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/en-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/plugins/enterkey/enterkey.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/find/dialogs/find.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/flash/dialogs/flash.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/fo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/forms/dialogs/form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/plugins/wysiwygarea/fullpage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/gu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/gu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/forms/dialogs/hiddenfield.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/iframe/dialogs/iframe.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/image/dialogs/image.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/inlineall.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/inlinebycode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/inlinetextarea.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/jquery.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/adapters/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/ka.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/ku.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/ku.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/ku.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/assets/uilanguages/languages.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/link/dialogs/link.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/liststyle/dialogs/liststyle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/plugins/magicline/magicline.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/mn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/mn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/ms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/plugins/dialog/assets/my_dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/scayt/dialogs/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/plugins/htmlwriter/outputforflash.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/plugins/htmlwriter/outputhtml.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/assets/outputxhtml/outputxhtml.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/clipboard/dialogs/paste.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/assets/posteddata.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/preview/preview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/forms/dialogs/radio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editor/skins/icy_orange/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/skins/moono/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/readonly.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/replacebyclass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/replacebycode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/sample.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/sample.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/sample_posteddata.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/forms/dialogs/select.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/smiley/dialogs/smiley.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/specialchar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/sr-latn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/sr-latn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/styles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/plugins/htmlwriter/assets/outputforflash/swfobject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/tabindex.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/table/dialogs/table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/tabletools/dialogs/tableCell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/templates/dialogs/templates.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/templates/dialogs/templates.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/forms/dialogs/textarea.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/forms/dialogs/textfield.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/wsc/dialogs/tmpFrameset.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/scayt/dialogs/toolbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/plugins/toolbar/toolbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/tt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/tt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/tt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/ug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/ug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/ug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/uicolor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/uilanguages.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/wsc/dialogs/wsc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/wsc/dialogs/wsc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/wsc/dialogs/wsc_ie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/samples/xhtmlstyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/lang/zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/a11yhelp/dialogs/lang/zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/editorFull/plugins/specialchar/dialogs/lang/zh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/skins/moono/icons.png" afterPath="$PROJECT_DIR$/plugins/editor/skins/moono/icons.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/skins/moono/icons_hidpi.png" afterPath="$PROJECT_DIR$/plugins/editor/skins/moono/icons_hidpi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/af.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/af.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ar.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/bg.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/bn.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/bn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/bs.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/bs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/build-config.js" afterPath="$PROJECT_DIR$/plugins/editor/build-config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ca.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/ckeditor.js" afterPath="$PROJECT_DIR$/plugins/editor/ckeditor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/config.js" afterPath="$PROJECT_DIR$/plugins/editor/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/cs.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/cy.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/cy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/da.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/da.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/de.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/skins/moono/editor.css" afterPath="$PROJECT_DIR$/plugins/editor/skins/moono/editor.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_gecko.css" afterPath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_gecko.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_ie.css" afterPath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_ie.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_ie7.css" afterPath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_ie7.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_ie8.css" afterPath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_ie8.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_iequirks.css" afterPath="$PROJECT_DIR$/plugins/editor/skins/moono/editor_iequirks.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/el.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/en-au.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/en-au.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/en-ca.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/en-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/en-gb.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/en-gb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/eo.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/eo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/es.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/et.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/et.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/eu.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/eu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/fa.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/fa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/fi.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/fi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/fo.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/fo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/fr-ca.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/fr-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/fr.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/gl.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/gl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/gu.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/gu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/he.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/he.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/hi.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/hi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/hr.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/hr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/hu.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/hu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/id.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/is.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/is.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/it.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ja.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ja.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ka.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ka.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/km.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/km.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ko.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ko.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ku.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ku.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/lt.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/lt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/lv.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/lv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/mk.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/mk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/mn.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/mn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ms.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/nb.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/nb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/nl.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/no.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/no.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/pl.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/pt-br.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/pt-br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/pt.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/pt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ro.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ru.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/si.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/si.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/sk.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/sk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/sl.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/sl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/sq.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/sq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/sr-latn.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/sr-latn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/sr.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/sr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/sv.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/sv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/th.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/th.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/tr.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/tr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/tt.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/tt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/ug.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/ug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/uk.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/uk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/vi.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/vi.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/zh-cn.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/zh-cn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/editor/lang/zh.js" afterPath="$PROJECT_DIR$/plugins/editor/lang/zh.js" />
     </list>
     <ignored path="pptcreator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,14 +484,14 @@
     <favorites_list name="pptcreator" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.41513634">
+    <splitter split-orientation="horizontal" split-proportion="0.47823495">
       <split-first>
         <leaf>
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="3.716518" vertical-offset="0" max-vertical-offset="5025">
-                  <caret line="222" column="32" selection-start-line="222" selection-start-column="32" selection-end-line="233" selection-end-column="22" />
+                <state vertical-scroll-proportion="0.7198661" vertical-offset="2895" max-vertical-offset="5025">
+                  <caret line="236" column="31" selection-start-line="236" selection-start-column="31" selection-end-line="236" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -70,11 +523,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="PresentationVC.js" pinned="false" current="true" current-in-tab="true">
+              <file leaf-file-name="PresentationVC.js" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/assets/js/controller/PresentationVC.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.88294315" vertical-offset="603" max-vertical-offset="1500">
-                      <caret line="93" column="45" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+                    <state vertical-scroll-proportion="0.38127092" vertical-offset="603" max-vertical-offset="1500">
+                      <caret line="63" column="58" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
                       <folding />
                     </state>
                   </provider>
@@ -145,20 +598,20 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+              <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/assets/css/main.css">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="2897" max-vertical-offset="11295">
-                      <caret line="218" column="29" selection-start-line="218" selection-start-column="29" selection-end-line="218" selection-end-column="29" />
+                    <state vertical-scroll-proportion="0.26845637" vertical-offset="0" max-vertical-offset="11400">
+                      <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="pt2.css" pinned="false" current="false" current-in-tab="true">
+              <file leaf-file-name="pt2.css" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/themes/pt2.css">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.27331188" vertical-offset="0" max-vertical-offset="933">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
                       <caret line="17" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
                       <folding />
                     </state>
@@ -193,7 +646,6 @@
         <option value="$PROJECT_DIR$/plugins/editor/config.js" />
         <option value="$PROJECT_DIR$/plugins/animatecss/animate.css" />
         <option value="$PROJECT_DIR$/assets/js/controller/PresentationFunc.js" />
-        <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/assets/js/controller/functions.js" />
         <option value="$PROJECT_DIR$/assets/js/model/eText.js" />
         <option value="$PROJECT_DIR$/assets/js/controller/main.js" />
@@ -205,6 +657,7 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/themes/pt4w.css" />
         <option value="$PROJECT_DIR$/assets/js/controller/PresentationVC.js" />
+        <option value="$PROJECT_DIR$/assets/css/main.css" />
       </list>
     </option>
   </component>
@@ -268,7 +721,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
+              <option name="myItemId" value="plugins" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -282,33 +735,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="plugins" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pptcreator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pptcreator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="editor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -322,7 +753,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adapters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -340,11 +779,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/themes" />
       <recent name="$PROJECT_DIR$/plugins/editor" />
+      <recent name="$PROJECT_DIR$/plugins" />
+      <recent name="$PROJECT_DIR$/themes" />
       <recent name="$PROJECT_DIR$/assets/js/jQueryUI" />
       <recent name="$PROJECT_DIR$/assets/js/editor" />
-      <recent name="$PROJECT_DIR$/assets/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/images" />
@@ -418,7 +857,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09583992" sideWeight="0.6940687" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11690363" sideWeight="0.6940687" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24960506" sideWeight="0.30593133" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -473,20 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
           <caret line="22" column="28" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/editor/build-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2775">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/editor/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="810">
-          <caret line="46" column="36" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -687,14 +1112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/bootstrap/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06507592" vertical-offset="0" max-vertical-offset="922">
-          <caret line="4" column="113738" selection-start-line="4" selection-start-column="113738" selection-end-line="4" selection-end-column="113738" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/animatecss/animate.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.734375" vertical-offset="19742" max-vertical-offset="49200">
@@ -707,20 +1124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28877005" vertical-offset="0" max-vertical-offset="935">
           <caret line="22" column="28" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/editor/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7483731" vertical-offset="0" max-vertical-offset="922">
-          <caret line="46" column="36" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/editor/build-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5026738" vertical-offset="1795" max-vertical-offset="2730">
-          <caret line="154" column="67" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -774,14 +1177,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2897" max-vertical-offset="11295">
-          <caret line="218" column="29" selection-start-line="218" selection-start-column="29" selection-end-line="218" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/pt2w.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25723472" vertical-offset="0" max-vertical-offset="933">
@@ -792,7 +1187,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/pt2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27331188" vertical-offset="0" max-vertical-offset="933">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
           <caret line="17" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
           <folding />
         </state>
@@ -810,14 +1205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
           <caret line="16" column="4" selection-start-line="16" selection-start-column="0" selection-end-line="24" selection-end-column="132" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.716518" vertical-offset="0" max-vertical-offset="5025">
-          <caret line="222" column="32" selection-start-line="222" selection-start-column="32" selection-end-line="233" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -848,8 +1235,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/controller/PresentationVC.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88294315" vertical-offset="603" max-vertical-offset="1500">
-          <caret line="93" column="45" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.38127092" vertical-offset="603" max-vertical-offset="1500">
+          <caret line="63" column="58" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/bootstrap/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06521739" vertical-offset="0" max-vertical-offset="920">
+          <caret line="4" column="73559" selection-start-line="4" selection-start-column="73559" selection-end-line="4" selection-end-column="73559" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7198661" vertical-offset="2895" max-vertical-offset="5025">
+          <caret line="236" column="31" selection-start-line="236" selection-start-column="31" selection-end-line="236" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26845637" vertical-offset="0" max-vertical-offset="11400">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
           <folding />
         </state>
       </provider>
