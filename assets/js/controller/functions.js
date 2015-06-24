@@ -110,8 +110,8 @@ function getScreenshotFor(slideNum) {
     html2canvas(document.getElementById('slideContent'), {
         onrendered: function (canvas) {
             $(canvas).css({
-                'width': $('.slidesThumbnail').width()-8,
-                'height': $('.slidesThumbnail').height()-8
+                'width': $('.slidesThumbnail').width(),
+                'height': $('.slidesThumbnail').height()
             }).attr('id', 'tbn' + slideNum);
             if ($('#tbn' + slideNum) != undefined) {
                 $('#tbn' + slideNum).remove();

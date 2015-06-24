@@ -6,11 +6,11 @@ var lastId = 0;
 var etArray = [];
 
 var currentItem;
-var currentSlideNum = 1;
+var currentSlideNum = 0;
 
 var currentSlideContent = "";
 
-var totalSlideNum = 1;
+var totalSlideNum = 0;
 
 var AllSlides = [];
 

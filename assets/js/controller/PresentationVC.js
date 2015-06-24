@@ -30,35 +30,66 @@ function createThemeWide() {
 function createNewPresentation(e) {
     newPresentationTheme = $(e.target).attr('id').substring(2);
     $('#selectThemePanel').removeClass('animated fadeIn').addClass('animated fadeOutLeftBig');
-    setTimeout(function(){
+    setTimeout(function () {
         $('#selectThemePanel').hide().removeClass('animated fadeOutLeftBig');
-    },1000);
+    }, 1000);
     $('#fileNamePanel').show().addClass('animated fadeInRight');
 }
 
-function NewPresentationNameBack(){
+function NewPresentationNameBack() {
     $('#selectThemePanel').show().addClass('animated fadeInLeft');
     $('#fileNamePanel').removeClass('animated fadeInRight').addClass('animated fadeOutRightBig');
-    setTimeout(function(){
+    setTimeout(function () {
         $('#fileNamePanel').hide().removeClass('animated fadeOutRightBig');
-    },1000);
+    }, 1000);
 }
 
 function FinishCreatingNewPresentation() {
     presentationName = $('#newPresentationNameInput').val() || "Presentation";
     $('#fileNamePanel').addClass('animated fadeOut');
-    setTimeout(function() {
+    setTimeout(function () {
         $('#fileNamePanel').hide().removeClass('animated fadeOut');
-    },1000);
+    }, 1000);
     $('.loadingIndicator').show(400);
 
-    setTimeout(function(){
+    setTimeout(function () {
         $('.loadingIndicator').hide(400);
         $('.newPresentationWindowWrap').removeClass('animated fadeIn').addClass('animated fadeOut');
         $('.newPresentationWindow').addClass('animated fadeOutDownBig');
-    },3000);
-    setTimeout(function(){
+    }, 3000);
+    setTimeout(function () {
         $('.newPresentationWindowWrap').hide().removeClass('animated fadeOut');
         $('.newPresentationWindow').hide().removeClass('animated fadeOutDownBig');
-    },4000);
+
+        $('.slideWrap').sortable({placeholder: "ui-state-highlight"}).disableSelection();
+    }, 4000);
+
+    initializePresentation();
+}
+
+function initializePresentation() {
+    // initialize the presentation with associated style and firstpage
+    // -- first page init
+    newSlide(themeCard1Content);
+    lastId = 3;
+
+    $('.slideWrap').sortable({
+        placeholder: "ui-state-highlight",
+        update: function (event, ui) {
+            resortAllSlides();
+        }
+    })
+        .disableSelection();
+
+    // -- associate CSS to existing page
+    $('head').append('<link rel="stylesheet" href="themes/pt' + newPresentationTheme + '.css" type="text/css" />');
+}
+
+function resortAllSlides() {
+    var slidsList = $('.slideWrap').children();
+    for (var i = 0; i < slidsList.length; i++) {
+//        $($('.slideWrap').children()[i]).attr('id', 'stn' + (i + 1));
+        $($('.slideWrap').children()[i]).children('.pageNumber').html(i + 1);
+//        $($('.slideWrap').children()[i]).children('canvas').attr('id', 'tbn' + (i + 1));
+    }
 }
