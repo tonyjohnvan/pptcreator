@@ -14,6 +14,8 @@ var totalSlideNum = 0;
 
 var AllSlides = [];
 
+var rightClickSlide = "";
+
 $(document).ready(function () {
     "use strict";
 
@@ -117,6 +119,11 @@ $(document).ready(function () {
         //console.log($(e.target).closest('.slidesThumbnail').attr('id').substr(3));
         var clickedNum = parseInt($(e.target).closest('.slidesThumbnail').attr('id').substr(3));
         loadSlide(clickedNum);
+    }).delegate('.slidesThumbnail', 'mousedown', function (e) {
+        rightClickSlide = parseInt($(e.target).closest('.slidesThumbnail').attr('id').substr(3));
+        if (e.which === 3) {
+            console.log(rightClickSlide);
+        }
     });
 
     $('.presentationsWrap').delegate('.PresentationItemTitle', 'keypress', function (event) {
@@ -159,7 +166,8 @@ $(document).ready(function () {
                 break;
             case "deleteSlide":
             {
-                console.log($(this).attr("data-action"));
+                deleteSlide(rightClickSlide);
+//                console.log($(this).attr("data-action"));
                 // Hide it AFTER the action was triggered
                 $(".custom-right-menu").hide(100);
             }

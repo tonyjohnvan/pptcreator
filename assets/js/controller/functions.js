@@ -153,8 +153,10 @@ function loadSlide(num) {
     lastId = AllSlides[num].numOfBoxes;
 }
 
-function newSlide(content) {
-    saveCurrentSlide();
+function newSlide(content,isFirstTime) {
+    if(isFirstTime===true){
+        saveCurrentSlide();
+    }
 //    ++currentSlideNum;
     $('.slideWrap').append(
             '<div class="slidesThumbnail" id="stn' + ++totalSlideNum + '">\
@@ -163,29 +165,46 @@ function newSlide(content) {
     );
     clearCurrentSlide();
     currentSlideNum = totalSlideNum;
-    if(content){
+    if (content) {
         setContent(content);
-        setTimeout(function(){
+        setTimeout(function () {
             loadSlide(currentSlideNum);
-        },1);
+        }, 1);
     }
     highlightCurrent();
+    resortAllSlides();
 }
 
-function setContent(content){
+function setContent(content) {
     $('.op-slideContainer').html(content);
 }
 
-function clearCurrentSlide(){
+function clearCurrentSlide() {
     $('.op-slideContainer').html('');
 }
 
-function highlightCurrent(){
-    $('.slidesThumbnail').css("border",'4px solid #464646');
-    $('#stn'+currentSlideNum).css('border','4px solid rgba(0, 127, 122, 0.5)');
+function highlightCurrent() {
+    $('.slidesThumbnail').css("border", '4px solid #464646');
+    $('#stn' + currentSlideNum).css('border', '4px solid rgba(0, 127, 122, 0.5)');
 //    $($('.slidesThumbnail')[currentSlideNum-1]).css("border",'4px solid rgba(0, 127, 122, 0.5);');
 }
 
-function updateEleWidth(){
+function updateEleWidth() {
     console.log(currentItem.attr('id'));
+}
+
+function deleteSlide(index) {
+    $('#stn'+index).remove();
+//    AllSlides.splice(index,1);
+//    totalSlideNum--;
+    resortAllSlides();
+}
+
+function findIndexFromArray(slideNum) {
+    for (var i = 0; i < AllSlides.length; i++) {
+        if(slideNum==$(AllSlides[1].domHtml).attr('id').substring(2)){
+            return i;
+        }
+    }
+    return -1;
 }

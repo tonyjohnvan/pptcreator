@@ -70,7 +70,7 @@ function FinishCreatingNewPresentation() {
 function initializePresentation() {
     // initialize the presentation with associated style and firstpage
     // -- first page init
-    newSlide(themeCard1Content);
+    newSlide(themeCard1Content,true);
     lastId = 3;
 
     $('.slideWrap').sortable({
