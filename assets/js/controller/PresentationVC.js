@@ -93,3 +93,16 @@ function resortAllSlides() {
 //        $($('.slideWrap').children()[i]).children('canvas').attr('id', 'tbn' + (i + 1));
     }
 }
+
+function searchPresentations(event) {
+    var key = (event.keyCode ? event.keyCode : event.which);
+    console.log(key);
+    // TODO:front end search logic
+
+    if (key == 13) {
+        event.preventDefault();
+        $(event.target).blur();
+
+        // TODO:server search logic
+    }
+}

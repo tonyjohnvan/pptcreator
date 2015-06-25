@@ -379,8 +379,26 @@ button.btn-black:active {
     min-height: 900px;
 }
 
+.searchPresentationWrap{
+    margin: 40px auto 10px;
+    width: 450px;
+}
+.searchPresentationWrap input{
+    cursor: text;
+    width: 450px;
+    background-color: #79797d;
+    border: 1px solid #555;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 2px 20px;
+}
+.searchPresentationWrap input:focus{
+    text-align: left;
+}
+
 .presentationsWrap {
-    margin: 90px auto;
+    margin: 20px auto;
     width: 990px;
     top: 92px;
     bottom: 0px;
@@ -752,4 +770,30 @@ button.btn-black:active {
     height: 24px;
     background: url("../images/ajax-loader-dark.gif")center center no-repeat;
     background-size: 24px 24px;
+}
+
+.newPresentationNavBar{
+    background: #222;
+    border: 1px solid rgba(0,0,0,0.8);
+    height: 50px;
+
+}
+
+.newPresentationNavBarWrapper{
+    width: 1024px;
+    margin: 0 auto;
+    padding: 5px;
+
+}
+.newPresentationNavBarWrapper i{
+    width: 40px;
+    font-size: 20px;
+}
+
+.logoWrap{
+    color: white;
+    font-size: 28px;
+    /*width: 100px;*/
+    margin: 0 auto;
+    text-align: center;
 }
