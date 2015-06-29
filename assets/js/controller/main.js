@@ -46,7 +46,7 @@ $(document).ready(function () {
                     containment: "parent"
                 }).resizable("destroy")
                 .resizable({
-                    handles: "se",
+                    handles: 'ne, se, sw, nw, s, w, e, n',
                     containment: "parent"
                 });
 //            }, 200);
@@ -61,7 +61,7 @@ $(document).ready(function () {
         setTimeout(function () {
             $('#' + target.attr('id'))
                 .resizable({
-                    handles: "se",
+                    handles: 'ne, se, sw, nw, s, w, e, n',
                     containment: "parent"
                 });
         }, 1);
@@ -198,9 +198,23 @@ $(document).ready(function () {
         lastId = 3;
     });
 
-    $("#slider1").slider();
-    $("#slider2").slider();
-    $("#slider3").slider();
+//    $("#slider1").slider();
+//    $("#slider2").slider();
+//    $("#slider3").slider();
+
+
+    $('#themeStyle1').on('click', function () {
+        changeTheme(1);
+    });
+    $('#themeStyle2').on('click', function () {
+        changeTheme(2);
+    });
+    $('#themeStyle3').on('click', function () {
+        changeTheme(3);
+    });
+    $('#themeStyle4').on('click', function () {
+        changeTheme(4);
+    });
 });
 
 

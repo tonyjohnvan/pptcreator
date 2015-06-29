@@ -59,7 +59,7 @@ function addTextField(e) {
             containment: "parent"
         })
         .resizable({
-            handles: "se",
+            handles: 'ne, se, sw, nw, s, w, e, n',
             containment: "parent"
         });
     if (e) {
@@ -145,7 +145,7 @@ function loadSlide(num) {
                     containment: "parent"
                 })
                 .resizable({
-                    handles: "se",
+                    handles: 'ne, se, sw, nw, s, w, e, n',
                     containment: "parent"
                 });
         }
@@ -207,4 +207,9 @@ function findIndexFromArray(slideNum) {
         }
     }
     return -1;
+}
+
+function changeTheme(id) {
+    $('#customizedCss').remove();
+    $('head').append('<link id="customizedCss" rel="stylesheet" href="themes/pt' + id + '.css" type="text/css" />');
 }

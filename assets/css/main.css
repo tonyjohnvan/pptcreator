@@ -8,6 +8,11 @@ body, html {
     -webkit-font-smoothing: antialiased;
 }
 
+.cke_editable {
+    cursor: text;
+    outline: none;
+}
+
 .navbar {
     border-radius: 0;
     margin-bottom: 0;
@@ -83,7 +88,8 @@ body, html {
     top: 150px;
     left: 250px;
     /*line-height: 0.5;*/
-    overflow: hidden;
+    /*overflow: hidden;*/
+    outline: none;
 }
 
 .floating-panel {
@@ -318,6 +324,26 @@ button.btn-black:active {
     background-size: 100px auto;
 }
 
+#themeStyle1 {
+    background: #fff url(../images/PresentationStyle/PT1.jpg) center center no-repeat;
+    background-size: auto 100px;
+}
+
+#themeStyle2 {
+    background: #fff url(../images/PresentationStyle/PT2.jpg) center center no-repeat;
+    background-size: auto 100px;
+}
+
+#themeStyle3 {
+    background: #fff url(../images/PresentationStyle/PT3.jpg) center center no-repeat;
+    background-size: auto 100px;
+}
+
+#themeStyle4 {
+    background: #fff url(../images/PresentationStyle/PT4.jpg) center center no-repeat;
+    background-size: auto 100px;
+}
+
 .dropdownThemeCard:hover {
     cursor: pointer;
     box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.6);
@@ -379,11 +405,12 @@ button.btn-black:active {
     min-height: 900px;
 }
 
-.searchPresentationWrap{
+.searchPresentationWrap {
     margin: 40px auto 10px;
     width: 450px;
 }
-.searchPresentationWrap input{
+
+.searchPresentationWrap input {
     cursor: text;
     width: 450px;
     background-color: #79797d;
@@ -393,7 +420,8 @@ button.btn-black:active {
     border-radius: 5px;
     padding: 2px 20px;
 }
-.searchPresentationWrap input:focus{
+
+.searchPresentationWrap input:focus {
     text-align: left;
 }
 
@@ -623,15 +651,18 @@ button.btn-black:active {
 .tabButtonWrap.left.active {
     background-color: #3b3b3b;
 }
-.tabButtonWrap a{
+
+.tabButtonWrap a {
     color: #3b3b3b;
     text-decoration: none;
 }
-.tabButtonWrap.active a{
+
+.tabButtonWrap.active a {
     color: #ffffff;
     text-decoration: none;
     cursor: inherit;
 }
+
 .tabButtonWrap.right {
 
     border: 1px solid #3b3b3b;
@@ -660,89 +691,100 @@ button.btn-black:active {
     border-color: #3b3b3b;
     box-shadow: none;
 }
+
 .tabButtonWrap.right.active {
     background-color: #3b3b3b;
 }
 
-.tabButtonWrap:active{
-    background: rgba(0,0,0,0.2);
+.tabButtonWrap:active {
+    background: rgba(0, 0, 0, 0.2);
 }
-.newPresentationTabWrap{
+
+.newPresentationTabWrap {
     font-size: 0;
     text-align: center;
 }
 
 .newPresentationThemeItemWrap,
-.oneRwoWrap{
+.oneRwoWrap {
     text-align: center;
 }
 
-.newPresentationThemeItemWrap{
+.newPresentationThemeItemWrap {
     width: 24%;
     display: inline-block;
 }
 
-#wideWrap{
+#wideWrap {
     display: none;
 }
 
-.newPresentationThemeItemThumbnail{
+.newPresentationThemeItemThumbnail {
     width: 190px;
     height: 144px;
     background: #000000;
     margin: 0 auto 10px;
     border: 2px solid #fff;
 }
-.newPresentationThemeItemThumbnail.wide{
+
+.newPresentationThemeItemThumbnail.wide {
     width: 190px;
     height: 109px;
     background: #000000;
     margin: 0 auto 10px;
 }
-.newPresentationThemeItemThumbnail:hover{
+
+.newPresentationThemeItemThumbnail:hover {
     cursor: pointer;
     border-color: #157efb;
 }
 
-.newPresentationThemeItemDescription{
+.newPresentationThemeItemDescription {
     font-size: 13px;
     color: #606060;
 }
 
-#PT1{
+#PT1 {
     background: url("../images/PresentationStyle/PT1.jpg") center center no-repeat;
     background-size: 190px 144px;
 }
-#PT2{
+
+#PT2 {
     background: url("../images/PresentationStyle/PT2.jpg") center center no-repeat;
     background-size: 190px 144px;
 }
-#PT3{
+
+#PT3 {
     background: url("../images/PresentationStyle/PT3.jpg") center center no-repeat;
     background-size: 190px 144px;
 }
-#PT4{
+
+#PT4 {
     background: url("../images/PresentationStyle/PT4.jpg") center center no-repeat;
     background-size: 190px 144px;
 }
-#PT1w{
+
+#PT1w {
     background: url("../images/PresentationStyle/PT1w.jpg") center center no-repeat;
     background-size: 190px 119px;
 }
-#PT2w{
+
+#PT2w {
     background: url("../images/PresentationStyle/PT2w.jpg") center center no-repeat;
     background-size: 190px 119px;
 }
-#PT3w{
+
+#PT3w {
     background: url("../images/PresentationStyle/PT3w.jpg") center center no-repeat;
     background-size: 190px 119px;
 }
-#PT4w{
+
+#PT4w {
     background: url("../images/PresentationStyle/PT4w.jpg") center center no-repeat;
     background-size: 190px 119px;
 }
 
-#fileNamePanel{
+#fileNamePanel {
     display: none;
     margin-top: -75px;
     margin-left: -300px;
@@ -752,14 +794,14 @@ button.btn-black:active {
     height: 150px;
 }
 
-#newPresentationNameInput{
+#newPresentationNameInput {
     font-size: 16px;
     margin: 20px;
     text-align: center;
     width: 60%;
 }
 
-.loadingIndicator{
+.loadingIndicator {
     display: none;
     position: absolute;
     top: 50%;
@@ -768,32 +810,63 @@ button.btn-black:active {
     margin-right: -12px;
     width: 24px;
     height: 24px;
-    background: url("../images/ajax-loader-dark.gif")center center no-repeat;
+    background: url("../images/ajax-loader-dark.gif") center center no-repeat;
     background-size: 24px 24px;
 }
 
-.newPresentationNavBar{
+.newPresentationNavBar {
     background: #222;
-    border: 1px solid rgba(0,0,0,0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
     height: 50px;
 
 }
 
-.newPresentationNavBarWrapper{
+.newPresentationNavBarWrapper {
     width: 1024px;
     margin: 0 auto;
     padding: 5px;
 
 }
-.newPresentationNavBarWrapper i{
+
+.newPresentationNavBarWrapper i {
     width: 40px;
     font-size: 20px;
 }
 
-.logoWrap{
+.logoWrap {
     color: white;
     font-size: 28px;
     /*width: 100px;*/
     margin: 0 auto;
     text-align: center;
+}
+
+/* jQuery resizable handles*/
+
+.ui-resizable-handle {
+    background: #3789f5;
+    border: 1px solid #FFF;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.15);
+
+    z-index: 2;
+}
+
+.ui-resizable-s,
+.ui-resizable-n {
+    left: 50%;
+    margin-left: -4px;
+}
+
+.ui-resizable-e,
+.ui-resizable-w {
+    top: 50%;
+    margin-top: -4px;
+}
+
+.ui-resizable-se {
+    right: -5px;
+    bottom: -5px;
 }

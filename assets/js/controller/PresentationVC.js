@@ -82,7 +82,7 @@ function initializePresentation() {
         .disableSelection();
 
     // -- associate CSS to existing page
-    $('head').append('<link rel="stylesheet" href="themes/pt' + newPresentationTheme + '.css" type="text/css" />');
+    $('head').append('<link id="customizedCss" rel="stylesheet" href="themes/pt' + newPresentationTheme + '.css" type="text/css" />');
 }
 
 function resortAllSlides() {
