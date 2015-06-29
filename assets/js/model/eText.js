@@ -8,7 +8,7 @@ function ETextObject(itemId) {
 //        'onclick="enableEdit(event)" ' +
         'contenteditable="true" ' +
         'id="et' + itemId +
-        '">Click to Edit</div>';
+        '"><p>Click to Edit</p></div>';
     this.id = itemId;
 }
 

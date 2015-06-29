@@ -56,11 +56,14 @@ function addTextField(e) {
     $(".op-slideContainer").append(tempET.domE);
     $('#et' + tempET.id)
         .draggable({
-            containment: "parent"
+            containment: "parent",
+            //grid: [ 10, 10 ],
+            snap: '#slideContent'
         })
         .resizable({
             handles: 'ne, se, sw, nw, s, w, e, n',
-            containment: "parent"
+            //grid: [ 10, 10 ],
+            //containment: "parent"
         });
     if (e) {
         $('#et' + tempET.id).css({
@@ -142,11 +145,14 @@ function loadSlide(num) {
         for (var i = 1; i <= AllSlides[num].numOfBoxes; i++) {
             $('#et' + i)
                 .draggable({
-                    containment: "parent"
+                    containment: "parent",
+                    //grid: [ 10, 10 ],
+                    snap: '#slideContent'
                 })
                 .resizable({
                     handles: 'ne, se, sw, nw, s, w, e, n',
-                    containment: "parent"
+                    //grid: [ 10, 10 ],
+                    //containment: "parent"
                 });
         }
     }, 1000);

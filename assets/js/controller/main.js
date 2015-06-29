@@ -43,11 +43,14 @@ $(document).ready(function () {
 //            setTimeout(function () {
             $('#' + target.attr('id'))
                 .draggable({
-                    containment: "parent"
+                    containment: "parent",
+                    //grid: [ 10, 10 ],
+                    snap: '#slideContent'
                 }).resizable("destroy")
                 .resizable({
                     handles: 'ne, se, sw, nw, s, w, e, n',
-                    containment: "parent"
+                    //grid: [ 10, 10 ],
+                    //containment: "parent"
                 });
 //            }, 200);
             updatePropertyPanel();
@@ -62,7 +65,8 @@ $(document).ready(function () {
             $('#' + target.attr('id'))
                 .resizable({
                     handles: 'ne, se, sw, nw, s, w, e, n',
-                    containment: "parent"
+                    //grid: [ 10, 10 ],
+                    //containment: "parent"
                 });
         }, 1);
     }).delegate('.editText', 'drag', function (ev) {
