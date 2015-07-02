@@ -58,7 +58,7 @@
         <div class="presentationItemsWarp" id="presentation1">
             <div class="presentationItem">
             </div>
-            <div class="PresentationItemTitle" contenteditable="true" >
+            <div class="PresentationItemTitle" contenteditable="true">
                 Presentation
             </div>
         </div>
@@ -66,7 +66,7 @@
 
 </div>
 
-<div class="newPresentationWindowWrap no-select" >
+<div class="newPresentationWindowWrap no-select">
     <div class="ap-view newPresentationPopUpWindow" id="selectThemePanel">
         <div class="ap-view newPopUpWindowHeaderWrap">
             <div class="ap-view newPopUpWindowHeader">
@@ -96,19 +96,23 @@
         <div class="newPresentationThemesWrap" id="standardWrap">
             <div class="oneRwoWrap">
                 <div class="newPresentationThemeItemWrap">
-                    <div class="newPresentationThemeItemThumbnail" id="PT1" onclick="createNewPresentation(event);"></div>
+                    <div class="newPresentationThemeItemThumbnail" id="PT1"
+                         onclick="createNewPresentation(event);"></div>
                     <div class="newPresentationThemeItemDescription">Black</div>
                 </div>
                 <div class="newPresentationThemeItemWrap">
-                    <div class="newPresentationThemeItemThumbnail" id="PT2" onclick="createNewPresentation(event);"></div>
+                    <div class="newPresentationThemeItemThumbnail" id="PT2"
+                         onclick="createNewPresentation(event);"></div>
                     <div class="newPresentationThemeItemDescription">White</div>
                 </div>
                 <div class="newPresentationThemeItemWrap">
-                    <div class="newPresentationThemeItemThumbnail" id="PT3" onclick="createNewPresentation(event);"></div>
+                    <div class="newPresentationThemeItemThumbnail" id="PT3"
+                         onclick="createNewPresentation(event);"></div>
                     <div class="newPresentationThemeItemDescription">Iron</div>
                 </div>
                 <div class="newPresentationThemeItemWrap">
-                    <div class="newPresentationThemeItemThumbnail" id="PT4" onclick="createNewPresentation(event);"></div>
+                    <div class="newPresentationThemeItemThumbnail" id="PT4"
+                         onclick="createNewPresentation(event);"></div>
                     <div class="newPresentationThemeItemDescription">Slick</div>
                 </div>
             </div>
@@ -116,19 +120,23 @@
         <div class="newPresentationThemesWrap" id="wideWrap">
             <div class="oneRwoWrap">
                 <div class="newPresentationThemeItemWrap">
-                    <div class="newPresentationThemeItemThumbnail wide" id="PT1w" onclick="createNewPresentation(event);"></div>
+                    <div class="newPresentationThemeItemThumbnail wide" id="PT1w"
+                         onclick="createNewPresentation(event);"></div>
                     <div class="newPresentationThemeItemDescription">Black</div>
                 </div>
                 <div class="newPresentationThemeItemWrap">
-                    <div class="newPresentationThemeItemThumbnail wide" id="PT2w" onclick="createNewPresentation(event);"></div>
+                    <div class="newPresentationThemeItemThumbnail wide" id="PT2w"
+                         onclick="createNewPresentation(event);"></div>
                     <div class="newPresentationThemeItemDescription">White</div>
                 </div>
                 <div class="newPresentationThemeItemWrap">
-                    <div class="newPresentationThemeItemThumbnail wide" id="PT3w" onclick="createNewPresentation(event);"></div>
+                    <div class="newPresentationThemeItemThumbnail wide" id="PT3w"
+                         onclick="createNewPresentation(event);"></div>
                     <div class="newPresentationThemeItemDescription">Iron</div>
                 </div>
                 <div class="newPresentationThemeItemWrap">
-                    <div class="newPresentationThemeItemThumbnail wide" id="PT4w" onclick="createNewPresentation(event);"></div>
+                    <div class="newPresentationThemeItemThumbnail wide" id="PT4w"
+                         onclick="createNewPresentation(event);"></div>
                     <div class="newPresentationThemeItemDescription">Slick</div>
                 </div>
             </div>
@@ -167,10 +175,12 @@
         <div class="navbar-header">
             <a class="navbar-brand" href="#">Visualization Module</a>
         </div>
-        <div id="navbar">
-            <ul class="nav navbar-nav">
+        <div id="navbar row">
+            <ul class="nav navbar-nav col-xs-4">
+
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">File <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">File
+                        <span class="caret"></span></a>
                     <ul class="dropdown-menu navbar-inverse op-nav-drop-down" role="menu">
                         <li><a href="">New Presentation</a></li>
                         <li><a onclick="saveCurrentSlide()">Save Presentation</a></li>
@@ -180,7 +190,8 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Edit <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Edit
+                        <span class="caret"></span></a>
                     <ul class="dropdown-menu navbar-inverse op-nav-drop-down" role="menu">
                         <li><a onclick="addTextField();">Insert Text Box</a></li>
                         <li><a onclick="">Delete Selected Text</a></li>
@@ -192,34 +203,41 @@
                 </li>
 
 
-                <div class="dropdown pull-left newSlideButton" role="group" aria-label="...">
-                    <button type="button" class="dropdown-toggle btn-black" data-toggle="dropdown"
-                            aria-expanded="false">
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-expanded="false">
                         New Slide
-                        <!--<span class="caret"></span>-->
-                    </button>
+                        <span class="caret"></span>
+                    </a>
                     <ul class="dropdown-menu navbar-inverse op-nav-drop-down themeDropdown" role="menu">
                         <li class="dropdownThemeCard" id="themeCard1"></li>
                         <li class="dropdownThemeCard" id="themeCard2"></li>
                         <li class="dropdownThemeCard" id="themeCard3"></li>
                         <li class="dropdownThemeCard" id="themeCard4"></li>
                     </ul>
-                </div>
+                </li>
 
-                <div class="dropdown pull-left newSlideButton" role="group" aria-label="...">
-                    <button type="button" class="dropdown-toggle btn-black" data-toggle="dropdown"
-                            aria-expanded="false">
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-expanded="false">
                         Change Themes
-                        <!--<span class="caret"></span>-->
-                    </button>
+                        <span class="caret"></span>
+                    </a>
                     <ul class="dropdown-menu navbar-inverse op-nav-drop-down themeDropdown" role="menu">
                         <li class="dropdownThemeCard" id="themeStyle1"></li>
                         <li class="dropdownThemeCard" id="themeStyle2"></li>
                         <li class="dropdownThemeCard" id="themeStyle3"></li>
                         <li class="dropdownThemeCard" id="themeStyle4"></li>
                     </ul>
-                </div>
-
+                </li>
+            </ul>
+            <ul class="nav navbar-nav col-xs-4 ">
+                <li class="">
+                    <a href="#" onclick="toggleGridSnap()" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-expanded="false">
+                        <i class="glyphicon glyphicon-th"></i>
+                    </a>
+                </li>
             </ul>
         </div>
         <!--/.nav-collapse -->
@@ -231,20 +249,25 @@
     <div class="col-xs-2 op-sidebar no-select">
         <div class="slideWrap">
             <!--<div class="slidesThumbnail" id="stn1">-->
-                <!--<div class="pageNumber">1</div>-->
+            <!--<div class="pageNumber">1</div>-->
             <!--</div>-->
             <!--<div class="slidesThumbnail" id="stn2">-->
-                <!--<div class="pageNumber">2</div>-->
+            <!--<div class="pageNumber">2</div>-->
             <!--</div>-->
             <!--<div class="slidesThumbnail" id="stn3">-->
-                <!--<div class="pageNumber">3</div>-->
+            <!--<div class="pageNumber">3</div>-->
             <!--</div>-->
             <!--<div class="slidesThumbnail" id="stn4">-->
-                <!--<div class="pageNumber">4</div>-->
+            <!--<div class="pageNumber">4</div>-->
             <!--</div>-->
         </div>
     </div>
     <div class="col-xs-10 op-pptContainer">
+
+            <div class="snappingDiv sideDiveUp"></div>
+            <div class="snappingDiv sideDiveDown"></div>
+            <div class="snappingDiv sideDiveLeft"></div>
+            <div class="snappingDiv sideDiveRight"></div>
         <div class="op-slideContainer" id="slideContent">
         </div>
     </div>
@@ -259,8 +282,10 @@
 
         <!-- Nav tabs -->
         <ul class="nav nav-tabs tabWrap" role="tablist">
-            <li role="presentation"><a href="#components" aria-controls="components" role="tab" data-toggle="tab">Components</a></li>
-            <li role="presentation" class="active"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab">Properties</a></li>
+            <li role="presentation"><a href="#components" aria-controls="components" role="tab" data-toggle="tab">Components</a>
+            </li>
+            <li role="presentation" class="active"><a href="#properties" aria-controls="properties" role="tab"
+                                                      data-toggle="tab">Properties</a></li>
         </ul>
 
         <!-- Tab panes -->
@@ -277,7 +302,7 @@
                     </div>
                     <div class="col-xs-3 propertyPanelTextDiv">
                         <div class="ui-icon-newwinE"></div>
-                        <div class="propertyValue" id="topValue">- </div>
+                        <div class="propertyValue" id="topValue">-</div>
                         <div class="propertyValue" id="leftValue">-</div>
                         <div class="propertyValue" id="widthValue">-</div>
                         <div class="propertyValue" id="heightValue">-</div>
@@ -290,9 +315,15 @@
                         <!--<div>Width:<input type="text" onchange="updateEleWidth();"/> </div>-->
                         <!--<div>Height:<input type="text" onchange="updateEleHeight();"/></div>-->
                         <!--<div>zIndex:<input type="text" onchange="updateEleZIndex()"/></div>-->
-                        <div>Width: <div id="slider1"></div> </div>
-                        <div>Height: <div id="slider2"></div> </div>
-                        <div>zIndex: <div id="slider3"></div> </div>
+                        <div>Width:
+                            <div id="slider1"></div>
+                        </div>
+                        <div>Height:
+                            <div id="slider2"></div>
+                        </div>
+                        <div>zIndex:
+                            <div id="slider3"></div>
+                        </div>
 
                     </div>
                 </div>

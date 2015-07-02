@@ -54,17 +54,8 @@ function addTextField(e) {
     var tempET = new ETextObject(++lastId);
     etArray.push(tempET);
     $(".op-slideContainer").append(tempET.domE);
-    $('#et' + tempET.id)
-        .draggable({
-            containment: "parent",
-            //grid: [ 10, 10 ],
-            snap: '#slideContent'
-        })
-        .resizable({
-            handles: 'ne, se, sw, nw, s, w, e, n',
-            //grid: [ 10, 10 ],
-            //containment: "parent"
-        });
+    applyDraggable($('#et' + tempET.id));
+
     if (e) {
         $('#et' + tempET.id).css({
             top: e.pageY - 80 + "px",
@@ -143,24 +134,14 @@ function loadSlide(num) {
     highlightCurrent();
     setTimeout(function () {
         for (var i = 1; i <= AllSlides[num].numOfBoxes; i++) {
-            $('#et' + i)
-                .draggable({
-                    containment: "parent",
-                    //grid: [ 10, 10 ],
-                    snap: '#slideContent'
-                })
-                .resizable({
-                    handles: 'ne, se, sw, nw, s, w, e, n',
-                    //grid: [ 10, 10 ],
-                    //containment: "parent"
-                });
+            applyDraggable($('#et' + i));
         }
     }, 1000);
     lastId = AllSlides[num].numOfBoxes;
 }
 
-function newSlide(content,isFirstTime) {
-    if(isFirstTime===true){
+function newSlide(content, isFirstTime) {
+    if (isFirstTime === true) {
         saveCurrentSlide();
     }
 //    ++currentSlideNum;
@@ -200,7 +181,7 @@ function updateEleWidth() {
 }
 
 function deleteSlide(index) {
-    $('#stn'+index).remove();
+    $('#stn' + index).remove();
 //    AllSlides.splice(index,1);
 //    totalSlideNum--;
     resortAllSlides();
@@ -208,7 +189,7 @@ function deleteSlide(index) {
 
 function findIndexFromArray(slideNum) {
     for (var i = 0; i < AllSlides.length; i++) {
-        if(slideNum==$(AllSlides[1].domHtml).attr('id').substring(2)){
+        if (slideNum == $(AllSlides[1].domHtml).attr('id').substring(2)) {
             return i;
         }
     }
@@ -219,3 +200,85 @@ function changeTheme(id) {
     $('#customizedCss').remove();
     $('head').append('<link id="customizedCss" rel="stylesheet" href="themes/pt' + id + '.css" type="text/css" />');
 }
+
+function toggleGridSnap() {
+    if (toggleGridSnapFlag) {
+        $('.editText').draggable("option", "grid", [10, 10]);
+    } else {
+        $('.editText').draggable("option", "grid", false);
+    }
+    toggleGridSnapFlag = !toggleGridSnapFlag;
+}
+
+function applyDraggable(jObj) {
+    jObj
+        .draggable({
+            drag: function (event, ui) {
+                var draggable = $(this).data("ui-draggable");
+                $.each(draggable.snapElements, function (index, element) {
+                    ui = $.extend({}, ui, {
+                        snapElement: $(element.item),
+                        snapping: element.snapping
+                    });
+                    if (element.snapping) {
+                        if (!element.snappingKnown) {
+                            element.snappingKnown = true;
+                            draggable._trigger("snapped", event, ui);
+                        }
+                    } else if (element.snappingKnown) {
+                        element.snappingKnown = false;
+                        draggable._trigger("snapLeft", event, ui);
+                    }
+                });
+            },
+            containment: "parent",
+            snap: '#slideContent,.editText',
+            snapTolerance: 5,
+            snapped: function (event, ui) {
+                $(ui.helper).css('border-color', 'red');
+                ui.snapElement.css('border-color', 'red');
+            },
+            snapLeft: function (event, ui) {
+                $(ui.helper).css('border-color', 'rgba(0, 0, 0, 0.2)');
+                ui.snapElement.css('border-color', 'rgba(0, 0, 0, 0.2)');
+            },
+            stop: function (event, ui) {
+                $(ui.helper).css('border-color', 'rgba(0, 0, 0, 0.2)');
+//                ui.snapElement.css('border-color', 'rgba(0, 0, 0, 0.2)');
+            }
+        })
+//        .resizable("destroy")
+        .resizable({
+            handles: 'ne, se, sw, nw, s, w, e, n'
+        })
+}
+//    jObj
+//        .draggable({
+//            drag: function (event, ui) {
+//                var draggable = $(this).data("ui-draggable");
+//                $.each(draggable.snapElements, function (index, element) {
+//                    ui = $.extend({}, ui, {
+//                        snapElement: $(element.item),
+//                        snapping: element.snapping
+//                    });
+//                    if (element.snapping) {
+//                        if (!element.snappingKnown) {
+//                            element.snappingKnown = true;
+//                            draggable._trigger("snapped", event, ui);
+//                        }
+//                    } else if (element.snappingKnown) {
+//                        element.snappingKnown = false;
+//                    }
+//                });
+//            },
+//            containment: "parent",
+//            //grid: [ 10, 10 ],
+//            snap: '#slideContent,.editText',
+//            snapTolerance: 5,
+//            snapped: function (event, ui) {
+//                console.log("baga");
+//            }
+//        })
+//        .resizable({
+//            handles: 'ne, se, sw, nw, s, w, e, n',
+//        });

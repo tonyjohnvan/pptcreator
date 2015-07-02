@@ -16,6 +16,8 @@ var AllSlides = [];
 
 var rightClickSlide = "";
 
+var toggleGridSnapFlag = false;
+
 $(document).ready(function () {
     "use strict";
 
@@ -41,18 +43,8 @@ $(document).ready(function () {
         CKEDITOR.instances[target.attr('id')].on('blur', function () {
             //console.log('onblur fired at ' + target.attr('id'));
 //            setTimeout(function () {
-            $('#' + target.attr('id'))
-                .draggable({
-                    containment: "parent",
-                    //grid: [ 10, 10 ],
-                    snap: '#slideContent'
-                }).resizable("destroy")
-                .resizable({
-                    handles: 'ne, se, sw, nw, s, w, e, n',
-                    //grid: [ 10, 10 ],
-                    //containment: "parent"
-                });
-//            }, 200);
+            applyDraggable($('#' + target.attr('id')));
+
             updatePropertyPanel();
             settingCurrentItem();
         });
@@ -65,7 +57,7 @@ $(document).ready(function () {
             $('#' + target.attr('id'))
                 .resizable({
                     handles: 'ne, se, sw, nw, s, w, e, n',
-                    //grid: [ 10, 10 ],
+//                    grid: [ 10, 10 ],
                     //containment: "parent"
                 });
         }, 1);
@@ -73,6 +65,7 @@ $(document).ready(function () {
         var target = $(ev.target).closest('.editText');
         settingCurrentItem(target);
         updatePropertyPanel(target.attr('id'));
+        console.log($(ev.target).offset().top);
     }).delegate('.editText', 'dragend', function (ev) {
 //        settingCurrentItem();
 //        updatePropertyPanel();

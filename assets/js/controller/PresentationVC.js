@@ -47,6 +47,7 @@ function NewPresentationNameBack() {
 function FinishCreatingNewPresentation() {
     presentationName = $('#newPresentationNameInput').val() || "Presentation";
     $('#fileNamePanel').addClass('animated fadeOut');
+
     setTimeout(function () {
         $('#fileNamePanel').hide().removeClass('animated fadeOut');
     }, 1000);
@@ -56,13 +57,13 @@ function FinishCreatingNewPresentation() {
         $('.loadingIndicator').hide(400);
         $('.newPresentationWindowWrap').removeClass('animated fadeIn').addClass('animated fadeOut');
         $('.newPresentationWindow').addClass('animated fadeOutDownBig');
-    }, 3000);
+    }, 2000);
+
     setTimeout(function () {
         $('.newPresentationWindowWrap').hide().removeClass('animated fadeOut');
         $('.newPresentationWindow').hide().removeClass('animated fadeOutDownBig');
-
         $('.slideWrap').sortable({placeholder: "ui-state-highlight"}).disableSelection();
-    }, 4000);
+    }, 3000);
 
     initializePresentation();
 }
