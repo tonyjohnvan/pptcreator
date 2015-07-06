@@ -434,6 +434,7 @@ button.btn-black:active {
     z-index: 1001;
     min-width: 1440px;
     min-height: 900px;
+    display: none;
 }
 
 .searchPresentationWrap {
@@ -915,9 +916,9 @@ button.btn-black:active {
 }
 
 .snappingDiv{
-    background-color: transparent;
+    background-color: red;
     position: absolute;
-    /*display: none;*/
+    display: none;
 }
 .sideDiveUp,
 .sideDiveDown{

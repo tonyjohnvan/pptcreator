@@ -2,54 +2,6 @@
  * Created by fanzhang on 6/10/15.
  */
 
-// --- NotUsed ---
-//function enableEdit(ev) {
-//    ev.preventDefault();
-////    console.log($(ev.target).closest('.editText'));
-//    var target = $(ev.target).closest('.editText');
-//    console.log(target);
-//    if (!target.hasClass("cke_editable_inline")) {
-//        CKEDITOR.disableAutoInline = true;
-//        CKEDITOR.inline(target.attr('id'));
-//        console.log(target.attr('id'));
-//        currentEditId = target.attr('id');
-//        $('#' + target.attr('id')).draggable("destroy");
-//
-//        CKEDITOR.instances[target.attr('id')].on('blur', function () {
-//            console.log('onblur fired at ' + target.attr('id'));
-//            setTimeout(function () {
-//                $('#' + target.attr('id'))
-//                    .draggable({
-//                        containment: "parent"
-//                    }).resizable("destroy")
-//                    .resizable({
-//                        handles: "se",
-//                        containment: "parent"
-//                    });
-//            }, 100);
-//
-//        });
-//    } else {
-//        console.log(target.attr('id'));
-//        $('#' + target.attr('id')).draggable("destroy");
-//
-//        CKEDITOR.instances[target.attr('id')].on('blur', function () {
-//            console.log('onblur fired at ' + target.attr('id'));
-//            setTimeout(function () {
-//                $('#' + target.attr('id'))
-//                    .draggable({
-//                        containment: "parent"
-//                    }).resizable("destroy")
-//                    .resizable({
-//                        handles: "se",
-//                        containment: "parent"
-//                    });
-//            }, 100);
-//        });
-//    }
-//}
-
-
 function addTextField(e) {
     var tempET = new ETextObject(++lastId);
     etArray.push(tempET);
@@ -235,16 +187,16 @@ function applyDraggable(jObj) {
             snap: '#slideContent,.editText',
             snapTolerance: 5,
             snapped: function (event, ui) {
-                $(ui.helper).css('border-color', 'red');
-                ui.snapElement.css('border-color', 'red');
+                $(ui.helper).css('border-color', 'rgba(255,0,0,0.2)');
+                ui.snapElement.css('border-color', 'rgba(255,0,0,0.2)');
             },
             snapLeft: function (event, ui) {
-                $(ui.helper).css('border-color', 'rgba(0, 0, 0, 0.2)');
-                ui.snapElement.css('border-color', 'rgba(0, 0, 0, 0.2)');
+                $(ui.helper).css('border-color', '#167efb');
+                ui.snapElement.css('border-color', 'rgba(0,0,0,0.2)');
             },
             stop: function (event, ui) {
-                $(ui.helper).css('border-color', 'rgba(0, 0, 0, 0.2)');
-//                ui.snapElement.css('border-color', 'rgba(0, 0, 0, 0.2)');
+                $('.editText').css('border-color', 'rgba(0, 0, 0, 0.2)');
+                $(ui.helper).css('border-color', '#167efb');
             }
         })
 //        .resizable("destroy")
@@ -252,33 +204,48 @@ function applyDraggable(jObj) {
             handles: 'ne, se, sw, nw, s, w, e, n'
         })
 }
-//    jObj
-//        .draggable({
-//            drag: function (event, ui) {
-//                var draggable = $(this).data("ui-draggable");
-//                $.each(draggable.snapElements, function (index, element) {
-//                    ui = $.extend({}, ui, {
-//                        snapElement: $(element.item),
-//                        snapping: element.snapping
-//                    });
-//                    if (element.snapping) {
-//                        if (!element.snappingKnown) {
-//                            element.snappingKnown = true;
-//                            draggable._trigger("snapped", event, ui);
-//                        }
-//                    } else if (element.snappingKnown) {
-//                        element.snappingKnown = false;
-//                    }
-//                });
-//            },
-//            containment: "parent",
-//            //grid: [ 10, 10 ],
-//            snap: '#slideContent,.editText',
-//            snapTolerance: 5,
-//            snapped: function (event, ui) {
-//                console.log("baga");
-//            }
-//        })
-//        .resizable({
-//            handles: 'ne, se, sw, nw, s, w, e, n',
-//        });
+
+
+function updateShadowBorder(top, left, width, height) {
+    $('.snappingDiv').hide();
+    var right = left + width;
+    var bottom = top + height;
+    var target = $('.op-slideContainer');
+    var targetOffset = target.offset();
+    if (top == targetOffset.top) {
+        $('.sideDiveUp').show()
+    }
+
+    if (left == targetOffset.left) {
+        $('.sideDiveLeft').show()
+    }
+
+    if (right == targetOffset.left + target.width() - 2) {
+        $('.sideDiveRight').show()
+    }
+
+    if (bottom == targetOffset.top + target.height() - 2) {
+        $('.sideDiveDown').show()
+    }
+}
+
+function deselectCurrentEl(target) {
+    itemSelected = false;
+    $('.editText').css('border', '1px solid rgba(0,0,0,0.2)');
+
+    updatePropertyPanel();
+    settingCurrentItem();
+    if(target){
+        target.blur();
+    }
+}
+function selectCurrentEl(target) {
+
+    lastSelectedItem = target;
+
+    itemSelected = true;
+    target.css('border', '1px solid #167efb');
+
+    settingCurrentItem(target);
+    updatePropertyPanel(target.attr('id'));
+}

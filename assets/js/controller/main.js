@@ -18,45 +18,70 @@ var rightClickSlide = "";
 
 var toggleGridSnapFlag = false;
 
+var itemSelected = false;
+
+var lastSelectedItem = null;
+
 $(document).ready(function () {
     "use strict";
 
     CKEDITOR.disableAutoInline = true;
     highlightCurrent();
+
+    $('.op-slideContainer').click(function (e) {
+        console.log(e.target);
+        if (itemSelected && $(e.target).hasClass('op-slideContainer')) {
+            deselectCurrentEl();
+        }
+    });
+
     // MAKE EVENT on every new text box
     $(".op-slideContainer").delegate('.editText', 'click', function (ev) {
-        ev.preventDefault();
+        //click to select div
         var target = $(ev.target).closest('.editText');
-//        if (target.html() == 'Click to Edit') {
-//            target.html('');
-//        }
-        settingCurrentItem(target);
-        updatePropertyPanel(target.attr('id'));
-        //console.log(target);
 
-        if (target.hasClass("ui-draggable")) {
-            $('#' + target.attr('id')).draggable("destroy");
-        }
-        if (!target.hasClass("cke_editable_inline")) {
-            CKEDITOR.inline(target.attr('id'));
-        }
-        CKEDITOR.instances[target.attr('id')].on('blur', function () {
-            //console.log('onblur fired at ' + target.attr('id'));
-//            setTimeout(function () {
-            applyDraggable($('#' + target.attr('id')));
+        if (!itemSelected) {
+            selectCurrentEl(target);
+        } else {
+            if (lastSelectedItem.attr('id') == target.attr('id')) {
+                if (target.hasClass("ui-draggable")) {
+                    $('#' + target.attr('id')).draggable("destroy");
+                }
+                if (!target.hasClass("cke_editable_inline")) {
+                    CKEDITOR.inline(target.attr('id'));
+                    target.focus();
+                } else {
+                    target.focus();
+                }
+                CKEDITOR.instances[target.attr('id')].on('blur', function () {
+                    applyDraggable($('#' + target.attr('id')));
+                    deselectCurrentEl();
+                });
+            } else {
+                deselectCurrentEl(lastSelectedItem);
+//                deselectCurrentEl();
+//                selectCurrentEl(target);
 
-            updatePropertyPanel();
-            settingCurrentItem();
-        });
+            }
+
+        }
+
 
     }).delegate('.editText', 'keydown', function (e) {
+        var key = (e.keyCode ? e.keyCode : e.which);
+        console.log(key);
+        if (key == 65) {
+            e.preventDefault();
+            deselectCurrentEl(lastSelectedItem);
+        }
+
         var target = $(e.target);
         $('#' + target.attr('id'))
             .resizable("destroy");
         setTimeout(function () {
             $('#' + target.attr('id'))
                 .resizable({
-                    handles: 'ne, se, sw, nw, s, w, e, n',
+                    handles: 'ne, se, sw, nw, s, w, e, n'
 //                    grid: [ 10, 10 ],
                     //containment: "parent"
                 });
@@ -64,19 +89,28 @@ $(document).ready(function () {
     }).delegate('.editText', 'drag', function (ev) {
         var target = $(ev.target).closest('.editText');
         settingCurrentItem(target);
+
+        deselectCurrentEl();
+        selectCurrentEl(target);
+
         updatePropertyPanel(target.attr('id'));
-        console.log($(ev.target).offset().top);
+
+        updateShadowBorder($(ev.target).offset().top, $(ev.target).offset().left, $(ev.target).width(), $(ev.target).height());
+
     }).delegate('.editText', 'dragend', function (ev) {
 //        settingCurrentItem();
 //        updatePropertyPanel();
+        selectCurrentEl(target);
     }).delegate('.editText', 'resize', function (ev) {
         var target = $(ev.target).closest('.editText');
         settingCurrentItem(target);
         updatePropertyPanel(target.attr('id'));
     }).delegate('.editText', 'blur', function (ev) {
+        var target = $(ev.target).closest('.editText');
         setTimeout(function () {
-            settingCurrentItem();
-            updatePropertyPanel();
+//            settingCurrentItem();
+//            updatePropertyPanel();
+            deselectCurrentEl();
         }, 100);
     });
 
