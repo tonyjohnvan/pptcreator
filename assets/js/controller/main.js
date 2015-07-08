@@ -22,6 +22,10 @@ var itemSelected = false;
 
 var lastSelectedItem = null;
 
+var isMultiSelect = false;
+
+var multiSelectedItems = [];
+
 $(document).ready(function () {
     "use strict";
 
@@ -42,6 +46,7 @@ $(document).ready(function () {
 
         if (!itemSelected) {
             selectCurrentEl(target);
+            return 0;
         } else {
             if (lastSelectedItem.attr('id') == target.attr('id')) {
                 if (target.hasClass("ui-draggable")) {
@@ -90,12 +95,39 @@ $(document).ready(function () {
         var target = $(ev.target).closest('.editText');
         settingCurrentItem(target);
 
-        deselectCurrentEl();
-        selectCurrentEl(target);
+//        deselectCurrentEl();
+//        selectCurrentEl(target);
 
         updatePropertyPanel(target.attr('id'));
 
         updateShadowBorder($(ev.target).offset().top, $(ev.target).offset().left, $(ev.target).width(), $(ev.target).height());
+
+        //checking centralized
+//        var opCanvas = $('.op-slideContainer');
+//        var opCanvasOffset = opCanvas.offset();
+//        var middle = {
+//            top: $(ev.target).offset().top + ($(ev.target).height() / 2),
+//            left: $(ev.target).offset().left + ($(ev.target).width() / 2)
+//        };
+//        var middleLineTop = opCanvasOffset.top + (opCanvas.height() / 2) - 2;
+//        var middleLineLeft = opCanvasOffset.left + (opCanvas.width() / 2) - 2;
+//
+//        console.log(middle.top + '|' + middle.left + '/' + middleLineTop + '|' + middleLineLeft);
+//        if (middleLineTop - 3 <= middle.top && middle.top <= middleLineTop + 3) {
+//            $('.sideDiveCenterH').show();
+////            target.offset({top:middleLineTop-target.height()/2})
+////                .draggable("destroy")
+////            setTimeout(function () {
+////                target
+////                .draggable({
+////                    axis: "x"
+////                });
+////            },10)
+//        }
+//        if (middleLineLeft - 3 <= middle.left && middle.left <= middleLineLeft + 3) {
+//            $('.sideDiveCenterV').show();
+//        }
+
 
     }).delegate('.editText', 'dragend', function (ev) {
 //        settingCurrentItem();

@@ -103,7 +103,7 @@ body, html {
 /*.editText h4,*/
 /*.editText h5,*/
 /*.editText a*/
- {
+  {
     cursor: text;
 }
 
@@ -903,7 +903,7 @@ button.btn-black:active {
     bottom: -5px;
 }
 
-#slideContentShadow{
+#slideContentShadow {
     position: absolute;
     top: 0;
 
@@ -915,33 +915,54 @@ button.btn-black:active {
     z-index: 5;
 }
 
-.snappingDiv{
+.snappingDiv {
     background-color: red;
     position: absolute;
     display: none;
 }
+
 .sideDiveUp,
-.sideDiveDown{
+.sideDiveCenterH,
+.sideDiveDown {
     width: 1024px;
     height: 1px;
 }
+
 .sideDiveLeft,
-.sideDiveRight{
+.sideDiveCenterV,
+.sideDiveRight {
     height: 768px;
     width: 1px;
 }
 
 .sideDiveUp,
-.sideDiveLeft{
+.sideDiveLeft {
     top: 50px;
     left: 65px;
 }
 
-.sideDiveDown{
+.sideDiveDown {
     top: 818px;
     left: 65px;
 }
-.sideDiveRight{
+
+.sideDiveRight {
     top: 50px;
     left: 1089px;
+}
+
+.sideDiveCenterH {
+    margin-left: 50px;
+    margin-top: 23px;
+    top: 50%;
+}
+
+.sideDiveCenterV {
+    margin-top: 50px;
+    margin-left: -23px;
+    left: 50%;
+}
+
+.MultiSelect-toggle {
+    background: transparent;
 }

@@ -183,9 +183,9 @@ function applyDraggable(jObj) {
                     }
                 });
             },
-            containment: "parent",
+//            containment: "parent",
             snap: '#slideContent,.editText',
-            snapTolerance: 5,
+            snapTolerance: 3,
             snapped: function (event, ui) {
                 $(ui.helper).css('border-color', 'rgba(255,0,0,0.2)');
                 ui.snapElement.css('border-color', 'rgba(255,0,0,0.2)');
@@ -197,6 +197,7 @@ function applyDraggable(jObj) {
             stop: function (event, ui) {
                 $('.editText').css('border-color', 'rgba(0, 0, 0, 0.2)');
                 $(ui.helper).css('border-color', '#167efb');
+                $('.snappingDiv').hide();
             }
         })
 //        .resizable("destroy")
@@ -208,6 +209,8 @@ function applyDraggable(jObj) {
 
 function updateShadowBorder(top, left, width, height) {
     $('.snappingDiv').hide();
+    var tolerance = 4;
+
     var right = left + width;
     var bottom = top + height;
     var target = $('.op-slideContainer');
@@ -227,6 +230,36 @@ function updateShadowBorder(top, left, width, height) {
     if (bottom == targetOffset.top + target.height() - 2) {
         $('.sideDiveDown').show()
     }
+
+    var middle = {
+        top: top + (height / 2),
+        left: left + (width / 2)
+    };
+    var middleLineTop = targetOffset.top + (target.height() / 2) - 2;
+    var middleLineLeft = targetOffset.left + (target.width() / 2) - 2;
+
+    console.log(middle.top + '|' + middle.left + '/' + middleLineTop + '|' + middleLineLeft);
+
+
+    if (!(middleLineTop - tolerance < middle.top && middle.top < middleLineTop + tolerance)
+        && !(middleLineLeft - tolerance < middle.left && middle.left < middleLineLeft + tolerance)) {
+        $('.editText').draggable("option", "grid", false);
+    }
+
+
+    if (middleLineTop - tolerance < middle.top && middle.top < middleLineTop + tolerance) {
+        $('.sideDiveCenterH').show();
+        $('.editText').draggable("option", "grid", [1, tolerance+1]);
+    }
+    if (middleLineLeft - tolerance < middle.left && middle.left < middleLineLeft + tolerance) {
+        $('.sideDiveCenterV').show();
+        $('.editText').draggable("option", "grid", [tolerance+1, 1]);
+    }
+
+    if ((middleLineTop - tolerance < middle.top && middle.top < middleLineTop + tolerance)
+        && (middleLineLeft - tolerance < middle.left && middle.left < middleLineLeft + tolerance)) {
+        $('.editText').draggable("option", "grid", [tolerance+1, tolerance+1]);
+    }
 }
 
 function deselectCurrentEl(target) {
@@ -235,7 +268,7 @@ function deselectCurrentEl(target) {
 
     updatePropertyPanel();
     settingCurrentItem();
-    if(target){
+    if (target) {
         target.blur();
     }
 }
@@ -249,3 +282,33 @@ function selectCurrentEl(target) {
     settingCurrentItem(target);
     updatePropertyPanel(target.attr('id'));
 }
+
+function toggleMultiSelect() {
+    if (isMultiSelect) {
+        disableMultiSelect();
+    } else {
+        enableMultiselect();
+    }
+}
+
+function disableMultiSelect() {
+    isMultiSelect = false;
+    $('.MultiSelect-toggle').css({
+        'background': 'transparent'
+    })
+}
+
+function enableMultiselect() {
+    isMultiSelect = true;
+    $('.MultiSelect-toggle').css({
+        'background': 'black'
+    })
+}
+
+//function addToSelectedItems(id) {
+//    multiSelectedItems.push(id);
+//}
+//
+//function removeFromSelectedItems(id) {
+//    multiSelectedItems.push(id);
+//}
