@@ -26,125 +26,125 @@ var isMultiSelect = false;
 
 var multiSelectedItems = [];
 
+var resizingHost;
+
 $(document).ready(function () {
     "use strict";
 
     CKEDITOR.disableAutoInline = true;
     highlightCurrent();
 
-    $('.op-slideContainer').click(function (e) {
+    //ghostSizing Draggable
+    applyDraggable($('.ghostSizing'));
+
+    $('.op-slideContainer').on('mousedown', function (e) {
         console.log(e.target);
-        if (itemSelected && $(e.target).hasClass('op-slideContainer')) {
-            deselectCurrentEl();
+        if ($(e.target).hasClass('op-slideContainer')) {
+//            deselectCurrentEl();
+//            $('.ghostSizing').hide();
+
+            updateHostSpec();
+            $('.ghostSizing').hide();
         }
+
+    });
+
+    // v2
+    $(".op-slideContainer").delegate('.slidItem', 'click', function (ev) {
+        var target = $(ev.target).closest('.slidItem');
+        resizingHost = target.attr('id').substring(2) - 1;
+        console.log(resizingHost);
+        $('.ghostSizing')
+            .css({
+                top: AllSlides[currentSlideNum].content[resizingHost].top - 5,
+                left: AllSlides[currentSlideNum].content[resizingHost].left - 5,
+                width: AllSlides[currentSlideNum].content[resizingHost].width + 10,
+                height: AllSlides[currentSlideNum].content[resizingHost].height + 10
+            })
+            .show()
+    }).delegate('.slidItem', 'blur', function (ev) {
     });
 
     // MAKE EVENT on every new text box
-    $(".op-slideContainer").delegate('.editText', 'click', function (ev) {
-        //click to select div
-        var target = $(ev.target).closest('.editText');
-
-        if (!itemSelected) {
-            selectCurrentEl(target);
-            return 0;
-        } else {
-            if (lastSelectedItem.attr('id') == target.attr('id')) {
-                if (target.hasClass("ui-draggable")) {
-                    $('#' + target.attr('id')).draggable("destroy");
-                }
-                if (!target.hasClass("cke_editable_inline")) {
-                    CKEDITOR.inline(target.attr('id'));
-                    target.focus();
-                } else {
-                    target.focus();
-                }
-                CKEDITOR.instances[target.attr('id')].on('blur', function () {
-                    applyDraggable($('#' + target.attr('id')));
-                    deselectCurrentEl();
-                });
-            } else {
-                deselectCurrentEl(lastSelectedItem);
-//                deselectCurrentEl();
-//                selectCurrentEl(target);
-
-            }
-
-        }
-
-
-    }).delegate('.editText', 'keydown', function (e) {
-        var key = (e.keyCode ? e.keyCode : e.which);
-        console.log(key);
-        if (key == 65) {
-            e.preventDefault();
-            deselectCurrentEl(lastSelectedItem);
-        }
-
-        var target = $(e.target);
-        $('#' + target.attr('id'))
-            .resizable("destroy");
-        setTimeout(function () {
-            $('#' + target.attr('id'))
-                .resizable({
-                    handles: 'ne, se, sw, nw, s, w, e, n'
-//                    grid: [ 10, 10 ],
-                    //containment: "parent"
-                });
-        }, 1);
-    }).delegate('.editText', 'drag', function (ev) {
-        var target = $(ev.target).closest('.editText');
-        settingCurrentItem(target);
-
-//        deselectCurrentEl();
-//        selectCurrentEl(target);
-
-        updatePropertyPanel(target.attr('id'));
-
-        updateShadowBorder($(ev.target).offset().top, $(ev.target).offset().left, $(ev.target).width(), $(ev.target).height());
-
-        //checking centralized
-//        var opCanvas = $('.op-slideContainer');
-//        var opCanvasOffset = opCanvas.offset();
-//        var middle = {
-//            top: $(ev.target).offset().top + ($(ev.target).height() / 2),
-//            left: $(ev.target).offset().left + ($(ev.target).width() / 2)
-//        };
-//        var middleLineTop = opCanvasOffset.top + (opCanvas.height() / 2) - 2;
-//        var middleLineLeft = opCanvasOffset.left + (opCanvas.width() / 2) - 2;
+    // v1 - abandoned
+//    $(".op-slideContainer").delegate('.editText', 'click', function (ev) {
+//        //click to select div
+//        var target = $(ev.target).closest('.editText');
 //
-//        console.log(middle.top + '|' + middle.left + '/' + middleLineTop + '|' + middleLineLeft);
-//        if (middleLineTop - 3 <= middle.top && middle.top <= middleLineTop + 3) {
-//            $('.sideDiveCenterH').show();
-////            target.offset({top:middleLineTop-target.height()/2})
-////                .draggable("destroy")
-////            setTimeout(function () {
-////                target
-////                .draggable({
-////                    axis: "x"
-////                });
-////            },10)
+//        if (!itemSelected) {
+//            selectCurrentEl(target);
+//            return 0;
+//        } else {
+//            if (lastSelectedItem.attr('id') == target.attr('id')) {
+//                if (target.hasClass("ui-draggable")) {
+//                    $('#' + target.attr('id')).draggable("destroy");
+//                }
+//                if (!target.hasClass("cke_editable_inline")) {
+//                    CKEDITOR.inline(target.attr('id'));
+//                    target.focus();
+//                } else {
+//                    target.focus();
+//                }
+//                CKEDITOR.instances[target.attr('id')].on('blur', function () {
+//                    applyDraggable($('#' + target.attr('id')));
+//                    deselectCurrentEl();
+//                });
+//            } else {
+//                deselectCurrentEl(lastSelectedItem);
+////                deselectCurrentEl();
+////                selectCurrentEl(target);
+//
+//            }
+//
 //        }
-//        if (middleLineLeft - 3 <= middle.left && middle.left <= middleLineLeft + 3) {
-//            $('.sideDiveCenterV').show();
+//
+//
+//    }).delegate('.editText', 'keydown', function (e) {
+//        var key = (e.keyCode ? e.keyCode : e.which);
+//        console.log(key);
+//        if (key == 65) {
+//            e.preventDefault();
+//            deselectCurrentEl(lastSelectedItem);
 //        }
-
-
-    }).delegate('.editText', 'dragend', function (ev) {
-//        settingCurrentItem();
-//        updatePropertyPanel();
-        selectCurrentEl(target);
-    }).delegate('.editText', 'resize', function (ev) {
-        var target = $(ev.target).closest('.editText');
-        settingCurrentItem(target);
-        updatePropertyPanel(target.attr('id'));
-    }).delegate('.editText', 'blur', function (ev) {
-        var target = $(ev.target).closest('.editText');
-        setTimeout(function () {
-//            settingCurrentItem();
-//            updatePropertyPanel();
-            deselectCurrentEl();
-        }, 100);
-    });
+//
+//        var target = $(e.target);
+//        $('#' + target.attr('id'))
+//            .resizable("destroy");
+//        setTimeout(function () {
+//            $('#' + target.attr('id'))
+//                .resizable({
+//                    handles: 'ne, se, sw, nw, s, w, e, n'
+////                    grid: [ 10, 10 ],
+//                    //containment: "parent"
+//                });
+//        }, 1);
+//    }).delegate('.editText', 'drag', function (ev) {
+//        var target = $(ev.target).closest('.editText');
+//        settingCurrentItem(target);
+//
+////        deselectCurrentEl();
+////        selectCurrentEl(target);
+//
+//        updatePropertyPanel(target.attr('id'));
+//
+//        updateShadowBorder($(ev.target).offset().top, $(ev.target).offset().left, $(ev.target).width(), $(ev.target).height());
+//
+//    }).delegate('.editText', 'dragend', function (ev) {
+////        settingCurrentItem();
+////        updatePropertyPanel();
+//        selectCurrentEl(target);
+//    }).delegate('.editText', 'resize', function (ev) {
+//        var target = $(ev.target).closest('.editText');
+//        settingCurrentItem(target);
+//        updatePropertyPanel(target.attr('id'));
+//    }).delegate('.editText', 'blur', function (ev) {
+//        var target = $(ev.target).closest('.editText');
+//        setTimeout(function () {
+////            settingCurrentItem();
+////            updatePropertyPanel();
+//            deselectCurrentEl();
+//        }, 100);
+//    });
 
 
     // MAKE THE floating panel floating...

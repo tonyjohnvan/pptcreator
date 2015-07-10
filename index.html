@@ -39,7 +39,7 @@
 
     <div class="newPresentationNavBar">
         <div class="newPresentationNavBarWrapper">
-            <div class="logoWrap"><i class="glyphicon glyphicon-tasks"></i>Quantilus Visualization Module</div>
+            <div class="logoWrap"><i class="glyphicon glyphicon-tasks"></i>Visualization Module</div>
         </div>
     </div>
 
@@ -270,12 +270,14 @@
     </div>
     <div class="col-xs-10 op-pptContainer">
 
-            <div class="snappingDiv sideDiveUp"></div>
-            <div class="snappingDiv sideDiveDown"></div>
-            <div class="snappingDiv sideDiveLeft"></div>
-            <div class="snappingDiv sideDiveRight"></div>
-            <div class="snappingDiv sideDiveCenterH"></div>
-            <div class="snappingDiv sideDiveCenterV"></div>
+        <div class="snappingDiv sideDiveUp"></div>
+        <div class="snappingDiv sideDiveDown"></div>
+        <div class="snappingDiv sideDiveLeft"></div>
+        <div class="snappingDiv sideDiveRight"></div>
+        <div class="snappingDiv sideDiveCenterH"></div>
+        <div class="snappingDiv sideDiveCenterV"></div>
+        <div class="ghostSizing"></div>
+
         <div class="op-slideContainer" id="slideContent">
         </div>
     </div>
@@ -298,7 +300,34 @@
 
         <!-- Tab panes -->
         <div class="tab-content detailPanel">
-            <div role="tabpanel" class="tab-pane" id="components">components</div>
+            <div role="tabpanel" class="tab-pane" id="components">
+                <ul class="componentsList">
+                    <!--<li class="oneComponent" data-siId="1">-->
+                        <!--<i class="text">T</i>-->
+                        <!--<p>Click to Edit</p>-->
+                    <!--</li>-->
+                    <!--<li class="oneComponent" data-siId="1">-->
+                        <!--<i class="text">T</i>-->
+                        <!--<p>Click to Edit</p>-->
+                    <!--</li>-->
+                    <!--<li class="oneComponent" data-siId="1">-->
+                        <!--<i class="text">T</i>-->
+                        <!--<p>Click to Edit</p>-->
+                    <!--</li>-->
+                    <!--<li class="oneComponent" data-siId="1">-->
+                        <!--<i class="text">T</i>-->
+                        <!--<p>Click to Edit</p>-->
+                    <!--</li>-->
+                    <!--<li class="oneComponent" data-siId="1">-->
+                        <!--<i class="text">T</i>-->
+                        <!--<p>Click to Edit</p>-->
+                    <!--</li>-->
+                    <!--<li class="oneComponent" data-siId="1">-->
+                        <!--<i class="text">T</i>-->
+                        <!--<p>Click to Edit</p>-->
+                    <!--</li>-->
+                </ul>
+            </div>
             <div role="tabpanel" class="tab-pane active" id="properties">
                 <div class="row">
                     <div class="col-xs-2 text-right propertyPanelTextDiv">
@@ -368,6 +397,8 @@
 <script src="assets/js/controller/functions.js"></script>
 <script src="assets/js/controller/main.js"></script>
 <script src="assets/js/controller/PresentationVC.js"></script>
+<script src="assets/js/controller/slideObjectVC.js"></script>
+<script src="assets/js/model/slideObject.js"></script>
 <script src="plugins/jQueryUI/jquery-ui.min.js"></script>
 <!--<script src="plugins/jquery.ui.resizable.snap.ext.js"></script>-->
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

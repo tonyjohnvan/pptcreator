@@ -3,17 +3,33 @@
  */
 
 function addTextField(e) {
-    var tempET = new ETextObject(++lastId);
-    etArray.push(tempET);
-    $(".op-slideContainer").append(tempET.domE);
-    applyDraggable($('#et' + tempET.id));
+    //this is ver 1:
+//    var tempET = new ETextObject(++lastId);
+//    etArray.push(tempET);
+//    $(".op-slideContainer").append(tempET.domE);
+//    applyDraggable($('#et' + tempET.id));
+//
+//    if (e) {
+//        $('#et' + tempET.id).css({
+//            top: e.pageY - 80 + "px",
+//            left: e.pageX - 250 + "px"
+//        });
+//    }
 
+    //this is ver 2:
+    var sob = new SlideObj(++lastId);
     if (e) {
-        $('#et' + tempET.id).css({
-            top: e.pageY - 80 + "px",
-            left: e.pageX - 250 + "px"
-        });
+        sob.top = e.pageY - 80;
+        sob.left = e.pageX - 250;
     }
+    AllSlides[currentSlideNum].content.push(sob);
+    renderSlide(AllSlides[currentSlideNum]);
+
+    // add item in components window
+    $('.componentsList').append('<li class="oneComponent" data-siId="1">' +
+        '<i class="text">T</i>' +
+        '<p>Click to Edit</p>' +
+        '</li>');
 }
 
 function updatePropertyPanel(id) {
@@ -96,6 +112,9 @@ function newSlide(content, isFirstTime) {
     if (isFirstTime === true) {
         saveCurrentSlide();
     }
+    var slide = new Slide(totalSlideNum);
+    AllSlides.push(slide);
+    currentSlideNum = totalSlideNum;
 //    ++currentSlideNum;
     $('.slideWrap').append(
             '<div class="slidesThumbnail" id="stn' + ++totalSlideNum + '">\
@@ -103,7 +122,7 @@ function newSlide(content, isFirstTime) {
              </div>'
     );
     clearCurrentSlide();
-    currentSlideNum = totalSlideNum;
+
     if (content) {
         setContent(content);
         setTimeout(function () {
@@ -182,9 +201,10 @@ function applyDraggable(jObj) {
                         draggable._trigger("snapLeft", event, ui);
                     }
                 });
+                updateShadowBorder($(event.target).offset().top, $(event.target).offset().left, $(event.target).width(), $(event.target).height());
             },
 //            containment: "parent",
-            snap: '#slideContent,.editText',
+            snap: '#slideContent,.slidItem',
             snapTolerance: 3,
             snapped: function (event, ui) {
                 $(ui.helper).css('border-color', 'rgba(255,0,0,0.2)');
@@ -198,11 +218,15 @@ function applyDraggable(jObj) {
                 $('.editText').css('border-color', 'rgba(0, 0, 0, 0.2)');
                 $(ui.helper).css('border-color', '#167efb');
                 $('.snappingDiv').hide();
+                updateHostSpec();
             }
         })
 //        .resizable("destroy")
         .resizable({
-            handles: 'ne, se, sw, nw, s, w, e, n'
+            handles: 'ne, se, sw, nw, s, w, e, n',
+            stop: function (event, ui) {
+                updateHostSpec()
+            }
         })
 }
 
@@ -243,22 +267,22 @@ function updateShadowBorder(top, left, width, height) {
 
     if (!(middleLineTop - tolerance < middle.top && middle.top < middleLineTop + tolerance)
         && !(middleLineLeft - tolerance < middle.left && middle.left < middleLineLeft + tolerance)) {
-        $('.editText').draggable("option", "grid", false);
+        $('.ghostSizing').draggable("option", "grid", false);
     }
 
 
     if (middleLineTop - tolerance < middle.top && middle.top < middleLineTop + tolerance) {
         $('.sideDiveCenterH').show();
-        $('.editText').draggable("option", "grid", [1, tolerance+1]);
+        $('.ghostSizing').draggable("option", "grid", [1, tolerance + 1]);
     }
     if (middleLineLeft - tolerance < middle.left && middle.left < middleLineLeft + tolerance) {
         $('.sideDiveCenterV').show();
-        $('.editText').draggable("option", "grid", [tolerance+1, 1]);
+        $('.ghostSizing').draggable("option", "grid", [tolerance + 1, 1]);
     }
 
     if ((middleLineTop - tolerance < middle.top && middle.top < middleLineTop + tolerance)
         && (middleLineLeft - tolerance < middle.left && middle.left < middleLineLeft + tolerance)) {
-        $('.editText').draggable("option", "grid", [tolerance+1, tolerance+1]);
+        $('.ghostSizing').draggable("option", "grid", [tolerance + 1, tolerance + 1]);
     }
 }
 
@@ -312,3 +336,14 @@ function enableMultiselect() {
 //function removeFromSelectedItems(id) {
 //    multiSelectedItems.push(id);
 //}
+
+function updateHostSpec() {
+    var target = $('.ghostSizing');
+    var host = AllSlides[currentSlideNum].content[resizingHost];
+    host.top = parseInt(target.css('top').substring(0, target.css('top').length - 2)) + 5;
+    host.left = parseInt(target.css('left').substring(0, target.css('top').length - 2)) + 5;
+    host.width = parseInt(target.css('width').substring(0, target.css('top').length - 2)) - 10;
+    host.height = parseInt(target.css('height').substring(0, target.css('top').length - 2)) - 10;
+    host.content = $('#si' + (resizingHost + 1)).html();
+    renderSlide(AllSlides[currentSlideNum]);
+}
