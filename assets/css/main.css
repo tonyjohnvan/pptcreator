@@ -140,6 +140,7 @@ body, html {
     border-left: 1px solid #222;
     border-right: 1px solid #222;
     border-bottom: 1px solid #222;
+    overflow: scroll;
 }
 
 .tabWrap a {
@@ -993,10 +994,15 @@ button.btn-black:active {
     font-size: 11px;
     font-weight: 500;
     height: 40px;
+    min-height: 40px;
+    max-height: 40px;
     border: 1px solid #000;
     clear: right;
-    width: 100%;
+    width: 269px;
+    min-width: 269px;
+    max-width: 269px;
     margin-bottom: -1px;
+    background: #555;
 }
 
 .oneComponent p {
@@ -1004,6 +1010,7 @@ button.btn-black:active {
     vertical-align: middle;
     border-left: 1px solid #000;
     padding: 0 15px;
+    overflow: hidden;
 }
 
 .oneComponent .text {
@@ -1017,4 +1024,5 @@ button.btn-black:active {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+    width: 30px;
 }

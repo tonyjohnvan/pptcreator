@@ -26,10 +26,11 @@ function addTextField(e) {
     renderSlide(AllSlides[currentSlideNum]);
 
     // add item in components window
-    $('.componentsList').append('<li class="oneComponent" data-siId="1">' +
+    $('.componentsList').append('<li class="oneComponent" data-siId="' + lastId + '">' +
         '<i class="text">T</i>' +
-        '<p>Click to Edit</p>' +
+        '<p>Double Click to Edit</p>' +
         '</li>');
+    $(".componentsList").sortable().disableSelection();
 }
 
 function updatePropertyPanel(id) {
@@ -339,11 +340,17 @@ function enableMultiselect() {
 
 function updateHostSpec() {
     var target = $('.ghostSizing');
-    var host = AllSlides[currentSlideNum].content[resizingHost];
-    host.top = parseInt(target.css('top').substring(0, target.css('top').length - 2)) + 5;
-    host.left = parseInt(target.css('left').substring(0, target.css('top').length - 2)) + 5;
-    host.width = parseInt(target.css('width').substring(0, target.css('top').length - 2)) - 10;
-    host.height = parseInt(target.css('height').substring(0, target.css('top').length - 2)) - 10;
-    host.content = $('#si' + (resizingHost + 1)).html();
-    renderSlide(AllSlides[currentSlideNum]);
+    if (currentSlideNum != undefined && resizingHost != undefined) {
+        var host = AllSlides[currentSlideNum].content[resizingHost];
+        host.top = parseInt(target.css('top').substring(0, target.css('top').length - 2)) + 5;
+        host.left = parseInt(target.css('left').substring(0, target.css('top').length - 2)) + 5;
+        host.width = parseInt(target.css('width').substring(0, target.css('top').length - 2)) - 10;
+        host.height = parseInt(target.css('height').substring(0, target.css('top').length - 2)) - 10;
+        host.content = $('#si' + (resizingHost + 1)).html();
+        $('.oneComponent[data-siid=' + (resizingHost + 1) + '] p').html(host.content.length > 20 ? host.content.substring(0,19) + '...' : host.content);
+        renderSlide(AllSlides[currentSlideNum]);
+    }
+}
+
+function updateComponentList() {
 }

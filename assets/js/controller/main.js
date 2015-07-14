@@ -38,7 +38,7 @@ $(document).ready(function () {
     applyDraggable($('.ghostSizing'));
 
     $('.op-slideContainer').on('mousedown', function (e) {
-        console.log(e.target);
+//        console.log(e.target);
         if ($(e.target).hasClass('op-slideContainer')) {
 //            deselectCurrentEl();
 //            $('.ghostSizing').hide();
@@ -63,6 +63,29 @@ $(document).ready(function () {
             })
             .show()
     }).delegate('.slidItem', 'blur', function (ev) {
+    }).delegate('.slidItem', 'keydown', function (ev) {
+        var key = (ev.keyCode ? ev.keyCode : ev.which);
+        if (key == 13) {
+            ev.preventDefault();
+            deselectCurrentEl(lastSelectedItem);
+
+            updateHostSpec();
+            $('.ghostSizing').hide();
+        }
+    });
+
+    $('.componentsList').delegate('.oneComponent', 'dblclick', function (ev) {
+        resizingHost = $(ev.target).closest('.oneComponent').attr('data-siId') - 1;
+        $('.ghostSizing')
+            .css({
+                top: AllSlides[currentSlideNum].content[resizingHost].top - 5,
+                left: AllSlides[currentSlideNum].content[resizingHost].left - 5,
+                width: AllSlides[currentSlideNum].content[resizingHost].width + 10,
+                height: AllSlides[currentSlideNum].content[resizingHost].height + 10
+            })
+            .show();
+        $('#si'+ (resizingHost+1)).focus();
+        updateHostSpec();
     });
 
     // MAKE EVENT on every new text box

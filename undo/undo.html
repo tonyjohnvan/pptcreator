@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div id='text' contentEditable='true'></div>
+<button id='undo'>Undo</button>
+<button id='redo'>Redo</button>
+
+</body>
+<script src="../plugins/undo.js"></script>
+<script src="../plugins/jQuery1112.js"></script>
+<script>
+    $(function () {
+        // We’ll alias `$` to `querySelector` because, reasons.
+        var text = $('#text');
+        var undo = $('#undo');
+        var redo = $('#redo');
+
+        var stack = new Undo.Stack();
+
+        var EditCommand = Undo.Command.extend({
+            constructor: function (textarea, oldValue, newValue) {
+                this.textarea = textarea;
+                this.oldValue = oldValue;
+                this.newValue = newValue;
+            },
+            undo: function () {
+                this.textarea.innerHTML = this.oldValue;
+            },
+            redo: function () {
+                this.textarea.innerHTML = this.newValue;
+            }
+        });
+
+        var newValue = '';
+
+
+        var observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+                newValue = mutation.target.innerHTML;
+                if (newValue !== startValue) {
+                    stack.execute(new EditCommand(text, startValue, newValue));
+                    startValue = newValue;
+                }
+            });
+        });
+
+    });
+</script>
+</html>
