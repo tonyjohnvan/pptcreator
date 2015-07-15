@@ -5,22 +5,51 @@
     <title></title>
 </head>
 <body>
+<button class="undo">Undo</button>
+<button class="redo">Redo</button>
+<button class="save" href="#">Save<span class="dirty">*</span></button>
 
-<div id='text' contentEditable='true'></div>
-<button id='undo'>Undo</button>
-<button id='redo'>Redo</button>
-
+<div id="text" contenteditable="true">
+    Type something here
+</div>
 </body>
-<script src="../plugins/undo.js"></script>
 <script src="../plugins/jQuery1112.js"></script>
+<script src="../plugins/undo.js"></script>
 <script>
-    $(function () {
+    document.addEventListener("DOMContentLoaded", function () {
         // We’ll alias `$` to `querySelector` because, reasons.
-        var text = $('#text');
-        var undo = $('#undo');
-        var redo = $('#redo');
-
+        var x = document.querySelector.bind(document);
+        var text = x("#text");
+        var startValue = text.innerHTML;
+//        var blocked = false;
+        var undo = x(".undo");
+        var redo = x(".redo");
+        var save = x(".save");
+        var dirty = x(".dirty");
+//        var stack = new Undo.Stack();
+//        var newValue = "";
         var stack = new Undo.Stack();
+        var newValue = "";
+
+        var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+
+        var observer = new MutationObserver(function (mutations) {
+            if (blocked) {
+                blocked = false;
+                return;
+            }
+            newValue = text.innerHTML;
+            stack.execute(new EditCommand(text, startValue, newValue));
+            startValue = newValue;
+        });
+
+        observer.observe(text, {
+            attributes: true,
+            childList: true,
+            characterData: true,
+            characterDataOldValue: true,
+            subtree: true
+        });
 
         var EditCommand = Undo.Command.extend({
             constructor: function (textarea, oldValue, newValue) {
@@ -28,27 +57,120 @@
                 this.oldValue = oldValue;
                 this.newValue = newValue;
             },
+            execute: function () {
+            },
             undo: function () {
+                blocked = true;
                 this.textarea.innerHTML = this.oldValue;
             },
+
             redo: function () {
+                blocked = true;
                 this.textarea.innerHTML = this.newValue;
             }
         });
 
-        var newValue = '';
 
+        function stackUI() {
+            redo.disabled = !stack.canRedo();
+            undo.disabled = !stack.canUndo();
+            dirty.style.display = stack.dirty() ? 'inline-block' : 'none';
 
-        var observer = new MutationObserver(function (mutations) {
-            mutations.forEach(function (mutation) {
-                newValue = mutation.target.innerHTML;
-                if (newValue !== startValue) {
-                    stack.execute(new EditCommand(text, startValue, newValue));
-                    startValue = newValue;
-                }
-            });
+        }
+
+        stackUI();
+
+        undo.addEventListener("click", function () {
+            stack.undo();
         });
 
+        redo.addEventListener("click", function () {
+            stack.redo();
+        });
+
+        save.addEventListener("click", function () {
+            stack.save();
+        });
+
+        stack.changed = function () {
+            stackUI();
+        };
+
+    }); document.addEventListener("DOMContentLoaded", function () {
+
+        var x = document.querySelector.bind(document);
+        var text = x("#text");
+        var startValue = text.innerHTML;
+        var blocked = false;
+        var undo = x(".undo");
+        var redo = x(".redo");
+        var save = x(".save");
+        var dirty = x(".dirty");
+        var stack = new Undo.Stack();
+        var newValue = "";
+
+        var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+
+        var observer = new MutationObserver(function (mutations) {
+            if(blocked){
+                blocked = false;
+                return;
+            }
+            newValue = text.innerHTML;
+            stack.execute(new EditCommand(text, startValue, newValue));
+            startValue = newValue;
+        });
+
+        observer.observe(text, {
+            attributes: true,
+            childList: true,
+            characterData: true,
+            characterDataOldValue: true,
+            subtree: true
+        });
+
+        var EditCommand = Undo.Command.extend({
+            constructor: function (textarea, oldValue, newValue) {
+                this.textarea = textarea;
+                this.oldValue = oldValue;
+                this.newValue = newValue;
+            },
+            execute: function () {},
+            undo: function () {
+                blocked = true;
+                this.textarea.innerHTML = this.oldValue;
+            },
+
+            redo: function () {
+                blocked = true;
+                this.textarea.innerHTML = this.newValue;
+            }
+        });
+
+
+        function stackUI() {
+            redo.disabled = !stack.canRedo();
+            undo.disabled = !stack.canUndo();
+            dirty.style.display = stack.dirty() ? 'inline-block' : 'none';
+
+        }
+        stackUI();
+
+        undo.addEventListener("click", function () {
+            stack.undo();
+        });
+
+        redo.addEventListener("click", function () {
+            stack.redo();
+        });
+
+        save.addEventListener("click", function () {
+            stack.save();
+        });
+
+        stack.changed = function () {
+            stackUI();
+        };
     });
 </script>
 </html>
