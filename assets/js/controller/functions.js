@@ -349,6 +349,7 @@ function updateHostSpec() {
         host.content = $('#si' + (resizingHost + 1)).html();
         $('.oneComponent[data-siid=' + (resizingHost + 1) + '] p').html(host.content.length > 20 ? host.content.substring(0,19) + '...' : host.content);
         renderSlide(AllSlides[currentSlideNum]);
+        addToStack();
     }
 }
 

@@ -21,5 +21,3 @@ function Slide(slidId) {
     this.content = [];
 }
 
-// redo - undo stack
-

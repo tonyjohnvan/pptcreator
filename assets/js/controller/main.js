@@ -54,12 +54,21 @@ $(document).ready(function () {
         var target = $(ev.target).closest('.slidItem');
         resizingHost = target.attr('id').substring(2) - 1;
         console.log(resizingHost);
+        var ghostTop, ghostLeft, ghostWidth, ghostHeight;
+        if (isMultiSelect) {
+
+        } else {
+            ghostTop = AllSlides[currentSlideNum].content[resizingHost].top - 5;
+            ghostLeft = AllSlides[currentSlideNum].content[resizingHost].left - 5;
+            ghostWidth = AllSlides[currentSlideNum].content[resizingHost].width + 10;
+            ghostHeight = AllSlides[currentSlideNum].content[resizingHost].height + 10;
+        }
         $('.ghostSizing')
             .css({
-                top: AllSlides[currentSlideNum].content[resizingHost].top - 5,
-                left: AllSlides[currentSlideNum].content[resizingHost].left - 5,
-                width: AllSlides[currentSlideNum].content[resizingHost].width + 10,
-                height: AllSlides[currentSlideNum].content[resizingHost].height + 10
+                top: ghostTop,
+                left: ghostLeft,
+                width: ghostWidth,
+                height: ghostHeight
             })
             .show()
     }).delegate('.slidItem', 'blur', function (ev) {
@@ -84,7 +93,7 @@ $(document).ready(function () {
                 height: AllSlides[currentSlideNum].content[resizingHost].height + 10
             })
             .show();
-        $('#si'+ (resizingHost+1)).focus();
+        $('#si' + (resizingHost + 1)).focus();
         updateHostSpec();
     });
 
