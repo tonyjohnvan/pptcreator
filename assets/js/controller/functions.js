@@ -185,6 +185,10 @@ function toggleGridSnap() {
 function applyDraggable(jObj) {
     jObj
         .draggable({
+            start: function (event, ui) {
+                initTop = event.pageY;
+                initLeft = event.pageX;
+            },
             drag: function (event, ui) {
                 var draggable = $(this).data("ui-draggable");
                 $.each(draggable.snapElements, function (index, element) {
@@ -219,14 +223,26 @@ function applyDraggable(jObj) {
                 $('.editText').css('border-color', 'rgba(0, 0, 0, 0.2)');
                 $(ui.helper).css('border-color', '#167efb');
                 $('.snappingDiv').hide();
-                updateHostSpec();
+                if (isMultiSelect) {
+                    var deltaTop = event.pageY - initTop;
+                    var deltaLeft = event.pageX - initLeft;
+                    updateMultipleHost(deltaTop, deltaLeft);
+                } else {
+                    updateHostSpec();
+                }
             }
         })
 //        .resizable("destroy")
         .resizable({
             handles: 'ne, se, sw, nw, s, w, e, n',
+            start: function (event, ui) {
+            },
             stop: function (event, ui) {
-                updateHostSpec()
+                if (isMultiSelect) {
+                    updateMultipleHostResize(ui.originalPosition, ui.position, ui.originalSize, ui.size);
+                } else {
+                    updateHostSpec();
+                }
             }
         })
 }
@@ -342,16 +358,128 @@ function updateHostSpec() {
     var target = $('.ghostSizing');
     if (currentSlideNum != undefined && resizingHost != undefined) {
         var host = AllSlides[currentSlideNum].content[resizingHost];
-        host.top = parseInt(target.css('top').substring(0, target.css('top').length - 2)) + 5;
-        host.left = parseInt(target.css('left').substring(0, target.css('top').length - 2)) + 5;
-        host.width = parseInt(target.css('width').substring(0, target.css('top').length - 2)) - 10;
-        host.height = parseInt(target.css('height').substring(0, target.css('top').length - 2)) - 10;
+        host.top = target.getCss('top') + 5;
+        host.left = target.getCss('left') + 5;
+        host.width = target.getCss('width') - 10;
+        host.height = target.getCss('height') - 10;
         host.content = $('#si' + (resizingHost + 1)).html();
-        $('.oneComponent[data-siid=' + (resizingHost + 1) + '] p').html(host.content.length > 20 ? host.content.substring(0,19) + '...' : host.content);
+        $('.oneComponent[data-siid=' + (resizingHost + 1) + '] p').html(host.content.length > 20 ? host.content.substring(0, 19) + '...' : host.content);
         renderSlide(AllSlides[currentSlideNum]);
         addToStack();
     }
 }
 
-function updateComponentList() {
+function updateMultipleHost(deltaTop, deltaLeft) {
+    for (var i = 0; i < multiSelectedItems.length; i++) {
+        var host = AllSlides[currentSlideNum].content[multiSelectedItems[i]];
+        host.top += deltaTop;
+        host.left += deltaLeft;
+//        host.width = target.getCss('width') - 10;
+//        host.height = target.getCss('height') - 10;
+//        host.content = $('#si' + (resizingHost + 1)).html();
+    }
+    renderSlide(AllSlides[currentSlideNum]);
 }
+
+function updateComponentList() {
+
+}
+
+function calculateGhostSize(items) {
+    var gTop, gLeft, gWidth, gHeight;
+    if (items.length > 0) {
+        var firstEl = $('#si' + (items[0] + 1));
+        gTop = firstEl.getCss('top');
+        gLeft = firstEl.getCss('left');
+        gWidth = firstEl.getCss('width') + firstEl.getCss('left') - gLeft;
+        gHeight = firstEl.getCss('height') + firstEl.getCss('top') - gTop;
+        for (var i = 0; i < items.length; i++) {
+            var currentEl = $('#si' + (items[i] + 1));
+            gTop = gTop > currentEl.getCss('top') ? currentEl.getCss('top') : gTop;
+            gLeft = gLeft > currentEl.getCss('left') ? currentEl.getCss('left') : gLeft;
+        }
+        for (var i = 0; i < items.length; i++) {
+            var currentEl = $('#si' + (items[i] + 1));
+            gWidth = gWidth < currentEl.getCss('width') + currentEl.getCss('left') - gLeft ?
+                currentEl.getCss('width') + currentEl.getCss('left') - gLeft :
+                gWidth;
+            gHeight = currentEl.getCss('height') + currentEl.getCss('top') - gTop ?
+                currentEl.getCss('height') + currentEl.getCss('top') - gTop :
+                gHeight;
+        }
+    }
+    return {gTop: gTop, gLeft: gLeft, gWidth: gWidth, gHeight: gHeight};
+}
+
+function updateMultipleHostResize(origPosition, position, origSize, size) {
+    var factorW, factorH, ghostSize;
+
+    factorW = size.width / origSize.width;
+    factorH = size.height / origSize.height;
+    ghostSize = calculateGhostSize(multiSelectedItems);
+
+    if (origPosition.left == position.left
+        &&
+        origPosition.top == position.top) {
+
+        for (var i = 0; i < multiSelectedItems.length; i++) {
+            var host = AllSlides[currentSlideNum].content[multiSelectedItems[i]];
+            host.width *= factorW;
+            host.height *= factorH;
+            if (host.left - ghostSize.gLeft > 0) {
+                host.left = ghostSize.gLeft + (host.left - ghostSize.gLeft) * factorW;
+            }
+            if (host.top - ghostSize.gTop > 0) {
+                host.top = ghostSize.gTop + (host.top - ghostSize.gTop) * factorH;
+            }
+        }
+        renderSlide(AllSlides[currentSlideNum]);
+        ghostSize = calculateGhostSize(multiSelectedItems);
+        $('.ghostSizing')
+            .css({
+                top: ghostSize.gTop - 5,
+                left: ghostSize.gLeft - 5,
+                width: ghostSize.gWidth + 10,
+                height: ghostSize.gHeight + 10
+            });
+    } else {
+
+        for (var i = 0; i < multiSelectedItems.length; i++) {
+            var host = AllSlides[currentSlideNum].content[multiSelectedItems[i]];
+            var oldLeft = host.left;
+            var oldTop = host.top;
+            var oldWidth = host.width;
+            var oldHeight = host.height;
+            host.width *= factorW;
+            host.height *= factorH;
+            // 2 page calculation for universal situation #1 try.
+            host.left = - ( (origPosition.left + origSize.width - oldLeft - oldWidth) * factorW - position.left - size.width + host.width);
+            host.top = - ( (origPosition.top + origSize.height - oldTop - oldHeight) * factorH - position.top - size.height + host.height);
+        }
+
+        renderSlide(AllSlides[currentSlideNum]);
+        ghostSize = calculateGhostSize(multiSelectedItems);
+        $('.ghostSizing')
+            .css({
+                top: ghostSize.gTop - 5,
+                left: ghostSize.gLeft - 5,
+                width: ghostSize.gWidth + 10,
+                height: ghostSize.gHeight + 10
+            });
+    }
+}
+
+jQuery.fn.extend({
+    getCss: function (key) {
+        switch (key) {
+            case 'top':
+                return parseInt(this.css('top').substring(0, this.css('top').length - 2));
+            case 'left':
+                return parseInt(this.css('left').substring(0, this.css('left').length - 2));
+            case 'width':
+                return parseInt(this.css('width').substring(0, this.css('width').length - 2));
+            case 'height':
+                return parseInt(this.css('height').substring(0, this.css('height').length - 2));
+        }
+    }
+});

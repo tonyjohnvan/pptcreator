@@ -39,7 +39,7 @@ $(function () {
 });
 
 function OPStackObj(targetId, innerHTML, width, height, left, top) {
-    this.id = undoStkId++;
+    this.id = undoStkId;
     this.targetId = targetId;
     this.innerHTML = innerHTML;
     this.width = width;
@@ -64,7 +64,7 @@ function updateSlideItem(opsObj) {
                 left: host.left - 5,
                 width: host.width + 10,
                 height: host.height + 10
-            })
+            });
 
         renderSlide(AllSlides[currentSlideNum]);
 

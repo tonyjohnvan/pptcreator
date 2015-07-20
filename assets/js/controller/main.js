@@ -28,6 +28,8 @@ var multiSelectedItems = [];
 
 var resizingHost;
 
+var initTop, initLeft, initSize;
+
 $(document).ready(function () {
     "use strict";
 
@@ -40,11 +42,13 @@ $(document).ready(function () {
     $('.op-slideContainer').on('mousedown', function (e) {
 //        console.log(e.target);
         if ($(e.target).hasClass('op-slideContainer')) {
-//            deselectCurrentEl();
-//            $('.ghostSizing').hide();
-
-            updateHostSpec();
+            if (isMultiSelect) {
+                updateMultipleHost(0, 0);
+            } else {
+                updateHostSpec();
+            }
             $('.ghostSizing').hide();
+            multiSelectedItems = [];
         }
 
     });
@@ -55,8 +59,15 @@ $(document).ready(function () {
         resizingHost = target.attr('id').substring(2) - 1;
         console.log(resizingHost);
         var ghostTop, ghostLeft, ghostWidth, ghostHeight;
-        if (isMultiSelect) {
 
+        if (isMultiSelect) {
+            multiSelectedItems.push(resizingHost);
+            var ghostSize = calculateGhostSize(multiSelectedItems);
+            ghostTop = ghostSize.gTop - 5;
+            ghostLeft = ghostSize.gLeft - 5;
+            ghostWidth = ghostSize.gWidth + 10;
+            ghostHeight = ghostSize.gHeight + 10;
+            target.css('background', 'rgba(0,50,255,0.2)');
         } else {
             ghostTop = AllSlides[currentSlideNum].content[resizingHost].top - 5;
             ghostLeft = AllSlides[currentSlideNum].content[resizingHost].left - 5;
@@ -78,8 +89,14 @@ $(document).ready(function () {
             ev.preventDefault();
             deselectCurrentEl(lastSelectedItem);
 
-            updateHostSpec();
+
+            if (isMultiSelect) {
+                updateMultipleHost(0, 0);
+            } else {
+                updateHostSpec();
+            }
             $('.ghostSizing').hide();
+            multiSelectedItems = [];
         }
     });
 
@@ -94,7 +111,12 @@ $(document).ready(function () {
             })
             .show();
         $('#si' + (resizingHost + 1)).focus();
-        updateHostSpec();
+
+        if (isMultiSelect) {
+            updateMultipleHost(0, 0);
+        } else {
+            updateHostSpec();
+        }
     });
 
     // MAKE EVENT on every new text box
