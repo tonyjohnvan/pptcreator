@@ -403,7 +403,7 @@ function calculateGhostSize(items) {
             gWidth = gWidth < currentEl.getCss('width') + currentEl.getCss('left') - gLeft ?
                 currentEl.getCss('width') + currentEl.getCss('left') - gLeft :
                 gWidth;
-            gHeight = currentEl.getCss('height') + currentEl.getCss('top') - gTop ?
+            gHeight = gHeight < currentEl.getCss('height') + currentEl.getCss('top') - gTop ?
                 currentEl.getCss('height') + currentEl.getCss('top') - gTop :
                 gHeight;
         }
@@ -453,8 +453,8 @@ function updateMultipleHostResize(origPosition, position, origSize, size) {
             host.width *= factorW;
             host.height *= factorH;
             // 2 page calculation for universal situation #1 try.
-            host.left = - ( (origPosition.left + origSize.width - oldLeft - oldWidth) * factorW - position.left - size.width + host.width);
-            host.top = - ( (origPosition.top + origSize.height - oldTop - oldHeight) * factorH - position.top - size.height + host.height);
+            host.left = -( (origPosition.left + origSize.width - oldLeft - oldWidth) * factorW - position.left - size.width + host.width);
+            host.top = -( (origPosition.top + origSize.height - oldTop - oldHeight) * factorH - position.top - size.height + host.height);
         }
 
         renderSlide(AllSlides[currentSlideNum]);

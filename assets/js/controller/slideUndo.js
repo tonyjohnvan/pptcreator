@@ -35,6 +35,8 @@ $(function () {
 //        dirty.toggle(undoStack.dirty());
     }
 
+    startValue = jQuery.extend(true, {}, AllSlides[currentSlideNum]);
+
     stackUI();
 });
 
@@ -49,31 +51,39 @@ function OPStackObj(targetId, innerHTML, width, height, left, top) {
 }
 
 function updateSlideItem(opsObj) {
-    if (opsObj.targetId != undefined) {
-        var host = AllSlides[currentSlideNum].content[opsObj.targetId];
-        host.top = opsObj.top;
-        host.left = opsObj.left;
-        host.width = opsObj.width;
-        host.height = opsObj.height;
-        host.content = opsObj.innerHTML;
-//        $('.oneComponent[data-siid=' + (opsObj.targetId + 1) + '] p').html(host.content.length > 20 ? host.content.substring(0, 19) + '...' : host.content);
+//    if (opsObj.targetId != undefined) {
+//        var host = AllSlides[currentSlideNum].content[opsObj.targetId];
+//        host.top = opsObj.top;
+//        host.left = opsObj.left;
+//        host.width = opsObj.width;
+//        host.height = opsObj.height;
+//        host.content = opsObj.innerHTML;
+////        $('.oneComponent[data-siid=' + (opsObj.targetId + 1) + '] p').html(host.content.length > 20 ? host.content.substring(0, 19) + '...' : host.content);
+//
+//        $('.ghostSizing')
+//            .css({
+//                top: host.top - 5,
+//                left: host.left - 5,
+//                width: host.width + 10,
+//                height: host.height + 10
+//            });
+//    }
 
-        $('.ghostSizing')
-            .css({
-                top: host.top - 5,
-                left: host.left - 5,
-                width: host.width + 10,
-                height: host.height + 10
-            });
-
-        renderSlide(AllSlides[currentSlideNum]);
-
-    }
+    renderSlide(opsObj);
 }
 
+//function addToStack() {
+//    var host = AllSlides[currentSlideNum].content[resizingHost];
+//    var newValue = new OPStackObj(resizingHost, host.content, host.width, host.height, host.left, host.top);
+//    if (newValue != startValue) {
+//        undoStack.execute(new EditCommand(startValue, newValue));
+//        startValue = newValue
+//    }
+//}
 function addToStack() {
-    var host = AllSlides[currentSlideNum].content[resizingHost];
-    var newValue = new OPStackObj(resizingHost, host.content, host.width, host.height, host.left, host.top);
+//    var host = AllSlides[currentSlideNum].content[resizingHost];
+
+    var newValue = jQuery.extend(true, {}, AllSlides[currentSlideNum]);
     if (newValue != startValue) {
         undoStack.execute(new EditCommand(startValue, newValue));
         startValue = newValue
