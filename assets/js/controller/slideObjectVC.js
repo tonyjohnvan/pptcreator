@@ -17,7 +17,7 @@ function renderSlide(slide) {
             'left: ' + domItem.left + 'px; ' +
             'width: ' + domItem.width + 'px; ' +
             'height: ' + domItem.height + 'px; ' +
-            'background: rgba(0, 50, 255, 0.2);' +
+//            'background: rgba(0, 50, 255, 0.2);' +
             'text-align: ' + domItem.textAlign +
             ';" ' +
             'id="si' + domItem.id + '">' + domItem.content +

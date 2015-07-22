@@ -239,10 +239,18 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="#" onclick="toggleMultiSelect()" class="MultiSelect-toggle"
+                    <button href="#" onclick="{undoStack.undo()}" class="undo"
                        aria-expanded="false">
-                        <i class="glyphicon glyphicon-th"></i>
-                    </a>
+                        <!--<i class="glyphicon glyphicon-asterisk"></i>-->
+                        Undo
+                    </button>
+                </li>
+                <li class="">
+                    <button href="#" onclick="{undoStack.redo()}" class="redo"
+                       aria-expanded="false">
+                        <!--<i class="glyphicon glyphicon-share-alt"></i>-->
+                        Redo
+                    </button>
                 </li>
             </ul>
         </div>

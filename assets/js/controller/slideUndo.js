@@ -30,12 +30,12 @@ $(function () {
         dirty = $(".dirty");
 
     function stackUI() {
-//        undo.attr("disabled", !undoStack.canUndo());
-//        redo.attr("disabled", !undoStack.canRedo());
+        undo.attr("disabled", !undoStack.canUndo());
+        redo.attr("disabled", !undoStack.canRedo());
 //        dirty.toggle(undoStack.dirty());
     }
 
-    startValue = jQuery.extend(true, {}, AllSlides[currentSlideNum]);
+//    startValue = $.extend(true, {}, AllSlides[currentSlideNum]);
 
     stackUI();
 });
@@ -82,9 +82,11 @@ function updateSlideItem(opsObj) {
 //}
 function addToStack() {
 //    var host = AllSlides[currentSlideNum].content[resizingHost];
-
-    var newValue = jQuery.extend(true, {}, AllSlides[currentSlideNum]);
-    if (newValue != startValue) {
+//    var newValue = $.extend(true, {}, AllSlides[currentSlideNum]);
+    var newValue = JSON.parse(JSON.stringify(AllSlides[currentSlideNum]));
+    var newValueContent = JSON.stringify(newValue.content);
+    var startValueContent = JSON.stringify(startValue.content);
+    if (newValueContent != startValueContent) {
         undoStack.execute(new EditCommand(startValue, newValue));
         startValue = newValue
     }

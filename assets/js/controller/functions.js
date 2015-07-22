@@ -85,13 +85,13 @@ function getScreenshotFor(slideNum) {
 }
 
 function saveCurrentSlide() {
-    $('.editText').attr('class', 'editText');
+//    $('.editText').attr('class', 'editText');
 //    currentSlideContent = $("#slideContent").html();
-    AllSlides[currentSlideNum] = {
-        'domHtml': $("#slideContent").html(),
-        'numOfBoxes': lastId
-    };
-    getScreenshotFor(currentSlideNum);
+//    AllSlides[currentSlideNum] = {
+//        'domHtml': $("#slideContent").html(),
+//        'numOfBoxes': lastId
+//    };
+    getScreenshotFor(currentSlideNum+1);
 //    loadSlide(currentSlideNum);
 }
 
@@ -99,21 +99,24 @@ function loadSlide(num) {
     saveCurrentSlide();
     currentSlideNum = num;
     clearCurrentSlide();
-    $('#slideContent').html(AllSlides[num].domHtml);
+//    $('#slideContent').html(AllSlides[num].domHtml);
     highlightCurrent();
-    setTimeout(function () {
-        for (var i = 1; i <= AllSlides[num].numOfBoxes; i++) {
-            applyDraggable($('#et' + i));
-        }
-    }, 1000);
-    lastId = AllSlides[num].numOfBoxes;
+//    setTimeout(function () {
+//        for (var i = 1; i <= AllSlides[num].numOfBoxes; i++) {
+//            applyDraggable($('#et' + i));
+//        }
+//    }, 1000);
+    lastId = AllSlides[num].content.length;
+    renderSlide(AllSlides[num]);
 }
 
 function newSlide(content, isFirstTime) {
-    if (isFirstTime === true) {
-        saveCurrentSlide();
-    }
     var slide = new Slide(totalSlideNum);
+
+    if (content) {
+        slide.content = content.content;
+    }
+
     AllSlides.push(slide);
     currentSlideNum = totalSlideNum;
 //    ++currentSlideNum;
@@ -124,18 +127,22 @@ function newSlide(content, isFirstTime) {
     );
     clearCurrentSlide();
 
-    if (content) {
-        setContent(content);
-        setTimeout(function () {
-            loadSlide(currentSlideNum);
-        }, 1);
-    }
     highlightCurrent();
     resortAllSlides();
+    startValue = JSON.parse(JSON.stringify(AllSlides[currentSlideNum]));
+
+    setTimeout(function(){
+        loadSlide(currentSlideNum);
+    },100);
+    if (isFirstTime === true) {
+        saveCurrentSlide();
+    }
+    saveCurrentSlide();
 }
 
 function setContent(content) {
-    $('.op-slideContainer').html(content);
+//    $('.op-slideContainer').html(content);
+
 }
 
 function clearCurrentSlide() {
@@ -144,7 +151,7 @@ function clearCurrentSlide() {
 
 function highlightCurrent() {
     $('.slidesThumbnail').css("border", '4px solid #464646');
-    $('#stn' + currentSlideNum).css('border', '4px solid rgba(0, 127, 122, 0.5)');
+    $('#stn' + (currentSlideNum+1)).css('border', '4px solid rgba(0, 127, 122, 0.5)');
 //    $($('.slidesThumbnail')[currentSlideNum-1]).css("border",'4px solid rgba(0, 127, 122, 0.5);');
 }
 

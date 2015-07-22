@@ -6,7 +6,7 @@ var lastId = 0;
 var etArray = [];
 
 var currentItem;
-var currentSlideNum = 0;
+var currentSlideNum = 1;
 
 var currentSlideContent = "";
 
@@ -235,7 +235,8 @@ $(document).ready(function () {
     $('.slideWrap').delegate('.slidesThumbnail', 'click', function (e) {
         //console.log($(e.target).closest('.slidesThumbnail').attr('id').substr(3));
         var clickedNum = parseInt($(e.target).closest('.slidesThumbnail').attr('id').substr(3));
-        loadSlide(clickedNum);
+        loadSlide(clickedNum-1);
+        $('.ghostSizing').hide();
     }).delegate('.slidesThumbnail', 'mousedown', function (e) {
         rightClickSlide = parseInt($(e.target).closest('.slidesThumbnail').attr('id').substr(3));
         if (e.which === 3) {
