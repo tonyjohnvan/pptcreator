@@ -26,11 +26,6 @@ function addTextField(e) {
     renderSlide(AllSlides[currentSlideNum]);
 
     // add item in components window
-    $('.componentsList').append('<li class="oneComponent" data-siId="' + lastId + '">' +
-        '<i class="text">T</i>' +
-        '<p>Double Click to Edit</p>' +
-        '</li>');
-    $(".componentsList").sortable().disableSelection();
 }
 
 function updatePropertyPanel(id) {
@@ -386,10 +381,6 @@ function updateMultipleHost(deltaTop, deltaLeft) {
 //        host.content = $('#si' + (resizingHost + 1)).html();
     }
     renderSlide(AllSlides[currentSlideNum]);
-}
-
-function updateComponentList() {
-
 }
 
 function calculateGhostSize(items) {

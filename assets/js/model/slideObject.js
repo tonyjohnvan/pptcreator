@@ -14,6 +14,7 @@ function SlideObj(itemId) {
     this.zindex = 100;
     this.background = 'transparent';
     this.textAlign = 'center';
+    this.fontsize = 16;
 }
 
 function Slide(slidId) {
