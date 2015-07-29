@@ -481,3 +481,41 @@ jQuery.fn.extend({
         }
     }
 });
+
+function copyCurrentItem(){
+
+    if (isMultiSelect) {
+        updateMultipleHost(0, 0);
+    } else {
+        updateHostSpec();
+    }
+
+    copiedItem = JSON.parse(JSON.stringify(AllSlides[currentSlideNum].content[resizingHost]));
+}
+
+function pasteItem(){
+    var pastItme = JSON.parse(JSON.stringify(copiedItem));
+    pastItme.id = ++lastId;
+    pastItme.top +=50;
+    pastItme.left +=50;
+    AllSlides[currentSlideNum].content.push(pastItme);
+    renderSlide(AllSlides[currentSlideNum]);
+    resizingHost = pastItme.id - 1;
+
+    $('.ghostSizing')
+        .css({
+            top: AllSlides[currentSlideNum].content[resizingHost].top - 5,
+            left: AllSlides[currentSlideNum].content[resizingHost].left - 5,
+            width: AllSlides[currentSlideNum].content[resizingHost].width + 10,
+            height: AllSlides[currentSlideNum].content[resizingHost].height + 10
+        })
+        .show();
+}
+
+function showHideItem(e){
+    var itemID = parseInt($(e.target).closest('.oneComponent').attr('data-siid'));
+    console.log(itemID);
+    var item = AllSlides[currentSlideNum].content[itemID-1];
+    item.hidden = !item.hidden;
+    renderSlide(AllSlides[currentSlideNum]);
+}

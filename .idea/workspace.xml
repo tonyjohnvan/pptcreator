@@ -5,6 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/controller/functions.js" afterPath="$PROJECT_DIR$/assets/js/controller/functions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/controller/main.js" afterPath="$PROJECT_DIR$/assets/js/controller/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/model/slideObject.js" afterPath="$PROJECT_DIR$/assets/js/model/slideObject.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/controller/slideObjectVC.js" afterPath="$PROJECT_DIR$/assets/js/controller/slideObjectVC.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -29,14 +30,14 @@
     <favorites_list name="pptcreator" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46921697">
+    <splitter split-orientation="horizontal" split-proportion="0.33472803">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-1.0704846" vertical-offset="4914" max-vertical-offset="6825">
-                  <caret line="279" column="83" selection-start-line="279" selection-start-column="83" selection-end-line="279" selection-end-column="83" />
+                <state vertical-scroll-proportion="-26.166666" vertical-offset="3737" max-vertical-offset="7275">
+                  <caret line="291" column="50" selection-start-line="291" selection-start-column="41" selection-end-line="291" selection-end-column="50" />
                   <folding />
                 </state>
               </provider>
@@ -45,8 +46,18 @@
           <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/js/controller/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="4240" max-vertical-offset="5160">
-                  <caret line="314" column="13" selection-start-line="314" selection-start-column="13" selection-end-line="314" selection-end-column="13" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="5190">
+                  <caret line="59" column="54" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="54" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="functions.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/assets/js/controller/functions.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.38297874" vertical-offset="5535" max-vertical-offset="7890">
+                  <caret line="387" column="57" selection-start-line="387" selection-start-column="27" selection-end-line="387" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
@@ -55,14 +66,14 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.58798736">
+        <splitter split-orientation="horizontal" split-proportion="0.80194175">
           <split-first>
             <leaf>
               <file leaf-file-name="PresentationVC.js" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/assets/js/controller/PresentationVC.js">
                   <provider selected="true" editor-type-id="text-editor">
                     <state vertical-scroll-proportion="0.0" vertical-offset="1005" max-vertical-offset="1710">
-                      <caret line="96" column="36" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+                      <caret line="94" column="8" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
                       <folding />
                     </state>
                   </provider>
@@ -71,8 +82,8 @@
               <file leaf-file-name="slideObject.js" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/assets/js/model/slideObject.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-                      <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+                      <caret line="8" column="37" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
                       <folding />
                     </state>
                   </provider>
@@ -91,18 +102,8 @@
               <file leaf-file-name="slideObjectVC.js" pinned="false" current="true" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/assets/js/controller/slideObjectVC.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.8240469" vertical-offset="23" max-vertical-offset="705">
-                      <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="functions.js" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/assets/js/controller/functions.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="5525" max-vertical-offset="7320">
-                      <caret line="382" column="42" selection-start-line="382" selection-start-column="16" selection-end-line="382" selection-end-column="42" />
+                    <state vertical-scroll-proportion="0.29787233" vertical-offset="180" max-vertical-offset="885">
+                      <caret line="26" column="38" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
                       <folding />
                     </state>
                   </provider>
@@ -125,8 +126,8 @@
               <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/assets/css/main.css">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.62957317" vertical-offset="14332" max-vertical-offset="15705">
-                      <caret line="983" column="18" selection-start-line="983" selection-start-column="18" selection-end-line="983" selection-end-column="18" />
+                    <state vertical-scroll-proportion="0.48657188" vertical-offset="14902" max-vertical-offset="15945">
+                      <caret line="1014" column="17" selection-start-line="1014" selection-start-column="17" selection-end-line="1014" selection-end-column="17" />
                       <folding />
                     </state>
                   </provider>
@@ -135,7 +136,7 @@
               <file leaf-file-name="domItems.js" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/assets/js/model/domItems.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="300">
                       <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
                       <folding>
                         <marker date="1433967546000" expanded="true" signature="95:530" placeholder="..." />
@@ -148,10 +149,10 @@
               <file leaf-file-name="functions.js" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/assets/js/controller/functions.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="7320">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="7890">
                       <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
                       <folding>
-                        <marker date="1437663652000" expanded="true" signature="3925:3960" placeholder="{...}" />
+                        <marker date="1438196879000" expanded="true" signature="3925:3960" placeholder="{...}" />
                       </folding>
                     </state>
                   </provider>
@@ -200,12 +201,12 @@
         <option value="$PROJECT_DIR$/assets/js/controller/undo.js" />
         <option value="$PROJECT_DIR$/assets/js/model/eText.js" />
         <option value="$PROJECT_DIR$/assets/js/controller/slideUndo.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/js/controller/main.js" />
-        <option value="$PROJECT_DIR$/assets/js/controller/functions.js" />
+        <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/assets/js/model/slideObject.js" />
         <option value="$PROJECT_DIR$/assets/js/controller/slideObjectVC.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/assets/js/controller/functions.js" />
       </list>
     </option>
   </component>
@@ -376,6 +377,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -386,12 +395,14 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
       <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -399,16 +410,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" />
-      <option name="executablePath" />
-      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -450,8 +451,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -474,6 +475,22 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3645" max-vertical-offset="6825">
+          <caret line="257" column="65" selection-start-line="257" selection-start-column="64" selection-end-line="257" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/controller/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4710" max-vertical-offset="5160">
+          <caret line="314" column="13" selection-start-line="314" selection-start-column="13" selection-end-line="314" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3019" max-vertical-offset="5040">
@@ -722,13 +739,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.050962627" vertical-offset="0" max-vertical-offset="883">
           <caret line="3" column="28" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE">
@@ -778,15 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28057554" vertical-offset="0" max-vertical-offset="1860">
           <caret line="21" column="44" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/controller/PresentationVC.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1005" max-vertical-offset="1710">
-          <caret line="96" column="36" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -794,14 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1215">
           <caret line="75" column="404" selection-start-line="75" selection-start-column="404" selection-end-line="75" selection-end-column="404" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/controller/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4240" max-vertical-offset="5160">
-          <caret line="314" column="13" selection-start-line="314" selection-start-column="13" selection-end-line="314" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -817,18 +817,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/controller/functions.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5525" max-vertical-offset="7320">
-          <caret line="382" column="42" selection-start-line="382" selection-start-column="16" selection-end-line="382" selection-end-column="42" />
+        <state vertical-scroll-proportion="-26.166666" vertical-offset="3737" max-vertical-offset="7275">
+          <caret line="291" column="50" selection-start-line="291" selection-start-column="41" selection-end-line="291" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48657188" vertical-offset="14902" max-vertical-offset="15945">
+          <caret line="1014" column="17" selection-start-line="1014" selection-start-column="17" selection-end-line="1014" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/controller/PresentationVC.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1028" max-vertical-offset="1710">
+          <caret line="94" column="8" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/model/slideObject.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -841,26 +857,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+    <entry file="file://$PROJECT_DIR$/assets/js/controller/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62957317" vertical-offset="14332" max-vertical-offset="15705">
-          <caret line="983" column="18" selection-start-line="983" selection-start-column="18" selection-end-line="983" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="5190">
+          <caret line="59" column="54" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/assets/js/controller/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0704846" vertical-offset="4914" max-vertical-offset="6825">
-          <caret line="279" column="83" selection-start-line="279" selection-start-column="83" selection-end-line="279" selection-end-column="83" />
+        <state vertical-scroll-proportion="0.38297874" vertical-offset="5535" max-vertical-offset="7890">
+          <caret line="387" column="57" selection-start-line="387" selection-start-column="27" selection-end-line="387" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/controller/slideObjectVC.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8240469" vertical-offset="23" max-vertical-offset="705">
-          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.29787233" vertical-offset="180" max-vertical-offset="885">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
           <folding />
         </state>
       </provider>

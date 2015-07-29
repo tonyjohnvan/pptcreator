@@ -981,7 +981,7 @@ button.btn-black:active {
 
 .slidItem {
     outline: none;
-    font-size: 2em;
+    /*font-size: 2em;*/
 }
 
 .componentsList {
@@ -1012,6 +1012,7 @@ button.btn-black:active {
     border-left: 1px solid #000;
     padding: 0 15px;
     overflow: hidden;
+    width: 194px;
 }
 
 .oneComponent .text {
@@ -1039,4 +1040,19 @@ button.redo{
 .navbar-nav li > .dropdown{
     margin-top: 8px;
     width: 66px;
+}
+
+.showHide{
+    cursor: pointer;
+    color: white;
+    padding: 10px 0px 0 13px;
+    border-left: 1px solid black;
+    height: 38px;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+}
+
+.showHide:hover{
+    color: #DDD;
 }

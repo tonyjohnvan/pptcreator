@@ -30,6 +30,8 @@ var resizingHost;
 
 var initTop, initLeft, initSize;
 
+var copiedItem;
+
 $(document).ready(function () {
     "use strict";
 
