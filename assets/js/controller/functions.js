@@ -24,8 +24,6 @@ function addTextField(e) {
     }
     AllSlides[currentSlideNum].content.push(sob);
     renderSlide(AllSlides[currentSlideNum]);
-
-    // add item in components window
 }
 
 function updatePropertyPanel(id) {

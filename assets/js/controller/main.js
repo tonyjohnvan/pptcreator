@@ -91,12 +91,12 @@ $(document).ready(function () {
             ev.preventDefault();
             deselectCurrentEl(lastSelectedItem);
 
-
             if (isMultiSelect) {
                 updateMultipleHost(0, 0);
             } else {
                 updateHostSpec();
             }
+
             $('.ghostSizing').hide();
             multiSelectedItems = [];
         }

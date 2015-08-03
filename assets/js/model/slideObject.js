@@ -11,7 +11,7 @@ function SlideObj(itemId) {
     this.height = 50;
     this.centerX = (this.top + this.width) / 2;
     this.centerY = (this.left + this.height) / 2;
-    this.zindex = 100;
+    this.zindex = itemId;
     this.background = 'transparent';
     this.textAlign = 'center';
     this.fontsize = 16;
