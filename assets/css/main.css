@@ -435,7 +435,7 @@ button.btn-black:active {
     z-index: 1001;
     min-width: 1440px;
     min-height: 900px;
-    display: none;
+    /*display: none;*/
 }
 
 .searchPresentationWrap {
@@ -1071,7 +1071,6 @@ button.redo{
 }
 
 .inputWrap{
-    margin-top: 60px;
     width: 570px !important;
     height: 300px;
     min-height: 300px;
