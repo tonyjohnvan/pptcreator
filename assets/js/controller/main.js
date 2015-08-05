@@ -10,73 +10,197 @@ var currentSlideNum = 1;
 
 var currentSlideContent = "";
 
-var totalSlideNum = 1;
+var totalSlideNum = 0;
 
 var AllSlides = [];
+
+var rightClickSlide = "";
+
+var toggleGridSnapFlag = false;
+
+var itemSelected = false;
+
+var lastSelectedItem = null;
+
+var isMultiSelect = false;
+
+var multiSelectedItems = [];
+
+var resizingHost;
+
+var initTop, initLeft, initSize;
+
+var copiedItem;
 
 $(document).ready(function () {
     "use strict";
 
+    CKEDITOR.disableAutoInline = true;
     highlightCurrent();
-    // MAKE EVENT on every new text box
-    $(".op-slideContainer").delegate('.editText', 'click', function (ev) {
-        ev.preventDefault();
-        var target = $(ev.target).closest('.editText');
-//        if (target.html() == 'Click to Edit') {
-//            target.html('');
-//        }
-        settingCurrentItem(target);
-        updatePropertyPanel(target.attr('id'));
-        //console.log(target);
 
-        if (target.hasClass("ui-draggable")) {
-            $('#' + target.attr('id')).draggable("destroy");
-        }
-        if (!target.hasClass("cke_editable_inline")) {
-            CKEDITOR.disableAutoInline = true;
-            CKEDITOR.inline(target.attr('id'));
-        }
-        CKEDITOR.instances[target.attr('id')].on('blur', function () {
-            //console.log('onblur fired at ' + target.attr('id'));
-            setTimeout(function () {
-                $('#' + target.attr('id'))
-                    .draggable({
-                        containment: "parent"
-                    }).resizable("destroy").delay(100)
-                    .resizable({
-                        handles: "se",
-                        containment: "parent"
-                    });
-            }, 200);
-            updatePropertyPanel();
-            settingCurrentItem();
-        });
+    //ghostSizing Draggable
+    applyDraggable($('.ghostSizing'));
 
-    }).delegate('.editText', 'keydown', function (e) {
-        var target = $(e.target);
-        $('#' + target.attr('id'))
-//            .resizable("destroy").delay(100)
-            .resizable({
-                handles: "se",
-                containment: "parent"
-            });
-    }).delegate('.editText', 'drag', function (ev) {
-        var target = $(ev.target).closest('.editText');
-        settingCurrentItem(target);
-        updatePropertyPanel(target.attr('id'));
-    }).delegate('.editText', 'dragend', function (ev) {
-//        settingCurrentItem();
-//        updatePropertyPanel();
-    }).delegate('.editText', 'resize', function (ev) {
-        var target = $(ev.target).closest('.editText');
-        settingCurrentItem(target);
-        updatePropertyPanel(target.attr('id'));
-    }).delegate('.editText', 'blur', function (ev) {
-        setTimeout(function () {
-            settingCurrentItem();
-            updatePropertyPanel();
-        }, 100);
+    $('.op-slideContainer').on('mousedown', function (e) {
+//        console.log(e.target);
+        if ($(e.target).hasClass('op-slideContainer')) {
+            if (isMultiSelect) {
+                updateMultipleHost(0, 0);
+            } else {
+                updateHostSpec();
+            }
+            $('.ghostSizing').hide();
+            multiSelectedItems = [];
+        }
+
     });
+
+    // v2
+    $(".op-slideContainer").delegate('.slidItem', 'click', function (ev) {
+        var target = $(ev.target).closest('.slidItem');
+        resizingHost = target.attr('id').substring(2) - 1;
+        console.log(resizingHost);
+        var ghostTop, ghostLeft, ghostWidth, ghostHeight;
+
+        if (isMultiSelect) {
+            multiSelectedItems.push(resizingHost);
+            var ghostSize = calculateGhostSize(multiSelectedItems);
+            ghostTop = ghostSize.gTop - 5;
+            ghostLeft = ghostSize.gLeft - 5;
+            ghostWidth = ghostSize.gWidth + 10;
+            ghostHeight = ghostSize.gHeight + 10;
+            target.css('background', 'rgba(0,50,255,0.2)');
+        } else {
+            ghostTop = AllSlides[currentSlideNum].content[resizingHost].top - 5;
+            ghostLeft = AllSlides[currentSlideNum].content[resizingHost].left - 5;
+            ghostWidth = AllSlides[currentSlideNum].content[resizingHost].width + 10;
+            ghostHeight = AllSlides[currentSlideNum].content[resizingHost].height + 10;
+        }
+        $('.ghostSizing')
+            .css({
+                top: ghostTop,
+                left: ghostLeft,
+                width: ghostWidth,
+                height: ghostHeight
+            })
+            .show()
+    }).delegate('.slidItem', 'blur', function (ev) {
+    }).delegate('.slidItem', 'keydown', function (ev) {
+        var key = (ev.keyCode ? ev.keyCode : ev.which);
+        if (key == 13) {
+            ev.preventDefault();
+            deselectCurrentEl(lastSelectedItem);
+
+            if (isMultiSelect) {
+                updateMultipleHost(0, 0);
+            } else {
+                updateHostSpec();
+            }
+
+            $('.ghostSizing').hide();
+            multiSelectedItems = [];
+        }
+    });
+
+    $('.componentsList').delegate('.oneComponent', 'dblclick', function (ev) {
+        resizingHost = $(ev.target).closest('.oneComponent').attr('data-siId') - 1;
+        $('.ghostSizing')
+            .css({
+                top: AllSlides[currentSlideNum].content[resizingHost].top - 5,
+                left: AllSlides[currentSlideNum].content[resizingHost].left - 5,
+                width: AllSlides[currentSlideNum].content[resizingHost].width + 10,
+                height: AllSlides[currentSlideNum].content[resizingHost].height + 10
+            })
+            .show();
+        $('#si' + (resizingHost + 1)).focus();
+
+        if (isMultiSelect) {
+            updateMultipleHost(0, 0);
+        } else {
+            updateHostSpec();
+        }
+    });
+
+    // MAKE EVENT on every new text box
+    // v1 - abandoned
+//    $(".op-slideContainer").delegate('.editText', 'click', function (ev) {
+//        //click to select div
+//        var target = $(ev.target).closest('.editText');
+//
+//        if (!itemSelected) {
+//            selectCurrentEl(target);
+//            return 0;
+//        } else {
+//            if (lastSelectedItem.attr('id') == target.attr('id')) {
+//                if (target.hasClass("ui-draggable")) {
+//                    $('#' + target.attr('id')).draggable("destroy");
+//                }
+//                if (!target.hasClass("cke_editable_inline")) {
+//                    CKEDITOR.inline(target.attr('id'));
+//                    target.focus();
+//                } else {
+//                    target.focus();
+//                }
+//                CKEDITOR.instances[target.attr('id')].on('blur', function () {
+//                    applyDraggable($('#' + target.attr('id')));
+//                    deselectCurrentEl();
+//                });
+//            } else {
+//                deselectCurrentEl(lastSelectedItem);
+////                deselectCurrentEl();
+////                selectCurrentEl(target);
+//
+//            }
+//
+//        }
+//
+//
+//    }).delegate('.editText', 'keydown', function (e) {
+//        var key = (e.keyCode ? e.keyCode : e.which);
+//        console.log(key);
+//        if (key == 65) {
+//            e.preventDefault();
+//            deselectCurrentEl(lastSelectedItem);
+//        }
+//
+//        var target = $(e.target);
+//        $('#' + target.attr('id'))
+//            .resizable("destroy");
+//        setTimeout(function () {
+//            $('#' + target.attr('id'))
+//                .resizable({
+//                    handles: 'ne, se, sw, nw, s, w, e, n'
+////                    grid: [ 10, 10 ],
+//                    //containment: "parent"
+//                });
+//        }, 1);
+//    }).delegate('.editText', 'drag', function (ev) {
+//        var target = $(ev.target).closest('.editText');
+//        settingCurrentItem(target);
+//
+////        deselectCurrentEl();
+////        selectCurrentEl(target);
+//
+//        updatePropertyPanel(target.attr('id'));
+//
+//        updateShadowBorder($(ev.target).offset().top, $(ev.target).offset().left, $(ev.target).width(), $(ev.target).height());
+//
+//    }).delegate('.editText', 'dragend', function (ev) {
+////        settingCurrentItem();
+////        updatePropertyPanel();
+//        selectCurrentEl(target);
+//    }).delegate('.editText', 'resize', function (ev) {
+//        var target = $(ev.target).closest('.editText');
+//        settingCurrentItem(target);
+//        updatePropertyPanel(target.attr('id'));
+//    }).delegate('.editText', 'blur', function (ev) {
+//        var target = $(ev.target).closest('.editText');
+//        setTimeout(function () {
+////            settingCurrentItem();
+////            updatePropertyPanel();
+//            deselectCurrentEl();
+//        }, 100);
+//    });
 
 
     // MAKE THE floating panel floating...
@@ -113,8 +237,23 @@ $(document).ready(function () {
     $('.slideWrap').delegate('.slidesThumbnail', 'click', function (e) {
         //console.log($(e.target).closest('.slidesThumbnail').attr('id').substr(3));
         var clickedNum = parseInt($(e.target).closest('.slidesThumbnail').attr('id').substr(3));
-        loadSlide(clickedNum);
-    })
+        loadSlide(clickedNum-1);
+        $('.ghostSizing').hide();
+    }).delegate('.slidesThumbnail', 'mousedown', function (e) {
+        rightClickSlide = parseInt($(e.target).closest('.slidesThumbnail').attr('id').substr(3));
+        if (e.which === 3) {
+            console.log(rightClickSlide);
+        }
+    });
+
+    $('.presentationsWrap').delegate('.PresentationItemTitle', 'keypress', function (event) {
+        var key = (event.keyCode ? event.keyCode : event.which);
+        console.log(key);
+        if (key == 13) {
+            event.preventDefault();
+            $(this).blur();
+        }
+    });
 
     // If the menu element is clicked
     $(".custom-right-menu li").click(function (e) {
@@ -147,7 +286,8 @@ $(document).ready(function () {
                 break;
             case "deleteSlide":
             {
-                console.log($(this).attr("data-action"));
+                deleteSlide(rightClickSlide);
+//                console.log($(this).attr("data-action"));
                 // Hide it AFTER the action was triggered
                 $(".custom-right-menu").hide(100);
             }
@@ -160,21 +300,40 @@ $(document).ready(function () {
         }
     });
 
-    $('#themeCard1').on('click',function(){
+
+    $('#themeCard1').on('click', function () {
         newSlide(themeCard1Content);
         lastId = 3;
     });
-    $('#themeCard2').on('click',function(){
+    $('#themeCard2').on('click', function () {
         newSlide(themeCard2Content);
         lastId = 3;
     });
-    $('#themeCard3').on('click',function(){
+    $('#themeCard3').on('click', function () {
         newSlide(themeCard3Content);
         lastId = 2;
     });
-    $('#themeCard4').on('click',function(){
+    $('#themeCard4').on('click', function () {
         newSlide(themeCard4Content);
         lastId = 3;
+    });
+
+//    $("#slider1").slider();
+//    $("#slider2").slider();
+//    $("#slider3").slider();
+
+
+    $('#themeStyle1').on('click', function () {
+        changeTheme(1);
+    });
+    $('#themeStyle2').on('click', function () {
+        changeTheme(2);
+    });
+    $('#themeStyle3').on('click', function () {
+        changeTheme(3);
+    });
+    $('#themeStyle4').on('click', function () {
+        changeTheme(4);
     });
 });
 
