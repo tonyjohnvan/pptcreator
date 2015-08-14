@@ -33,19 +33,22 @@ function renderSlide(slide) {
 function updateComponentList(slide) {
     var regex = /(<([^>]+)>)/ig;
     $('.componentsList').html('');
-    slide.content.sort(function(a, b) {
+    slide.content.sort(function (a, b) {
         return parseFloat(a.zindex) - parseFloat(b.zindex);
     });
     for (var i = 0; i < slide.content.length; i++) {
         var obj = slide.content[i];
+        var showContent = obj.content.replace(regex, "").length < 26  ?
+            obj.content.replace(regex, "") :
+            obj.content.replace(regex, "").substr(0, 22) + '...' + obj.content.replace(regex, "").substr(obj.content.replace(regex, "").length - 3, 3);
         if (!obj.hidden) {
             $('.componentsList').prepend('<li class="oneComponent" data-siId="' + obj.id + '">' +
                 '<i class="text">T</i>' +
-                '<p>' + obj.content.replace(regex, "") + '</p>' +
+                '<p>' + showContent + '</p>' +
                 '<a class="showHide" onclick="showHideItem(event)"><i class="glyphicon glyphicon-eye-open"></i></a>' +
                 '</li>');
             $(".componentsList").sortable({
-                stop: function( event, ui ) {
+                stop: function (event, ui) {
 //                    console.log($('.componentsList li').attr('data-siid'));
 //                    updateSlideItemOrder();
                 }
@@ -53,11 +56,11 @@ function updateComponentList(slide) {
         } else {
             $('.componentsList').prepend('<li class="oneComponent" data-siId="' + obj.id + '">' +
                 '<i class="text">T</i>' +
-                '<p>' + obj.content.replace(regex, "") + '</p>' +
+                '<p>' + showContent + '</p>' +
                 '<a class="showHide" onclick="showHideItem(event)"><i class="glyphicon glyphicon-eye-close"></i></a>' +
                 '</li>');
             $(".componentsList").sortable({
-                stop: function( event, ui ) {
+                stop: function (event, ui) {
 //                    console.log($('.componentsList li').attr('data-siid'));
 //                    updateSlideItemOrder();
                 }
@@ -66,19 +69,19 @@ function updateComponentList(slide) {
     }
 }
 
-function updateSlideItemOrder(){
+function updateSlideItemOrder() {
     var allItems = $('.componentsList li');
     var total = allItems.length;
     var highestZIndex = total;
-    for(var i=0; i<total; i++){
+    for (var i = 0; i < total; i++) {
         findSlideItem(parseInt($(allItems[0]).attr('data-siid'))).zindex = --highestZIndex;
     }
 }
 
-function findSlideItem(id){
+function findSlideItem(id) {
     var list = AllSlides[currentSlideNum].content;
-    for(var i=0; i<list.length; i++){
-        if(list[i].id==id){
+    for (var i = 0; i < list.length; i++) {
+        if (list[i].id == id) {
             return list[i];
         }
     }
@@ -117,23 +120,35 @@ var SOModiStr = '\
         </a>\
     </li>\
     <li class="">\
-    <a href="#" onclick="{document.execCommand(\'justifyRight\', false);}" class="dropdown-toggle" data-toggle="dropdown"\
-    aria-expanded="false">\
-        <i class="glyphicon glyphicon-align-right"></i>\
-    </a>\
+        <a href="#" onclick="{document.execCommand(\'justifyRight\', false);}" class="dropdown-toggle" data-toggle="dropdown"\
+        aria-expanded="false">\
+            <i class="glyphicon glyphicon-align-right"></i>\
+        </a>\
     </li>\
-<li class="">\
-    <a href="#" onclick="{document.execCommand(\'insertOrderedList\', false);}" class="dropdown-toggle" data-toggle="dropdown"\
-    aria-expanded="false">\
-        <i class="glyphicon glyphicon-th-list"></i>\
-    </a>\
-</li>\
+    <li class="">\
+        <a href="#" onclick="{document.execCommand(\'insertOrderedList\', false);}" class="dropdown-toggle" data-toggle="dropdown"\
+        aria-expanded="false">\
+            <i class="glyphicon glyphicon-th-list"></i>\
+        </a>\
+    </li>\
 </ul>\
 <ul class="nav navbar-nav col-xm-4">\
     <li class="">\
         <a href="#" onclick="{document.execCommand(\'insertUnorderedList\', false);}" class="dropdown-toggle" data-toggle="dropdown"\
         aria-expanded="false">\
             <i class="glyphicon glyphicon-list"></i>\
+        </a>\
+    </li>\
+    <li class="">\
+        <a href="#" onclick="{document.execCommand(\'indent\', false);}" class="dropdown-toggle" data-toggle="dropdown"\
+        aria-expanded="false">\
+            <i class="glyphicon glyphicon-indent-left"></i>\
+        </a>\
+    </li>\
+    <li class="">\
+        <a href="#" onclick="{document.execCommand(\'outdent\', false);}" class="dropdown-toggle" data-toggle="dropdown"\
+        aria-expanded="false">\
+            <i class="glyphicon glyphicon-indent-right"></i>\
         </a>\
     </li>\
     <li class="">\
