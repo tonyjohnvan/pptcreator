@@ -32,6 +32,9 @@ var initTop, initLeft, initSize;
 
 var copiedItem;
 
+
+// ===== functions =====
+
 $(document).ready(function () {
     "use strict";
 
@@ -104,21 +107,44 @@ $(document).ready(function () {
 
     $('.componentsList').delegate('.oneComponent', 'dblclick', function (ev) {
         resizingHost = $(ev.target).closest('.oneComponent').attr('data-siId') - 1;
-        $('.ghostSizing')
-            .css({
-                top: AllSlides[currentSlideNum].content[resizingHost].top - 5,
-                left: AllSlides[currentSlideNum].content[resizingHost].left - 5,
-                width: AllSlides[currentSlideNum].content[resizingHost].width + 10,
-                height: AllSlides[currentSlideNum].content[resizingHost].height + 10
-            })
-            .show();
-        $('#si' + (resizingHost + 1)).focus();
+//        $('.ghostSizing')
+//            .css({
+//                top: AllSlides[currentSlideNum].content[resizingHost].top - 5,
+//                left: AllSlides[currentSlideNum].content[resizingHost].left - 5,
+//                width: AllSlides[currentSlideNum].content[resizingHost].width + 10,
+//                height: AllSlides[currentSlideNum].content[resizingHost].height + 10
+//            })
+//            .show();
+//        $('#si' + (resizingHost + 1)).focus();
+//
+//        if (isMultiSelect) {
+//            updateMultipleHost(0, 0);
+//        } else {
+//            updateHostSpec();
+//        }
 
-        if (isMultiSelect) {
-            updateMultipleHost(0, 0);
-        } else {
-            updateHostSpec();
-        }
+        bootbox.dialog({
+            title: "Quick Editor",
+            message: SOModiStr,
+            buttons: {
+                success: {
+                    label: "Save",
+                    className: "btn-success",
+                    callback: function () {
+                        AllSlides[currentSlideNum].content[resizingHost].content = $("#directText").html();
+                        renderSlide(AllSlides[currentSlideNum]);
+                        addToStack();
+                    }
+                },
+                main: {
+                    label: "cancel",
+                    className: "btn-primary",
+                    callback: function () {
+                    }
+                }
+            }
+        });
+        $("#directText").html(AllSlides[currentSlideNum].content[resizingHost].content);
     });
 
     // MAKE EVENT on every new text box
@@ -237,7 +263,7 @@ $(document).ready(function () {
     $('.slideWrap').delegate('.slidesThumbnail', 'click', function (e) {
         //console.log($(e.target).closest('.slidesThumbnail').attr('id').substr(3));
         var clickedNum = parseInt($(e.target).closest('.slidesThumbnail').attr('id').substr(3));
-        loadSlide(clickedNum-1);
+        loadSlide(clickedNum - 1);
         $('.ghostSizing').hide();
     }).delegate('.slidesThumbnail', 'mousedown', function (e) {
         rightClickSlide = parseInt($(e.target).closest('.slidesThumbnail').attr('id').substr(3));
