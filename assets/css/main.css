@@ -50,6 +50,7 @@ body, html {
     padding: 0 20px;
     overflow-y: scroll;
     margin-top: 52px;
+    z-index: 1;
 }
 
 .op-pptContainer {
@@ -103,7 +104,7 @@ body, html {
 /*.editText h4,*/
 /*.editText h5,*/
 /*.editText a*/
-   {
+    {
     cursor: text;
 }
 
@@ -1030,19 +1031,20 @@ button.btn-black:active {
 }
 
 button.undo,
-button.redo{
+button.redo {
     margin-top: 11px;
     /*background: transparent;*/
     /*color: #f5f5f5;*/
     /*font-weight: 800;*/
     /*border: transparent;*/
 }
-.navbar-nav li > .dropdown{
+
+.navbar-nav li > .dropdown {
     margin-top: 8px;
     width: 66px;
 }
 
-.showHide{
+.showHide {
     cursor: pointer;
     color: white;
     padding: 10px 0px 0 13px;
@@ -1053,24 +1055,25 @@ button.redo{
     font-size: 15px;
 }
 
-.showHide:hover{
+.showHide:hover {
     color: #DDD;
 }
 
-.black-nav{
+.black-nav {
     background: #fff;
     width: 572px;
 }
-.black-nav a{
+
+.black-nav a {
     color: #bbb;
 }
 
-.black-nav .nav > li > a:focus, .nav > li > a:hover{
+.black-nav .nav > li > a:focus, .nav > li > a:hover {
     background: #ddd;
     color: #222;
 }
 
-.inputWrap{
+.inputWrap {
     width: 570px !important;
     height: 300px;
     min-height: 300px;
@@ -1087,10 +1090,22 @@ button.redo{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.bootbox-body .container{
+.bootbox-body .container {
     width: 600px;
 }
 
-#directText{
+#directText {
     outline: none;
+}
+
+.insertChartWrap{
+    width: 100%;
+}
+
+.createChartTypeSelect{
+    width: 80%;
+    margin: 0 auto;
+}
+.select2-container{
+    width: 100% !important;
 }

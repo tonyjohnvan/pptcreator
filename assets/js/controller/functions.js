@@ -84,7 +84,7 @@ function saveCurrentSlide() {
 //        'domHtml': $("#slideContent").html(),
 //        'numOfBoxes': lastId
 //    };
-    getScreenshotFor(currentSlideNum+1);
+    getScreenshotFor(currentSlideNum + 1);
 //    loadSlide(currentSlideNum);
 }
 
@@ -124,9 +124,9 @@ function newSlide(content, isFirstTime) {
     resortAllSlides();
     startValue = JSON.parse(JSON.stringify(AllSlides[currentSlideNum]));
 
-    setTimeout(function(){
+    setTimeout(function () {
         loadSlide(currentSlideNum);
-    },100);
+    }, 100);
     if (isFirstTime === true) {
         saveCurrentSlide();
     }
@@ -144,7 +144,7 @@ function clearCurrentSlide() {
 
 function highlightCurrent() {
     $('.slidesThumbnail').css("border", '4px solid #464646');
-    $('#stn' + (currentSlideNum+1)).css('border', '4px solid rgba(0, 127, 122, 0.5)');
+    $('#stn' + (currentSlideNum + 1)).css('border', '4px solid rgba(0, 127, 122, 0.5)');
 //    $($('.slidesThumbnail')[currentSlideNum-1]).css("border",'4px solid rgba(0, 127, 122, 0.5);');
 }
 
@@ -480,7 +480,7 @@ jQuery.fn.extend({
     }
 });
 
-function copyCurrentItem(){
+function copyCurrentItem() {
 
     if (isMultiSelect) {
         updateMultipleHost(0, 0);
@@ -491,11 +491,11 @@ function copyCurrentItem(){
     copiedItem = JSON.parse(JSON.stringify(AllSlides[currentSlideNum].content[resizingHost]));
 }
 
-function pasteItem(){
+function pasteItem() {
     var pastItme = JSON.parse(JSON.stringify(copiedItem));
     pastItme.id = ++lastId;
-    pastItme.top +=50;
-    pastItme.left +=50;
+    pastItme.top += 50;
+    pastItme.left += 50;
     AllSlides[currentSlideNum].content.push(pastItme);
     renderSlide(AllSlides[currentSlideNum]);
     resizingHost = pastItme.id - 1;
@@ -510,10 +510,41 @@ function pasteItem(){
         .show();
 }
 
-function showHideItem(e){
+function showHideItem(e) {
     var itemID = parseInt($(e.target).closest('.oneComponent').attr('data-siid'));
     console.log(itemID);
-    var item = AllSlides[currentSlideNum].content[itemID-1];
+    var item = AllSlides[currentSlideNum].content[itemID - 1];
     item.hidden = !item.hidden;
     renderSlide(AllSlides[currentSlideNum]);
+}
+
+function addChart(e){
+    console.log(e);
+    bootbox.dialog({
+        title: "Insert Chart",
+        message: addChartStr,
+        buttons: {
+            success: {
+                label: "Create",
+                className: "btn-success",
+                callback: function () {
+                    AllSlides[currentSlideNum].content[resizingHost].content = $("#directText").html();
+                    renderSlide(AllSlides[currentSlideNum]);
+                    addToStack();
+                }
+            },
+            main: {
+                label: "Cancel",
+                className: "btn-primary",
+                callback: function () {
+                }
+            }
+        }
+    });
+    $('#createChartTypeSelect').selectize({
+        sortField: 'text'
+    });
+    $('#createChartDataSetSelect').selectize({
+        sortField: 'text'
+    });
 }

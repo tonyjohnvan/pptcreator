@@ -16,6 +16,7 @@
     <link href="plugins/spectrum/spectrum.css" rel="stylesheet">
     <link rel="stylesheet" href="plugins/jQueryUI/jquery-ui.min.css"/>
     <link rel="stylesheet" href="plugins/animatecss/animate.css"/>
+    <link rel="stylesheet" href="plugins/selectize/css/selectize.bootstrap3.css"/>
 
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
@@ -241,56 +242,63 @@
                 </li>
                 <li class="">
                     <button href="#" onclick="{undoStack.undo()}" class="undo"
-                       aria-expanded="false">
+                            aria-expanded="false">
                         <!--<i class="glyphicon glyphicon-asterisk"></i>-->
                         Undo
                     </button>
                 </li>
                 <li class="">
                     <button href="#" onclick="{undoStack.redo()}" class="redo"
-                       aria-expanded="false">
+                            aria-expanded="false">
                         <!--<i class="glyphicon glyphicon-share-alt"></i>-->
                         Redo
                     </button>
                 </li>
                 <li class="">
-                    <a href="#" onclick="{document.execCommand('bold', false);}" class="dropdown-toggle" data-toggle="dropdown"
+                    <a href="#" onclick="{document.execCommand('bold', false);}" class="dropdown-toggle"
+                       data-toggle="dropdown"
                        aria-expanded="false">
                         <i class="glyphicon glyphicon-bold"></i>
                     </a>
                 </li>
                 <li class="">
-                    <a href="#" onclick="{document.execCommand('italic', false);}" class="dropdown-toggle" data-toggle="dropdown"
+                    <a href="#" onclick="{document.execCommand('italic', false);}" class="dropdown-toggle"
+                       data-toggle="dropdown"
                        aria-expanded="false">
                         <i class="glyphicon glyphicon-italic"></i>
                     </a>
                 </li>
                 <li class="">
-                    <a href="#" onclick="{document.execCommand('justifyLeft', false);}" class="dropdown-toggle" data-toggle="dropdown"
+                    <a href="#" onclick="{document.execCommand('justifyLeft', false);}" class="dropdown-toggle"
+                       data-toggle="dropdown"
                        aria-expanded="false">
                         <i class="glyphicon glyphicon-align-left"></i>
                     </a>
                 </li>
                 <li class="">
-                    <a href="#" onclick="{document.execCommand('justifyCenter', false);}" class="dropdown-toggle" data-toggle="dropdown"
+                    <a href="#" onclick="{document.execCommand('justifyCenter', false);}" class="dropdown-toggle"
+                       data-toggle="dropdown"
                        aria-expanded="false">
                         <i class="glyphicon glyphicon-align-center"></i>
                     </a>
                 </li>
                 <li class="">
-                    <a href="#" onclick="{document.execCommand('justifyRight', false);}" class="dropdown-toggle" data-toggle="dropdown"
+                    <a href="#" onclick="{document.execCommand('justifyRight', false);}" class="dropdown-toggle"
+                       data-toggle="dropdown"
                        aria-expanded="false">
                         <i class="glyphicon glyphicon-align-right"></i>
                     </a>
                 </li>
                 <li class="">
-                    <a href="#" onclick="{document.execCommand('insertOrderedList', false);}" class="dropdown-toggle" data-toggle="dropdown"
+                    <a href="#" onclick="{document.execCommand('insertOrderedList', false);}" class="dropdown-toggle"
+                       data-toggle="dropdown"
                        aria-expanded="false">
                         <i class="glyphicon glyphicon-th-list"></i>
                     </a>
                 </li>
                 <li class="">
-                    <a href="#" onclick="{document.execCommand('insertUnorderedList', false);}" class="dropdown-toggle" data-toggle="dropdown"
+                    <a href="#" onclick="{document.execCommand('insertUnorderedList', false);}" class="dropdown-toggle"
+                       data-toggle="dropdown"
                        aria-expanded="false">
                         <i class="glyphicon glyphicon-list"></i>
                     </a>
@@ -309,7 +317,8 @@
                 </li>
                 <li class="">
                     <div class="dropdown">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             FontSize
                             <span class="caret"></span>
                         </button>
@@ -383,28 +392,28 @@
             <div role="tabpanel" class="tab-pane" id="components">
                 <ul class="componentsList">
                     <!--<li class="oneComponent" data-siId="1">-->
-                        <!--<i class="text">T</i>-->
-                        <!--<p>Click to Edit</p>-->
+                    <!--<i class="text">T</i>-->
+                    <!--<p>Click to Edit</p>-->
                     <!--</li>-->
                     <!--<li class="oneComponent" data-siId="1">-->
-                        <!--<i class="text">T</i>-->
-                        <!--<p>Click to Edit</p>-->
+                    <!--<i class="text">T</i>-->
+                    <!--<p>Click to Edit</p>-->
                     <!--</li>-->
                     <!--<li class="oneComponent" data-siId="1">-->
-                        <!--<i class="text">T</i>-->
-                        <!--<p>Click to Edit</p>-->
+                    <!--<i class="text">T</i>-->
+                    <!--<p>Click to Edit</p>-->
                     <!--</li>-->
                     <!--<li class="oneComponent" data-siId="1">-->
-                        <!--<i class="text">T</i>-->
-                        <!--<p>Click to Edit</p>-->
+                    <!--<i class="text">T</i>-->
+                    <!--<p>Click to Edit</p>-->
                     <!--</li>-->
                     <!--<li class="oneComponent" data-siId="1">-->
-                        <!--<i class="text">T</i>-->
-                        <!--<p>Click to Edit</p>-->
+                    <!--<i class="text">T</i>-->
+                    <!--<p>Click to Edit</p>-->
                     <!--</li>-->
                     <!--<li class="oneComponent" data-siId="1">-->
-                        <!--<i class="text">T</i>-->
-                        <!--<p>Click to Edit</p>-->
+                    <!--<i class="text">T</i>-->
+                    <!--<p>Click to Edit</p>-->
                     <!--</li>-->
                 </ul>
             </div>
@@ -453,6 +462,7 @@
 
 <ul class="custom-right-menu no-select">
     <li onclick="addTextField(event);" data-action="newElement">Insert Text Box</li>
+    <li onclick="addChart(event);">InsertChart</li>
     <li class="disabled" id="deleteElement" data-action="deleteElement">Delete Selected Text</li>
     <li data-action="divider" class="divider disabled"></li>
     <li data-action="newSlide">New Slide</li>
@@ -473,6 +483,11 @@
 <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
 <script src="plugins/editor/ckeditor.js"></script>
 <script src="plugins/undo.js"></script>
+<script src="plugins/selectize/js/standalone/selectize.min.js"></script>
+<script src="plugins/jQueryUI/jquery-ui.min.js"></script>
+<script src="plugins/spectrum/spectrum.js"></script>
+<script src="plugins/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+<script src="plugins/bootbox.min.js"></script>
 <script src="assets/js/model/eText.js"></script>
 <script src="assets/js/model/domItems.js"></script>
 <script src="assets/js/controller/functions.js"></script>
@@ -481,14 +496,7 @@
 <script src="assets/js/controller/slideObjectVC.js"></script>
 <script src="assets/js/controller/slideUndo.js"></script>
 <script src="assets/js/model/slideObject.js"></script>
-<script src="plugins/jQueryUI/jquery-ui.min.js"></script>
-<script src="plugins/spectrum/spectrum.js"></script>
 <!--<script src="plugins/jquery.ui.resizable.snap.ext.js"></script>-->
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="plugins/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
-<script src="plugins/bootbox.min.js"></script>
-
-<script>
-</script>
 </body>
 </html>

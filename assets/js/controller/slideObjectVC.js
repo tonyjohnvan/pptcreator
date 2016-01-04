@@ -131,8 +131,8 @@ var SOModiStr = '\
             <i class="glyphicon glyphicon-th-list"></i>\
         </a>\
     </li>\
-</ul>\
-<ul class="nav navbar-nav col-xm-4">\
+</ul>'+
+'<ul class="nav navbar-nav col-xm-4">\
     <li class="">\
         <a href="#" onclick="{document.execCommand(\'insertUnorderedList\', false);}" class="dropdown-toggle" data-toggle="dropdown"\
         aria-expanded="false">\
@@ -182,3 +182,20 @@ var SOModiStr = '\
             <div id="directText" contenteditable="true"></div>\
         </div>\
     </div>';
+
+var addChartStr = '\
+<div class="insertChartWrap">\
+    <h3>New Chart</h3>\
+    <select id="createChartTypeSelect">\
+        <option value="cid-01">Stacked Chart</option>\
+        <option value="cid-02">Table Chart</option>\
+        <option value="cid-03">Line Chart</option>\
+    </select>\
+    <h3>Data Set</h3>\
+    <select id="createChartDataSetSelect">\
+        <option value="clentid-01">Client 1</option>\
+        <option value="clentid-02">Client 2</option>\
+        <option value="clentid-03">Client 3</option>\
+    </select>\
+</div>\
+';
