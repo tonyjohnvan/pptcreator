@@ -152,6 +152,12 @@ var SOModiStr = '\
         </a>\
     </li>\
     <li class="">\
+        <a href="#" onclick="{document.execCommand(\'removeFormat\', false);}" class="dropdown-toggle" data-toggle="dropdown"\
+        aria-expanded="false">\
+            <i class="glyphicon glyphicon-remove"></i>\
+        </a>\
+    </li>\
+    <li class="">\
         <div class="dropdown">\
             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">\
             FontSize\
