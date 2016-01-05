@@ -518,7 +518,9 @@ function showHideItem(e) {
     renderSlide(AllSlides[currentSlideNum]);
 }
 
-function addChart(e){
+function addChart(e) {
+
+
     console.log(e);
     bootbox.dialog({
         title: "Insert Chart",
@@ -527,10 +529,13 @@ function addChart(e){
             success: {
                 label: "Create",
                 className: "btn-success",
-                callback: function () {
-                    AllSlides[currentSlideNum].content[resizingHost].content = $("#directText").html();
-                    renderSlide(AllSlides[currentSlideNum]);
-                    addToStack();
+                callback: function (e) {
+                    //TODO: Insert Chart
+                    if (checkInsertChart()) {
+                        var chartID = $('#createChartTypeSelect').val(),
+                            data = $('#createChartDataSetSelect').val();
+                        addChartIntoSlide(chartID, data);
+                    }
                 }
             },
             main: {
@@ -541,10 +546,78 @@ function addChart(e){
             }
         }
     });
+    var clientData = $('#createChartDataSetSelect').selectize({
+        plugins: {
+            'disable_options': {
+                disableOptions: ['clentid-00']
+            }
+        }
+    }).on('change', function () {
+        checkInsertChart();
+    });
     $('#createChartTypeSelect').selectize({
-        sortField: 'text'
+        plugins: {
+            'disable_options': {
+                disableOptions: ['cid-00']
+            }
+        }
+    }).on('change', function (e) {
+        checkInsertChart();
+        switch (e.currentTarget.value) {
+            case 'cid-01':
+            {
+                clientData[0].selectize.destroy();
+                $('#createChartDataSetSelect').val('clentid-00');
+                clientData = $('#createChartDataSetSelect').selectize({
+                    plugins: {
+                        'disable_options': {
+                            disableOptions: ['clentid-00', 'clentid-01']
+                        }
+                    }
+                });
+            }
+                break;
+            case 'cid-02':
+            {
+                clientData[0].selectize.destroy();
+                $('#createChartDataSetSelect').val('clentid-00');
+                clientData =
+                    $('#createChartDataSetSelect').selectize({
+                        plugins: {
+                            'disable_options': {
+                                disableOptions: ['clentid-00', 'clentid-02']
+                            }
+                        }
+                    });
+            }
+                break;
+            case 'cid-03':
+            {
+                clientData[0].selectize.destroy();
+                $('#createChartDataSetSelect').val('clentid-00');
+                clientData =
+                    $('#createChartDataSetSelect').selectize({
+                        plugins: {
+                            'disable_options': {
+                                disableOptions: ['clentid-00', 'clentid-03']
+                            }
+                        }
+                    });
+            }
+                break;
+        }
     });
-    $('#createChartDataSetSelect').selectize({
-        sortField: 'text'
-    });
+    checkInsertChart();
+}
+
+function checkInsertChart() {
+    var chartID = $('#createChartTypeSelect').val(),
+        data = $('#createChartDataSetSelect').val();
+    if (chartID == 'cid-00' || data == 'clentid-00') {
+        $('.modal-footer .btn-success').attr('disabled', 'disabled');
+        return false
+    } else {
+        $('.modal-footer .btn-success').removeAttr('disabled');
+        return true
+    }
 }

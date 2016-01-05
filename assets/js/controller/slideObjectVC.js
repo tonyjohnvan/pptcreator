@@ -187,15 +187,17 @@ var addChartStr = '\
 <div class="insertChartWrap">\
     <h3>New Chart</h3>\
     <select id="createChartTypeSelect">\
+        <option selected value="cid-00" data-value="cid-00" >Please Select a Chart Type</option>\
         <option value="cid-01">Stacked Chart</option>\
         <option value="cid-02">Table Chart</option>\
         <option value="cid-03">Line Chart</option>\
     </select>\
     <h3>Data Set</h3>\
     <select id="createChartDataSetSelect">\
-        <option value="clentid-01">Client 1</option>\
-        <option value="clentid-02">Client 2</option>\
-        <option value="clentid-03">Client 3</option>\
+        <option selected value="clentid-00" data-value="clentid-00" >Please Select a Client Data</option>\
+        <option value="clentid-01" data-value="clentid-01">Client 1</option>\
+        <option value="clentid-02" data-value="clentid-02">Client 2</option>\
+        <option value="clentid-03" data-value="clentid-03">Client 3</option>\
     </select>\
 </div>\
 ';

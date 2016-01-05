@@ -1,0 +1,128 @@
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.coordinate{
+    display: flex;
+    align-items:stretch;
+    width: 80%;
+    margin-left: 155px;
+    z-index: 100;
+    position: relative;
+}
+
+.coordinate span{
+    flex-grow: 20;
+    text-align: center;
+}
+
+.graph-wrapper{
+    padding: 5px 0;
+}
+.one-row{
+    list-style: none;
+    background: #39424C;
+    width: 100%;
+    height: 110px;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+.row-label{
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    width: 140px;
+    height: auto;
+    word-break: normal;
+    margin: 0;
+    color: white;
+    padding: 10px;
+}
+.vertical-zero{
+    width: 2px;
+    height: calc((110px + 15px*2)*1);
+    position: absolute;
+    margin-left: calc(155px + 35.438px*11 - 35.438px/2 + 3px);
+    margin-top: 30px;
+    background: rgba(254, 254, 254, 0.2);
+    z-index: 100;
+}
+.data-points-wrap{
+    height: 100%;
+}
+.data-point{
+    list-style: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 10px solid red;
+    background: white;
+    position: relative;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 101;
+}
+
+.data-point.red{
+    border-color: red;
+}
+.data-point.green{
+    border-color: green;
+}
+.data-point.yellow{
+    border-color: yellow;
+}
+.color-meter{
+    height: 12px;
+    background: white;
+    position: absolute;
+    margin-top: 49px;
+    background: -webkit-linear-gradient(360deg, red 25%, orange 40%, green 70%);
+}
+.point-label{
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 50px;
+    color: white;
+    font-size: 11px;
+    font-weight: 200;
+    margin-left: -50px;
+}
+.point-label.up{
+    margin-top: -48px;
+}
+.point-label.down{
+    margin-top: 20px;
+}
+
+/* jQuery resizable handles*/
+.ui-resizable-handle {
+    background: #3789f5;
+    border: 1px solid #FFF;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.15);
+
+    z-index: 2;
+}
+.ui-resizable-s,
+.ui-resizable-n {
+    left: 50%;
+    margin-left: -4px;
+}
+.ui-resizable-e,
+.ui-resizable-w {
+    top: 50%;
+    margin-top: -4px;
+}
+.ui-resizable-se {
+    right: -5px;
+    bottom: -5px;
+}

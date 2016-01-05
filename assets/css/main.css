@@ -1109,3 +1109,11 @@ button.redo {
 .select2-container{
     width: 100% !important;
 }
+.option-disabled,
+.option-disabled.active,
+.option-disabled.selected,
+.option-disabled:hover{
+    cursor: not-allowed;
+    color: #a0a6ad;
+    background: none;
+}
