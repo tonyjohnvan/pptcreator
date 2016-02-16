@@ -519,8 +519,6 @@ function showHideItem(e) {
 }
 
 function addChart(e) {
-
-
     console.log(e);
     bootbox.dialog({
         title: "Insert Chart",
@@ -539,7 +537,7 @@ function addChart(e) {
                 }
             },
             main: {
-                label: "Cancel",
+                label: "Done",
                 className: "btn-primary",
                 callback: function () {
                 }

@@ -55,7 +55,6 @@ $(document).ready(function () {
             $('.ghostSizing').hide();
             multiSelectedItems = [];
         }
-
     });
 
     // v2
@@ -361,6 +360,46 @@ $(document).ready(function () {
     $('#themeStyle4').on('click', function () {
         changeTheme(4);
     });
+
+    // Chart OBJ double click to edit
+    $('.op-slideContainer').delegate('.chartItem', 'dblclick', function (e) {
+//        e.preventDefault();
+        var id = $(e.target).attr('chartid');
+        window.open('http://52.3.202.244/charts/' + id + '/edit', '_blank');
+    });
+
+
+    $(".op-slideContainer").delegate('.chartItem', 'click', function (ev) {
+        var target = $(ev.target).closest('.chartItem');
+        resizingHost = target.attr('id').substring(2) - 1;
+        console.log(resizingHost);
+        var ghostTop, ghostLeft, ghostWidth, ghostHeight;
+
+        if (isMultiSelect) {
+            multiSelectedItems.push(resizingHost);
+            var ghostSize = calculateGhostSize(multiSelectedItems);
+            ghostTop = ghostSize.gTop - 5;
+            ghostLeft = ghostSize.gLeft - 5;
+            ghostWidth = ghostSize.gWidth + 10;
+            ghostHeight = ghostSize.gHeight + 10;
+            target.css('background', 'rgba(0,50,255,0.2)');
+        } else {
+            ghostTop = AllSlides[currentSlideNum].content[resizingHost].top - 5;
+            ghostLeft = AllSlides[currentSlideNum].content[resizingHost].left - 5;
+            ghostWidth = AllSlides[currentSlideNum].content[resizingHost].width + 10;
+            ghostHeight = AllSlides[currentSlideNum].content[resizingHost].height + 10;
+        }
+        $('.ghostSizing')
+            .css({
+                top: ghostTop,
+                left: ghostLeft,
+                width: ghostWidth,
+                height: ghostHeight
+            })
+            .show()
+    }).delegate('.chartItem', 'blur', function (ev) {
+    });
+
 });
 
 

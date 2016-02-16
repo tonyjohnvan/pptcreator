@@ -23,11 +23,12 @@ function Slide(slidId) {
     this.content = [];
 }
 
-function ChartObj(chartId,data){
+function ChartObj(chartId, url, cid, width, height) {
+    this.cid = cid;
     this.id = chartId;
-    this.data = data;
-    this.top = 0;
-    this.left = 0;
-    this.width = 100;
-    this.height = 50;
+    this.url = url;
+    this.top = 100;
+    this.left = 100;
+    this.width = width;
+    this.height = height;
 }

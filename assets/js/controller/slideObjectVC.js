@@ -9,25 +9,41 @@ function renderSlide(slide) {
     slideContainer.html('');
     for (var i = 0; i < slide.content.length; i++) {
         var domItem = slide.content[i];
-        if (!domItem.hidden) {
-            var domEle = '<div class="slidItem" ' +
-                'contenteditable="true" ' +
-                'style="' +
-                'top: ' + domItem.top + 'px; ' +
-                'left: ' + domItem.left + 'px; ' +
-                'width: ' + domItem.width + 'px; ' +
-                'height: ' + domItem.height + 'px; ' +
+        if (domItem instanceof SlideObj) {
+            if (!domItem.hidden) {
+                var domEle = '<div class="slidItem" ' +
+                    'contenteditable="true" ' +
+                    'style="' +
+                    'top: ' + domItem.top + 'px; ' +
+                    'left: ' + domItem.left + 'px; ' +
+                    'width: ' + domItem.width + 'px; ' +
+                    'height: ' + domItem.height + 'px; ' +
 //            'background: rgba(0, 50, 255, 0.2);' +
 //            'font-size: ' + domItem.fontsize + 'px; ' +
-                'text-align: ' + domItem.textAlign +
-                ';" ' +
-                'id="si' + domItem.id + '">' + domItem.content +
-                '</div>';
-            slideContainer.append(domEle);
+                    'text-align: ' + domItem.textAlign +
+                    ';" ' +
+                    'id="si' + domItem.id + '">' + domItem.content +
+                    '</div>';
+                slideContainer.append(domEle);
+            }
+        } else if (domItem instanceof ChartObj) {
+            if (!domItem.hidden) {
+                var domEle =
+                    '<img class="chartItem" chartID="' +
+                    domItem.cid + '" src="' +
+                    domItem.url + '" width="' +
+                    domItem.width + '" height="' +
+                    domItem.height + '"id="si' +
+                    domItem.id + '" ' +
+                    'style="' +
+                    'top: ' + domItem.top + 'px; ' +
+                    'left: ' + domItem.left + 'px;" />';
+                slideContainer.append(domEle);
+            }
         }
     }
 
-    updateComponentList(slide);
+//    updateComponentList(slide);
 }
 
 function updateComponentList(slide) {
@@ -38,7 +54,7 @@ function updateComponentList(slide) {
     });
     for (var i = 0; i < slide.content.length; i++) {
         var obj = slide.content[i];
-        var showContent = obj.content.replace(regex, "").length < 26  ?
+        var showContent = obj.content.replace(regex, "").length < 26 ?
             obj.content.replace(regex, "") :
             obj.content.replace(regex, "").substr(0, 22) + '...' + obj.content.replace(regex, "").substr(obj.content.replace(regex, "").length - 3, 3);
         if (!obj.hidden) {
@@ -131,66 +147,69 @@ var SOModiStr = '\
             <i class="glyphicon glyphicon-th-list"></i>\
         </a>\
     </li>\
-</ul>'+
-'<ul class="nav navbar-nav col-xm-4">\
-    <li class="">\
-        <a href="#" onclick="{document.execCommand(\'insertUnorderedList\', false);}" class="dropdown-toggle" data-toggle="dropdown"\
-        aria-expanded="false">\
-            <i class="glyphicon glyphicon-list"></i>\
-        </a>\
-    </li>\
-    <li class="">\
-        <a href="#" onclick="{document.execCommand(\'indent\', false);}" class="dropdown-toggle" data-toggle="dropdown"\
-        aria-expanded="false">\
-            <i class="glyphicon glyphicon-indent-left"></i>\
-        </a>\
-    </li>\
-    <li class="">\
-        <a href="#" onclick="{document.execCommand(\'outdent\', false);}" class="dropdown-toggle" data-toggle="dropdown"\
-        aria-expanded="false">\
-            <i class="glyphicon glyphicon-indent-right"></i>\
-        </a>\
-    </li>\
-    <li class="">\
-        <a href="#" onclick="{document.execCommand(\'removeFormat\', false);}" class="dropdown-toggle" data-toggle="dropdown"\
-        aria-expanded="false">\
-            <i class="glyphicon glyphicon-remove"></i>\
-        </a>\
-    </li>\
-    <li class="">\
-        <div class="dropdown">\
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">\
-            FontSize\
-                <span class="caret"></span>\
-            </button>\
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">\
-                <li><a href="#" onclick="{document.execCommand(\'fontSize\', false, 1);}">XXSmall</a></li>\
-                <li><a href="#" onclick="{document.execCommand(\'fontSize\', false, 2);}">XSmall</a></li>\
-                <li><a href="#" onclick="{document.execCommand(\'fontSize\', false, 3);}">Small</a></li>\
-                <li><a href="#" onclick="{document.execCommand(\'fontSize\', false, 4);}">Normal</a></li>\
-                <li><a href="#" onclick="{document.execCommand(\'fontSize\', false, 5);}">Large</a></li>\
-                <li><a href="#" onclick="{document.execCommand(\'fontSize\', false, 6);}">XLarge</a></li>\
-                <li><a href="#" onclick="{document.execCommand(\'fontSize\', false, 7);}">XXLarge</a></li>\
-            </ul>\
-        </div>\
-    </li>\
-</ul>\
-</div>\
-</div>\
-    <div class="container inputWrap">\
-        <div class="row">\
-            <div id="directText" contenteditable="true"></div>\
-        </div>\
-    </div>';
+</ul>' +
+    '<ul class="nav navbar-nav col-xm-4">\
+        <li class="">\
+            <a href="#" onclick="{document.execCommand(\'insertUnorderedList\', false);}" class="dropdown-toggle" data-toggle="dropdown"\
+            aria-expanded="false">\
+                <i class="glyphicon glyphicon-list"></i>\
+            </a>\
+        </li>\
+        <li class="">\
+            <a href="#" onclick="{document.execCommand(\'indent\', false);}" class="dropdown-toggle" data-toggle="dropdown"\
+            aria-expanded="false">\
+                <i class="glyphicon glyphicon-indent-left"></i>\
+            </a>\
+        </li>\
+        <li class="">\
+            <a href="#" onclick="{document.execCommand(\'outdent\', false);}" class="dropdown-toggle" data-toggle="dropdown"\
+            aria-expanded="false">\
+                <i class="glyphicon glyphicon-indent-right"></i>\
+            </a>\
+        </li>\
+        <li class="">\
+            <a href="#" onclick="{document.execCommand(\'removeFormat\', false);}" class="dropdown-toggle" data-toggle="dropdown"\
+            aria-expanded="false">\
+                <i class="glyphicon glyphicon-remove"></i>\
+            </a>\
+        </li>\
+        <li class="">\
+            <div class="dropdown">\
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">\
+                FontSize\
+                    <span class="caret"></span>\
+                </button>\
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">\
+                    <li><a href="#" onclick="{document.execCommand(\'fontSize\', false, 1);}">XXSmall</a></li>\
+                    <li><a href="#" onclick="{document.execCommand(\'fontSize\', false, 2);}">XSmall</a></li>\
+                    <li><a href="#" onclick="{document.execCommand(\'fontSize\', false, 3);}">Small</a></li>\
+                    <li><a href="#" onclick="{document.execCommand(\'fontSize\', false, 4);}">Normal</a></li>\
+                    <li><a href="#" onclick="{document.execCommand(\'fontSize\', false, 5);}">Large</a></li>\
+                    <li><a href="#" onclick="{document.execCommand(\'fontSize\', false, 6);}">XLarge</a></li>\
+                    <li><a href="#" onclick="{document.execCommand(\'fontSize\', false, 7);}">XXLarge</a></li>\
+                </ul>\
+            </div>\
+        </li>\
+    </ul>\
+    </div>\
+    </div>\
+        <div class="container inputWrap">\
+            <div class="row">\
+                <div id="directText" contenteditable="true"></div>\
+            </div>\
+        </div>';
 
 var addChartStr = '\
 <div class="insertChartWrap">\
     <h3>New Chart</h3>\
     <select id="createChartTypeSelect">\
         <option selected value="cid-00" data-value="cid-00" >Please Select a Chart Type</option>\
-        <option value="cid-01">Stacked Chart</option>\
-        <option value="cid-02">Table Chart</option>\
-        <option value="cid-03">Line Chart</option>\
+        <option value="cid-08">cid-08</option>\
+        <option value="cid-05">cid-05</option>\
+        <option value="cid-06">cid-06</option>\
+        <option value="cid-37">cid-37</option>\
+        <option value="cid-38">cid-38</option>\
+        <option value="cid-39">cid-39</option>\
     </select>\
     <h3>Data Set</h3>\
     <select id="createChartDataSetSelect">\
